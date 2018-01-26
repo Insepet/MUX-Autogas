@@ -1,0 +1,5 @@
+C:\Users\SISTEMAS INSEPET\Documents\Projects\MUX\Programa\Bootloader550M\Bootloader550M\Bootloader550M.cydsn\Bootloader550M.cyprj|0c5f6aea-66c4-4df0-a0d9-d125666b15b6
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e8d58a33-8d53-4de6-98af-c9fd916c461e
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1ae0d2bd-14e8-4525-a42e-1fa5b504dcce
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|645f5d4a-c864-4517-855f-eeaf659b499e
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3c3f201f-c8de-42c2-9d24-036931aee8d1

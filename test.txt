@@ -1,0 +1,7 @@
+Descuento
+2 +- en precio  precio+-valor
+3 +- descuento	precio+-(%)
+4 precio	cambio de precio
+
+mensajes error impreso tal cual
+

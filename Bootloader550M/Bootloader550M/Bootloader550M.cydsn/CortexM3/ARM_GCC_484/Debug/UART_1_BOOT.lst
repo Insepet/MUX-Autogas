@@ -1,0 +1,1297 @@
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"UART_1_BOOT.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.UART_1_CyBtldrCommStart,"ax",%progbits
+  19              		.align	2
+  20              		.global	UART_1_CyBtldrCommStart
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	UART_1_CyBtldrCommStart, %function
+  24              	UART_1_CyBtldrCommStart:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\UART_1_BOOT.c"
+   1:.\Generated_Source\PSoC5/UART_1_BOOT.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * File Name: UART_1_BOOT.c
+   3:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Version 2.50
+   4:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+   5:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Description:
+   6:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  This file provides the source code of bootloader communication APIs for the
+   7:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  UART component.
+   8:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+   9:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Note:
+  10:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  11:.\Generated_Source\PSoC5/UART_1_BOOT.c **** ********************************************************************************
+  12:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * You may use this file only in accordance with the license, terms, conditions,
+  14:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  15:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * the software package with which this file was provided.
+  16:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *******************************************************************************/
+  17:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  18:.\Generated_Source\PSoC5/UART_1_BOOT.c **** #include "UART_1.h"
+  19:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  20:.\Generated_Source\PSoC5/UART_1_BOOT.c **** #if defined(CYDEV_BOOTLOADER_IO_COMP) && (0u != ((CYDEV_BOOTLOADER_IO_COMP == CyBtldr_UART_1) || \
+  21:.\Generated_Source\PSoC5/UART_1_BOOT.c ****                                           (CYDEV_BOOTLOADER_IO_COMP == CyBtldr_Custom_Interface)))
+  22:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  23:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  24:.\Generated_Source\PSoC5/UART_1_BOOT.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Function Name: UART_1_CyBtldrCommStart
+  26:.\Generated_Source\PSoC5/UART_1_BOOT.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  28:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Summary:
+  29:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  Starts the UART communication component.
+  30:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  31:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Parameters:
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  None
+  33:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  34:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Return:
+  35:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  None
+  36:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  37:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Side Effects:
+  38:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  This component automatically enables global interrupt.
+  39:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  40:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *******************************************************************************/
+  41:.\Generated_Source\PSoC5/UART_1_BOOT.c **** void UART_1_CyBtldrCommStart(void) CYSMALL 
+  42:.\Generated_Source\PSoC5/UART_1_BOOT.c **** {
+  27              		.loc 1 42 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31 0000 80B5     		push	{r7, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 7, -8
+  34              		.cfi_offset 14, -4
+  35 0002 00AF     		add	r7, sp, #0
+  36              		.cfi_def_cfa_register 7
+  43:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Start UART component and clear the Tx,Rx buffers */
+  44:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     UART_1_Start();
+  37              		.loc 1 44 0
+  38 0004 FFF7FEFF 		bl	UART_1_Start
+  45:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     UART_1_ClearRxBuffer();
+  39              		.loc 1 45 0
+  40 0008 FFF7FEFF 		bl	UART_1_ClearRxBuffer
+  46:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     UART_1_ClearTxBuffer();
+  41              		.loc 1 46 0
+  42 000c FFF7FEFF 		bl	UART_1_ClearTxBuffer
+  47:.\Generated_Source\PSoC5/UART_1_BOOT.c **** }
+  43              		.loc 1 47 0
+  44 0010 80BD     		pop	{r7, pc}
+  45              		.cfi_endproc
+  46              	.LFE0:
+  47              		.size	UART_1_CyBtldrCommStart, .-UART_1_CyBtldrCommStart
+  48 0012 00BF     		.section	.text.UART_1_CyBtldrCommStop,"ax",%progbits
+  49              		.align	2
+  50              		.global	UART_1_CyBtldrCommStop
+  51              		.thumb
+  52              		.thumb_func
+  53              		.type	UART_1_CyBtldrCommStop, %function
+  54              	UART_1_CyBtldrCommStop:
+  55              	.LFB1:
+  48:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  49:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  50:.\Generated_Source\PSoC5/UART_1_BOOT.c **** /*******************************************************************************
+  51:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Function Name: UART_1_CyBtldrCommStop
+  52:.\Generated_Source\PSoC5/UART_1_BOOT.c **** ********************************************************************************
+  53:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  54:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Summary:
+  55:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  Disables the communication component and disables the interrupt.
+  56:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  57:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Parameters:
+  58:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  None
+  59:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 3
+
+
+  60:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Return:
+  61:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  None
+  62:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  63:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *******************************************************************************/
+  64:.\Generated_Source\PSoC5/UART_1_BOOT.c **** void UART_1_CyBtldrCommStop(void) CYSMALL 
+  65:.\Generated_Source\PSoC5/UART_1_BOOT.c **** {
+  56              		.loc 1 65 0
+  57              		.cfi_startproc
+  58              		@ args = 0, pretend = 0, frame = 0
+  59              		@ frame_needed = 1, uses_anonymous_args = 0
+  60 0000 80B5     		push	{r7, lr}
+  61              		.cfi_def_cfa_offset 8
+  62              		.cfi_offset 7, -8
+  63              		.cfi_offset 14, -4
+  64 0002 00AF     		add	r7, sp, #0
+  65              		.cfi_def_cfa_register 7
+  66:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Stop UART component */
+  67:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     UART_1_Stop();
+  66              		.loc 1 67 0
+  67 0004 FFF7FEFF 		bl	UART_1_Stop
+  68:.\Generated_Source\PSoC5/UART_1_BOOT.c **** }
+  68              		.loc 1 68 0
+  69 0008 80BD     		pop	{r7, pc}
+  70              		.cfi_endproc
+  71              	.LFE1:
+  72              		.size	UART_1_CyBtldrCommStop, .-UART_1_CyBtldrCommStop
+  73 000a 00BF     		.section	.text.UART_1_CyBtldrCommReset,"ax",%progbits
+  74              		.align	2
+  75              		.global	UART_1_CyBtldrCommReset
+  76              		.thumb
+  77              		.thumb_func
+  78              		.type	UART_1_CyBtldrCommReset, %function
+  79              	UART_1_CyBtldrCommReset:
+  80              	.LFB2:
+  69:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  70:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  71:.\Generated_Source\PSoC5/UART_1_BOOT.c **** /*******************************************************************************
+  72:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Function Name: UART_1_CyBtldrCommReset
+  73:.\Generated_Source\PSoC5/UART_1_BOOT.c **** ********************************************************************************
+  74:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  75:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Summary:
+  76:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  Resets the receive and transmit communication Buffers.
+  77:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  78:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Parameters:
+  79:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  None
+  80:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  81:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Return:
+  82:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  None
+  83:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  84:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *******************************************************************************/
+  85:.\Generated_Source\PSoC5/UART_1_BOOT.c **** void UART_1_CyBtldrCommReset(void) CYSMALL 
+  86:.\Generated_Source\PSoC5/UART_1_BOOT.c **** {
+  81              		.loc 1 86 0
+  82              		.cfi_startproc
+  83              		@ args = 0, pretend = 0, frame = 0
+  84              		@ frame_needed = 1, uses_anonymous_args = 0
+  85 0000 80B5     		push	{r7, lr}
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 4
+
+
+  86              		.cfi_def_cfa_offset 8
+  87              		.cfi_offset 7, -8
+  88              		.cfi_offset 14, -4
+  89 0002 00AF     		add	r7, sp, #0
+  90              		.cfi_def_cfa_register 7
+  87:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Clear RX and TX buffers */
+  88:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     UART_1_ClearRxBuffer();
+  91              		.loc 1 88 0
+  92 0004 FFF7FEFF 		bl	UART_1_ClearRxBuffer
+  89:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     UART_1_ClearTxBuffer();
+  93              		.loc 1 89 0
+  94 0008 FFF7FEFF 		bl	UART_1_ClearTxBuffer
+  90:.\Generated_Source\PSoC5/UART_1_BOOT.c **** }
+  95              		.loc 1 90 0
+  96 000c 80BD     		pop	{r7, pc}
+  97              		.cfi_endproc
+  98              	.LFE2:
+  99              		.size	UART_1_CyBtldrCommReset, .-UART_1_CyBtldrCommReset
+ 100 000e 00BF     		.section	.text.UART_1_CyBtldrCommWrite,"ax",%progbits
+ 101              		.align	2
+ 102              		.global	UART_1_CyBtldrCommWrite
+ 103              		.thumb
+ 104              		.thumb_func
+ 105              		.type	UART_1_CyBtldrCommWrite, %function
+ 106              	UART_1_CyBtldrCommWrite:
+ 107              	.LFB3:
+  91:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  92:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+  93:.\Generated_Source\PSoC5/UART_1_BOOT.c **** /*******************************************************************************
+  94:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Function Name: UART_1_CyBtldrCommWrite
+  95:.\Generated_Source\PSoC5/UART_1_BOOT.c **** ********************************************************************************
+  96:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+  97:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Summary:
+  98:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  Allows the caller to write data to the boot loader host. This function uses
+  99:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * a blocking write function for writing data using UART communication component.
+ 100:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 101:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Parameters:
+ 102:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  pData:    A pointer to the block of data to send to the device
+ 103:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  size:     The number of bytes to write.
+ 104:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  count:    Pointer to an unsigned short variable to write the number of
+ 105:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *             bytes actually written.
+ 106:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  timeOut:  Number of units to wait before returning because of a timeout.
+ 107:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 108:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Return:
+ 109:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *   cystatus: This function will return CYRET_SUCCESS if data is sent
+ 110:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *             successfully.
+ 111:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 112:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Side Effects:
+ 113:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  This function should be called after command was received .
+ 114:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 115:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *******************************************************************************/
+ 116:.\Generated_Source\PSoC5/UART_1_BOOT.c **** cystatus UART_1_CyBtldrCommWrite(const uint8 pData[], uint16 size, uint16 * count, uint8 timeOut) C
+ 117:.\Generated_Source\PSoC5/UART_1_BOOT.c ****          
+ 118:.\Generated_Source\PSoC5/UART_1_BOOT.c **** {
+ 108              		.loc 1 118 0
+ 109              		.cfi_startproc
+ 110              		@ args = 0, pretend = 0, frame = 24
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 5
+
+
+ 111              		@ frame_needed = 1, uses_anonymous_args = 0
+ 112 0000 80B5     		push	{r7, lr}
+ 113              		.cfi_def_cfa_offset 8
+ 114              		.cfi_offset 7, -8
+ 115              		.cfi_offset 14, -4
+ 116 0002 86B0     		sub	sp, sp, #24
+ 117              		.cfi_def_cfa_offset 32
+ 118 0004 00AF     		add	r7, sp, #0
+ 119              		.cfi_def_cfa_register 7
+ 120 0006 F860     		str	r0, [r7, #12]
+ 121 0008 7A60     		str	r2, [r7, #4]
+ 122 000a 0A46     		mov	r2, r1	@ movhi
+ 123 000c 7A81     		strh	r2, [r7, #10]	@ movhi
+ 124 000e 7B72     		strb	r3, [r7, #9]
+ 119:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     uint16 bufIndex = 0u;
+ 125              		.loc 1 119 0
+ 126 0010 0023     		movs	r3, #0
+ 127 0012 FB82     		strh	r3, [r7, #22]	@ movhi
+ 120:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 121:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     if(0u != timeOut)
+ 122:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     {
+ 123:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         /* Suppress compiler warning */
+ 124:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     }
+ 125:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 126:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Clear receive buffers */
+ 127:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     UART_1_ClearRxBuffer();
+ 128              		.loc 1 127 0
+ 129 0014 FFF7FEFF 		bl	UART_1_ClearRxBuffer
+ 128:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 129:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Write TX data using blocking function */
+ 130:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     while(bufIndex < size)
+ 130              		.loc 1 130 0
+ 131 0018 09E0     		b	.L5
+ 132              	.L6:
+ 131:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     {
+ 132:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         UART_1_PutChar(pData[bufIndex]);
+ 133              		.loc 1 132 0
+ 134 001a FB8A     		ldrh	r3, [r7, #22]
+ 135 001c FA68     		ldr	r2, [r7, #12]
+ 136 001e 1344     		add	r3, r3, r2
+ 137 0020 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 138 0022 1846     		mov	r0, r3
+ 139 0024 FFF7FEFF 		bl	UART_1_PutChar
+ 133:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         bufIndex++;
+ 140              		.loc 1 133 0
+ 141 0028 FB8A     		ldrh	r3, [r7, #22]
+ 142 002a 0133     		adds	r3, r3, #1
+ 143 002c FB82     		strh	r3, [r7, #22]	@ movhi
+ 144              	.L5:
+ 130:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     while(bufIndex < size)
+ 145              		.loc 1 130 0 discriminator 1
+ 146 002e FA8A     		ldrh	r2, [r7, #22]
+ 147 0030 7B89     		ldrh	r3, [r7, #10]
+ 148 0032 9A42     		cmp	r2, r3
+ 149 0034 F1D3     		bcc	.L6
+ 134:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     }
+ 135:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 6
+
+
+ 136:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Return success code */
+ 137:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     *count = size;
+ 150              		.loc 1 137 0
+ 151 0036 7B68     		ldr	r3, [r7, #4]
+ 152 0038 7A89     		ldrh	r2, [r7, #10]	@ movhi
+ 153 003a 1A80     		strh	r2, [r3]	@ movhi
+ 138:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 139:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     return (CYRET_SUCCESS);
+ 154              		.loc 1 139 0
+ 155 003c 0023     		movs	r3, #0
+ 140:.\Generated_Source\PSoC5/UART_1_BOOT.c **** }
+ 156              		.loc 1 140 0
+ 157 003e 1846     		mov	r0, r3
+ 158 0040 1837     		adds	r7, r7, #24
+ 159 0042 BD46     		mov	sp, r7
+ 160              		@ sp needed
+ 161 0044 80BD     		pop	{r7, pc}
+ 162              		.cfi_endproc
+ 163              	.LFE3:
+ 164              		.size	UART_1_CyBtldrCommWrite, .-UART_1_CyBtldrCommWrite
+ 165 0046 00BF     		.section	.text.UART_1_CyBtldrCommRead,"ax",%progbits
+ 166              		.align	2
+ 167              		.global	UART_1_CyBtldrCommRead
+ 168              		.thumb
+ 169              		.thumb_func
+ 170              		.type	UART_1_CyBtldrCommRead, %function
+ 171              	UART_1_CyBtldrCommRead:
+ 172              	.LFB4:
+ 141:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 142:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 143:.\Generated_Source\PSoC5/UART_1_BOOT.c **** /*******************************************************************************
+ 144:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Function Name: UART_1_CyBtldrCommRead
+ 145:.\Generated_Source\PSoC5/UART_1_BOOT.c **** ********************************************************************************
+ 146:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 147:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Summary:
+ 148:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  Receives the command.
+ 149:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 150:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Parameters:
+ 151:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  pData:    A pointer to the area to store the block of data received
+ 152:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *             from the device.
+ 153:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  size:     Maximum size of the read buffer
+ 154:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  count:    Pointer to an unsigned short variable to write the number
+ 155:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *             of bytes actually read.
+ 156:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  timeOut:  Number of units to wait before returning because of a timeOut.
+ 157:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *            Time out is measured in 10s of ms.
+ 158:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 159:.\Generated_Source\PSoC5/UART_1_BOOT.c **** * Return:
+ 160:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  cystatus: This function will return CYRET_SUCCESS if at least one byte is
+ 161:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *            received successfully within the time out interval. If no data is
+ 162:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *            received  this function will return CYRET_EMPTY.
+ 163:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *
+ 164:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  BYTE2BYTE_TIME_OUT is used for detecting time out marking end of block data
+ 165:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  from host. This has to be set to a value which is greater than the expected
+ 166:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  maximum delay between two bytes during a block/packet transmission from the
+ 167:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  host. You have to account for the delay in hardware converters while
+ 168:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *  calculating this value, if you are using any USB-UART bridges.
+ 169:.\Generated_Source\PSoC5/UART_1_BOOT.c **** *******************************************************************************/
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 7
+
+
+ 170:.\Generated_Source\PSoC5/UART_1_BOOT.c **** cystatus UART_1_CyBtldrCommRead(uint8 pData[], uint16 size, uint16 * count, uint8 timeOut) CYSMALL
+ 171:.\Generated_Source\PSoC5/UART_1_BOOT.c ****          
+ 172:.\Generated_Source\PSoC5/UART_1_BOOT.c **** {
+ 173              		.loc 1 172 0
+ 174              		.cfi_startproc
+ 175              		@ args = 0, pretend = 0, frame = 32
+ 176              		@ frame_needed = 1, uses_anonymous_args = 0
+ 177 0000 90B5     		push	{r4, r7, lr}
+ 178              		.cfi_def_cfa_offset 12
+ 179              		.cfi_offset 4, -12
+ 180              		.cfi_offset 7, -8
+ 181              		.cfi_offset 14, -4
+ 182 0002 89B0     		sub	sp, sp, #36
+ 183              		.cfi_def_cfa_offset 48
+ 184 0004 00AF     		add	r7, sp, #0
+ 185              		.cfi_def_cfa_register 7
+ 186 0006 F860     		str	r0, [r7, #12]
+ 187 0008 7A60     		str	r2, [r7, #4]
+ 188 000a 0A46     		mov	r2, r1	@ movhi
+ 189 000c 7A81     		strh	r2, [r7, #10]	@ movhi
+ 190 000e 7B72     		strb	r3, [r7, #9]
+ 173:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     uint16 iCntr;
+ 174:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     uint16 dataIndexCntr;
+ 175:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     uint16 tempCount;
+ 176:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     uint16 oldDataCount;
+ 177:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 178:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     cystatus status = CYRET_EMPTY;
+ 191              		.loc 1 178 0
+ 192 0010 0523     		movs	r3, #5
+ 193 0012 BB61     		str	r3, [r7, #24]
+ 179:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 180:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Check whether data is received within the time out period.
+ 181:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     *  Time out period is in units of 10ms.
+ 182:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     *  If at least one byte is received within the time out interval, wait for more data */
+ 183:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     for (iCntr = 0u; iCntr < ((uint16)10u * timeOut); iCntr++)
+ 194              		.loc 1 183 0
+ 195 0014 0023     		movs	r3, #0
+ 196 0016 FB83     		strh	r3, [r7, #30]	@ movhi
+ 197 0018 1AE0     		b	.L9
+ 198              	.L13:
+ 184:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     {
+ 185:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         /* If at least one byte is received within the timeout interval
+ 186:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         *  enter the next loop waiting for more data reception
+ 187:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         */
+ 188:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         if(0u != UART_1_GetRxBufferSize())
+ 199              		.loc 1 188 0
+ 200 001a FFF7FEFF 		bl	UART_1_GetRxBufferSize
+ 201 001e 0346     		mov	r3, r0
+ 202 0020 002B     		cmp	r3, #0
+ 203 0022 0FD0     		beq	.L10
+ 204              	.L11:
+ 189:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         {
+ 190:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             /* Wait for more data until 25ms byte to byte time out interval.
+ 191:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             * If no data is received during the last 25 ms(BYTE2BYTE_TIME_OUT)
+ 192:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             * then it is considered as end of transmitted data block(packet)
+ 193:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             * from the host and the program execution will break from the
+ 194:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             * data awaiting loop with status=CYRET_SUCCESS
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 8
+
+
+ 195:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             */
+ 196:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             do
+ 197:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             {
+ 198:.\Generated_Source\PSoC5/UART_1_BOOT.c ****                 oldDataCount = UART_1_GetRxBufferSize();
+ 205              		.loc 1 198 0 discriminator 1
+ 206 0024 FFF7FEFF 		bl	UART_1_GetRxBufferSize
+ 207 0028 0346     		mov	r3, r0
+ 208 002a FB82     		strh	r3, [r7, #22]	@ movhi
+ 199:.\Generated_Source\PSoC5/UART_1_BOOT.c ****                 CyDelay(UART_1_BYTE2BYTE_TIME_OUT);
+ 209              		.loc 1 199 0 discriminator 1
+ 210 002c 1920     		movs	r0, #25
+ 211 002e FFF7FEFF 		bl	CyDelay
+ 200:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             }
+ 201:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             while(UART_1_GetRxBufferSize() > oldDataCount);
+ 212              		.loc 1 201 0 discriminator 1
+ 213 0032 FFF7FEFF 		bl	UART_1_GetRxBufferSize
+ 214 0036 0346     		mov	r3, r0
+ 215 0038 FA8A     		ldrh	r2, [r7, #22]
+ 216 003a 9A42     		cmp	r2, r3
+ 217 003c F2D3     		bcc	.L11
+ 202:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 203:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             status = CYRET_SUCCESS;
+ 218              		.loc 1 203 0
+ 219 003e 0023     		movs	r3, #0
+ 220 0040 BB61     		str	r3, [r7, #24]
+ 204:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             break;
+ 221              		.loc 1 204 0
+ 222 0042 0DE0     		b	.L12
+ 223              	.L10:
+ 205:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         }
+ 206:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         /* If the data is not received, give a delay of 
+ 207:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         *  UART_1_BL_CHK_DELAY_MS and check again until the timeOut specified.
+ 208:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         */
+ 209:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         else
+ 210:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         {
+ 211:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             CyDelay(UART_1_BL_CHK_DELAY_MS);
+ 224              		.loc 1 211 0
+ 225 0044 0120     		movs	r0, #1
+ 226 0046 FFF7FEFF 		bl	CyDelay
+ 183:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     for (iCntr = 0u; iCntr < ((uint16)10u * timeOut); iCntr++)
+ 227              		.loc 1 183 0
+ 228 004a FB8B     		ldrh	r3, [r7, #30]
+ 229 004c 0133     		adds	r3, r3, #1
+ 230 004e FB83     		strh	r3, [r7, #30]	@ movhi
+ 231              	.L9:
+ 183:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     for (iCntr = 0u; iCntr < ((uint16)10u * timeOut); iCntr++)
+ 232              		.loc 1 183 0 is_stmt 0 discriminator 1
+ 233 0050 F98B     		ldrh	r1, [r7, #30]
+ 234 0052 7A7A     		ldrb	r2, [r7, #9]	@ zero_extendqisi2
+ 235 0054 1346     		mov	r3, r2
+ 236 0056 9B00     		lsls	r3, r3, #2
+ 237 0058 1344     		add	r3, r3, r2
+ 238 005a 5B00     		lsls	r3, r3, #1
+ 239 005c 9942     		cmp	r1, r3
+ 240 005e DCDB     		blt	.L13
+ 241              	.L12:
+ 212:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         }
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 9
+
+
+ 213:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     }
+ 214:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 215:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* Initialize the data read indexes and Count value */
+ 216:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     *count = 0u;
+ 242              		.loc 1 216 0 is_stmt 1
+ 243 0060 7B68     		ldr	r3, [r7, #4]
+ 244 0062 0022     		movs	r2, #0
+ 245 0064 1A80     		strh	r2, [r3]	@ movhi
+ 217:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     dataIndexCntr = 0u;
+ 246              		.loc 1 217 0
+ 247 0066 0023     		movs	r3, #0
+ 248 0068 BB83     		strh	r3, [r7, #28]	@ movhi
+ 218:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 219:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     /* If GetRxBufferSize()>0 , move the received data to the pData buffer */
+ 220:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     while(UART_1_GetRxBufferSize() > 0u)
+ 249              		.loc 1 220 0
+ 250 006a 36E0     		b	.L14
+ 251              	.L20:
+ 221:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     {
+ 222:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         tempCount = UART_1_GetRxBufferSize();
+ 252              		.loc 1 222 0
+ 253 006c FFF7FEFF 		bl	UART_1_GetRxBufferSize
+ 254 0070 0346     		mov	r3, r0
+ 255 0072 BB82     		strh	r3, [r7, #20]	@ movhi
+ 223:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         *count  =(*count) + tempCount;
+ 256              		.loc 1 223 0
+ 257 0074 7B68     		ldr	r3, [r7, #4]
+ 258 0076 1A88     		ldrh	r2, [r3]
+ 259 0078 BB8A     		ldrh	r3, [r7, #20]	@ movhi
+ 260 007a 1344     		add	r3, r3, r2
+ 261 007c 9AB2     		uxth	r2, r3
+ 262 007e 7B68     		ldr	r3, [r7, #4]
+ 263 0080 1A80     		strh	r2, [r3]	@ movhi
+ 224:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 225:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         /* Check if buffer overflow will occur before moving the data */
+ 226:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         if(*count < size)
+ 264              		.loc 1 226 0
+ 265 0082 7B68     		ldr	r3, [r7, #4]
+ 266 0084 1B88     		ldrh	r3, [r3]
+ 267 0086 7A89     		ldrh	r2, [r7, #10]
+ 268 0088 9A42     		cmp	r2, r3
+ 269 008a 1ED9     		bls	.L15
+ 227:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         {
+ 228:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             for (iCntr = 0u; iCntr < tempCount; iCntr++)
+ 270              		.loc 1 228 0
+ 271 008c 0023     		movs	r3, #0
+ 272 008e FB83     		strh	r3, [r7, #30]	@ movhi
+ 273 0090 0CE0     		b	.L16
+ 274              	.L17:
+ 229:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             {
+ 230:.\Generated_Source\PSoC5/UART_1_BOOT.c ****                 /* Read the data and move it to the pData buffer */
+ 231:.\Generated_Source\PSoC5/UART_1_BOOT.c ****                 pData[dataIndexCntr] = UART_1_ReadRxData();
+ 275              		.loc 1 231 0 discriminator 2
+ 276 0092 BB8B     		ldrh	r3, [r7, #28]
+ 277 0094 FA68     		ldr	r2, [r7, #12]
+ 278 0096 D418     		adds	r4, r2, r3
+ 279 0098 FFF7FEFF 		bl	UART_1_ReadRxData
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 10
+
+
+ 280 009c 0346     		mov	r3, r0
+ 281 009e 2370     		strb	r3, [r4]
+ 232:.\Generated_Source\PSoC5/UART_1_BOOT.c ****                 dataIndexCntr++;
+ 282              		.loc 1 232 0 discriminator 2
+ 283 00a0 BB8B     		ldrh	r3, [r7, #28]
+ 284 00a2 0133     		adds	r3, r3, #1
+ 285 00a4 BB83     		strh	r3, [r7, #28]	@ movhi
+ 228:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             for (iCntr = 0u; iCntr < tempCount; iCntr++)
+ 286              		.loc 1 228 0 discriminator 2
+ 287 00a6 FB8B     		ldrh	r3, [r7, #30]
+ 288 00a8 0133     		adds	r3, r3, #1
+ 289 00aa FB83     		strh	r3, [r7, #30]	@ movhi
+ 290              	.L16:
+ 228:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             for (iCntr = 0u; iCntr < tempCount; iCntr++)
+ 291              		.loc 1 228 0 is_stmt 0 discriminator 1
+ 292 00ac FA8B     		ldrh	r2, [r7, #30]
+ 293 00ae BB8A     		ldrh	r3, [r7, #20]
+ 294 00b0 9A42     		cmp	r2, r3
+ 295 00b2 EED3     		bcc	.L17
+ 233:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             }
+ 234:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 235:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             /* Check if the last received byte is end of packet defined by bootloader
+ 236:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             *  If not wait for additional UART_1_WAIT_EOP_DELAY ms.
+ 237:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             */
+ 238:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             if(pData[dataIndexCntr - 1u] != UART_1_PACKET_EOP)
+ 296              		.loc 1 238 0 is_stmt 1
+ 297 00b4 BB8B     		ldrh	r3, [r7, #28]
+ 298 00b6 013B     		subs	r3, r3, #1
+ 299 00b8 FA68     		ldr	r2, [r7, #12]
+ 300 00ba 1344     		add	r3, r3, r2
+ 301 00bc 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 302 00be 172B     		cmp	r3, #23
+ 303 00c0 0BD0     		beq	.L14
+ 239:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             {
+ 240:.\Generated_Source\PSoC5/UART_1_BOOT.c ****                 CyDelay(UART_1_WAIT_EOP_DELAY);
+ 304              		.loc 1 240 0
+ 305 00c2 0520     		movs	r0, #5
+ 306 00c4 FFF7FEFF 		bl	CyDelay
+ 307 00c8 07E0     		b	.L14
+ 308              	.L15:
+ 241:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             }
+ 242:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         }
+ 243:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         /* If there is no space to move data, break from the loop */
+ 244:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         else
+ 245:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         {
+ 246:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             *count = (*count) - tempCount;
+ 309              		.loc 1 246 0
+ 310 00ca 7B68     		ldr	r3, [r7, #4]
+ 311 00cc 1A88     		ldrh	r2, [r3]
+ 312 00ce BB8A     		ldrh	r3, [r7, #20]	@ movhi
+ 313 00d0 D31A     		subs	r3, r2, r3
+ 314 00d2 9AB2     		uxth	r2, r3
+ 315 00d4 7B68     		ldr	r3, [r7, #4]
+ 316 00d6 1A80     		strh	r2, [r3]	@ movhi
+ 247:.\Generated_Source\PSoC5/UART_1_BOOT.c ****             break;
+ 317              		.loc 1 247 0
+ 318 00d8 04E0     		b	.L19
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 11
+
+
+ 319              	.L14:
+ 220:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     while(UART_1_GetRxBufferSize() > 0u)
+ 320              		.loc 1 220 0 discriminator 1
+ 321 00da FFF7FEFF 		bl	UART_1_GetRxBufferSize
+ 322 00de 0346     		mov	r3, r0
+ 323 00e0 002B     		cmp	r3, #0
+ 324 00e2 C3D1     		bne	.L20
+ 325              	.L19:
+ 248:.\Generated_Source\PSoC5/UART_1_BOOT.c ****         }
+ 249:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     }
+ 250:.\Generated_Source\PSoC5/UART_1_BOOT.c **** 
+ 251:.\Generated_Source\PSoC5/UART_1_BOOT.c ****     return (status);
+ 326              		.loc 1 251 0
+ 327 00e4 BB69     		ldr	r3, [r7, #24]
+ 252:.\Generated_Source\PSoC5/UART_1_BOOT.c **** }
+ 328              		.loc 1 252 0
+ 329 00e6 1846     		mov	r0, r3
+ 330 00e8 2437     		adds	r7, r7, #36
+ 331 00ea BD46     		mov	sp, r7
+ 332              		@ sp needed
+ 333 00ec 90BD     		pop	{r4, r7, pc}
+ 334              		.cfi_endproc
+ 335              	.LFE4:
+ 336              		.size	UART_1_CyBtldrCommRead, .-UART_1_CyBtldrCommRead
+ 337 00ee 00BF     		.text
+ 338              	.Letext0:
+ 339              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 340              		.section	.debug_info,"",%progbits
+ 341              	.Ldebug_info0:
+ 342 0000 E8010000 		.4byte	0x1e8
+ 343 0004 0400     		.2byte	0x4
+ 344 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 345 000a 04       		.byte	0x4
+ 346 000b 01       		.uleb128 0x1
+ 347 000c 93000000 		.4byte	.LASF31
+ 348 0010 01       		.byte	0x1
+ 349 0011 94010000 		.4byte	.LASF32
+ 350 0015 27010000 		.4byte	.LASF33
+ 351 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 352 001d 00000000 		.4byte	0
+ 353 0021 00000000 		.4byte	.Ldebug_line0
+ 354 0025 02       		.uleb128 0x2
+ 355 0026 01       		.byte	0x1
+ 356 0027 06       		.byte	0x6
+ 357 0028 66020000 		.4byte	.LASF0
+ 358 002c 02       		.uleb128 0x2
+ 359 002d 01       		.byte	0x1
+ 360 002e 08       		.byte	0x8
+ 361 002f BB010000 		.4byte	.LASF1
+ 362 0033 02       		.uleb128 0x2
+ 363 0034 02       		.byte	0x2
+ 364 0035 05       		.byte	0x5
+ 365 0036 45020000 		.4byte	.LASF2
+ 366 003a 02       		.uleb128 0x2
+ 367 003b 02       		.byte	0x2
+ 368 003c 07       		.byte	0x7
+ 369 003d 37000000 		.4byte	.LASF3
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 12
+
+
+ 370 0041 02       		.uleb128 0x2
+ 371 0042 04       		.byte	0x4
+ 372 0043 05       		.byte	0x5
+ 373 0044 5D020000 		.4byte	.LASF4
+ 374 0048 02       		.uleb128 0x2
+ 375 0049 04       		.byte	0x4
+ 376 004a 07       		.byte	0x7
+ 377 004b 0F010000 		.4byte	.LASF5
+ 378 004f 02       		.uleb128 0x2
+ 379 0050 08       		.byte	0x8
+ 380 0051 05       		.byte	0x5
+ 381 0052 32020000 		.4byte	.LASF6
+ 382 0056 02       		.uleb128 0x2
+ 383 0057 08       		.byte	0x8
+ 384 0058 07       		.byte	0x7
+ 385 0059 09020000 		.4byte	.LASF7
+ 386 005d 03       		.uleb128 0x3
+ 387 005e 04       		.byte	0x4
+ 388 005f 05       		.byte	0x5
+ 389 0060 696E7400 		.ascii	"int\000"
+ 390 0064 02       		.uleb128 0x2
+ 391 0065 04       		.byte	0x4
+ 392 0066 07       		.byte	0x7
+ 393 0067 FC010000 		.4byte	.LASF8
+ 394 006b 04       		.uleb128 0x4
+ 395 006c 21010000 		.4byte	.LASF9
+ 396 0070 02       		.byte	0x2
+ 397 0071 B3       		.byte	0xb3
+ 398 0072 2C000000 		.4byte	0x2c
+ 399 0076 04       		.uleb128 0x4
+ 400 0077 D0010000 		.4byte	.LASF10
+ 401 007b 02       		.byte	0x2
+ 402 007c B4       		.byte	0xb4
+ 403 007d 3A000000 		.4byte	0x3a
+ 404 0081 02       		.uleb128 0x2
+ 405 0082 04       		.byte	0x4
+ 406 0083 04       		.byte	0x4
+ 407 0084 88000000 		.4byte	.LASF11
+ 408 0088 02       		.uleb128 0x2
+ 409 0089 08       		.byte	0x8
+ 410 008a 04       		.byte	0x4
+ 411 008b C9010000 		.4byte	.LASF12
+ 412 008f 02       		.uleb128 0x2
+ 413 0090 01       		.byte	0x1
+ 414 0091 08       		.byte	0x8
+ 415 0092 40020000 		.4byte	.LASF13
+ 416 0096 05       		.uleb128 0x5
+ 417 0097 00000000 		.4byte	.LASF14
+ 418 009b 02       		.byte	0x2
+ 419 009c 5501     		.2byte	0x155
+ 420 009e 48000000 		.4byte	0x48
+ 421 00a2 02       		.uleb128 0x2
+ 422 00a3 04       		.byte	0x4
+ 423 00a4 07       		.byte	0x7
+ 424 00a5 29020000 		.4byte	.LASF15
+ 425 00a9 06       		.uleb128 0x6
+ 426 00aa 70000000 		.4byte	.LASF16
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 13
+
+
+ 427 00ae 01       		.byte	0x1
+ 428 00af 29       		.byte	0x29
+ 429 00b0 00000000 		.4byte	.LFB0
+ 430 00b4 12000000 		.4byte	.LFE0-.LFB0
+ 431 00b8 01       		.uleb128 0x1
+ 432 00b9 9C       		.byte	0x9c
+ 433 00ba 06       		.uleb128 0x6
+ 434 00bb 78020000 		.4byte	.LASF17
+ 435 00bf 01       		.byte	0x1
+ 436 00c0 40       		.byte	0x40
+ 437 00c1 00000000 		.4byte	.LFB1
+ 438 00c5 0A000000 		.4byte	.LFE1-.LFB1
+ 439 00c9 01       		.uleb128 0x1
+ 440 00ca 9C       		.byte	0x9c
+ 441 00cb 06       		.uleb128 0x6
+ 442 00cc 4A000000 		.4byte	.LASF18
+ 443 00d0 01       		.byte	0x1
+ 444 00d1 55       		.byte	0x55
+ 445 00d2 00000000 		.4byte	.LFB2
+ 446 00d6 0E000000 		.4byte	.LFE2-.LFB2
+ 447 00da 01       		.uleb128 0x1
+ 448 00db 9C       		.byte	0x9c
+ 449 00dc 07       		.uleb128 0x7
+ 450 00dd D7010000 		.4byte	.LASF23
+ 451 00e1 01       		.byte	0x1
+ 452 00e2 74       		.byte	0x74
+ 453 00e3 96000000 		.4byte	0x96
+ 454 00e7 00000000 		.4byte	.LFB3
+ 455 00eb 46000000 		.4byte	.LFE3-.LFB3
+ 456 00ef 01       		.uleb128 0x1
+ 457 00f0 9C       		.byte	0x9c
+ 458 00f1 3C010000 		.4byte	0x13c
+ 459 00f5 08       		.uleb128 0x8
+ 460 00f6 57020000 		.4byte	.LASF19
+ 461 00fa 01       		.byte	0x1
+ 462 00fb 74       		.byte	0x74
+ 463 00fc 3C010000 		.4byte	0x13c
+ 464 0100 02       		.uleb128 0x2
+ 465 0101 91       		.byte	0x91
+ 466 0102 6C       		.sleb128 -20
+ 467 0103 08       		.uleb128 0x8
+ 468 0104 8E000000 		.4byte	.LASF20
+ 469 0108 01       		.byte	0x1
+ 470 0109 74       		.byte	0x74
+ 471 010a 76000000 		.4byte	0x76
+ 472 010e 02       		.uleb128 0x2
+ 473 010f 91       		.byte	0x91
+ 474 0110 6A       		.sleb128 -22
+ 475 0111 08       		.uleb128 0x8
+ 476 0112 31000000 		.4byte	.LASF21
+ 477 0116 01       		.byte	0x1
+ 478 0117 74       		.byte	0x74
+ 479 0118 47010000 		.4byte	0x147
+ 480 011c 02       		.uleb128 0x2
+ 481 011d 91       		.byte	0x91
+ 482 011e 64       		.sleb128 -28
+ 483 011f 08       		.uleb128 0x8
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 14
+
+
+ 484 0120 4F020000 		.4byte	.LASF22
+ 485 0124 01       		.byte	0x1
+ 486 0125 74       		.byte	0x74
+ 487 0126 6B000000 		.4byte	0x6b
+ 488 012a 02       		.uleb128 0x2
+ 489 012b 91       		.byte	0x91
+ 490 012c 69       		.sleb128 -23
+ 491 012d 09       		.uleb128 0x9
+ 492 012e 20020000 		.4byte	.LASF25
+ 493 0132 01       		.byte	0x1
+ 494 0133 77       		.byte	0x77
+ 495 0134 76000000 		.4byte	0x76
+ 496 0138 02       		.uleb128 0x2
+ 497 0139 91       		.byte	0x91
+ 498 013a 76       		.sleb128 -10
+ 499 013b 00       		.byte	0
+ 500 013c 0A       		.uleb128 0xa
+ 501 013d 04       		.byte	0x4
+ 502 013e 42010000 		.4byte	0x142
+ 503 0142 0B       		.uleb128 0xb
+ 504 0143 6B000000 		.4byte	0x6b
+ 505 0147 0A       		.uleb128 0xa
+ 506 0148 04       		.byte	0x4
+ 507 0149 76000000 		.4byte	0x76
+ 508 014d 07       		.uleb128 0x7
+ 509 014e 1A000000 		.4byte	.LASF24
+ 510 0152 01       		.byte	0x1
+ 511 0153 AA       		.byte	0xaa
+ 512 0154 96000000 		.4byte	0x96
+ 513 0158 00000000 		.4byte	.LFB4
+ 514 015c EE000000 		.4byte	.LFE4-.LFB4
+ 515 0160 01       		.uleb128 0x1
+ 516 0161 9C       		.byte	0x9c
+ 517 0162 E5010000 		.4byte	0x1e5
+ 518 0166 08       		.uleb128 0x8
+ 519 0167 57020000 		.4byte	.LASF19
+ 520 016b 01       		.byte	0x1
+ 521 016c AA       		.byte	0xaa
+ 522 016d E5010000 		.4byte	0x1e5
+ 523 0171 02       		.uleb128 0x2
+ 524 0172 91       		.byte	0x91
+ 525 0173 5C       		.sleb128 -36
+ 526 0174 08       		.uleb128 0x8
+ 527 0175 8E000000 		.4byte	.LASF20
+ 528 0179 01       		.byte	0x1
+ 529 017a AA       		.byte	0xaa
+ 530 017b 76000000 		.4byte	0x76
+ 531 017f 02       		.uleb128 0x2
+ 532 0180 91       		.byte	0x91
+ 533 0181 5A       		.sleb128 -38
+ 534 0182 08       		.uleb128 0x8
+ 535 0183 31000000 		.4byte	.LASF21
+ 536 0187 01       		.byte	0x1
+ 537 0188 AA       		.byte	0xaa
+ 538 0189 47010000 		.4byte	0x147
+ 539 018d 02       		.uleb128 0x2
+ 540 018e 91       		.byte	0x91
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 15
+
+
+ 541 018f 54       		.sleb128 -44
+ 542 0190 08       		.uleb128 0x8
+ 543 0191 4F020000 		.4byte	.LASF22
+ 544 0195 01       		.byte	0x1
+ 545 0196 AA       		.byte	0xaa
+ 546 0197 6B000000 		.4byte	0x6b
+ 547 019b 02       		.uleb128 0x2
+ 548 019c 91       		.byte	0x91
+ 549 019d 59       		.sleb128 -39
+ 550 019e 09       		.uleb128 0x9
+ 551 019f 72020000 		.4byte	.LASF26
+ 552 01a3 01       		.byte	0x1
+ 553 01a4 AD       		.byte	0xad
+ 554 01a5 76000000 		.4byte	0x76
+ 555 01a9 02       		.uleb128 0x2
+ 556 01aa 91       		.byte	0x91
+ 557 01ab 6E       		.sleb128 -18
+ 558 01ac 09       		.uleb128 0x9
+ 559 01ad 62000000 		.4byte	.LASF27
+ 560 01b1 01       		.byte	0x1
+ 561 01b2 AE       		.byte	0xae
+ 562 01b3 76000000 		.4byte	0x76
+ 563 01b7 02       		.uleb128 0x2
+ 564 01b8 91       		.byte	0x91
+ 565 01b9 6C       		.sleb128 -20
+ 566 01ba 09       		.uleb128 0x9
+ 567 01bb 10000000 		.4byte	.LASF28
+ 568 01bf 01       		.byte	0x1
+ 569 01c0 AF       		.byte	0xaf
+ 570 01c1 76000000 		.4byte	0x76
+ 571 01c5 02       		.uleb128 0x2
+ 572 01c6 91       		.byte	0x91
+ 573 01c7 64       		.sleb128 -28
+ 574 01c8 09       		.uleb128 0x9
+ 575 01c9 EF010000 		.4byte	.LASF29
+ 576 01cd 01       		.byte	0x1
+ 577 01ce B0       		.byte	0xb0
+ 578 01cf 76000000 		.4byte	0x76
+ 579 01d3 02       		.uleb128 0x2
+ 580 01d4 91       		.byte	0x91
+ 581 01d5 66       		.sleb128 -26
+ 582 01d6 09       		.uleb128 0x9
+ 583 01d7 09000000 		.4byte	.LASF30
+ 584 01db 01       		.byte	0x1
+ 585 01dc B2       		.byte	0xb2
+ 586 01dd 96000000 		.4byte	0x96
+ 587 01e1 02       		.uleb128 0x2
+ 588 01e2 91       		.byte	0x91
+ 589 01e3 68       		.sleb128 -24
+ 590 01e4 00       		.byte	0
+ 591 01e5 0A       		.uleb128 0xa
+ 592 01e6 04       		.byte	0x4
+ 593 01e7 6B000000 		.4byte	0x6b
+ 594 01eb 00       		.byte	0
+ 595              		.section	.debug_abbrev,"",%progbits
+ 596              	.Ldebug_abbrev0:
+ 597 0000 01       		.uleb128 0x1
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 16
+
+
+ 598 0001 11       		.uleb128 0x11
+ 599 0002 01       		.byte	0x1
+ 600 0003 25       		.uleb128 0x25
+ 601 0004 0E       		.uleb128 0xe
+ 602 0005 13       		.uleb128 0x13
+ 603 0006 0B       		.uleb128 0xb
+ 604 0007 03       		.uleb128 0x3
+ 605 0008 0E       		.uleb128 0xe
+ 606 0009 1B       		.uleb128 0x1b
+ 607 000a 0E       		.uleb128 0xe
+ 608 000b 55       		.uleb128 0x55
+ 609 000c 17       		.uleb128 0x17
+ 610 000d 11       		.uleb128 0x11
+ 611 000e 01       		.uleb128 0x1
+ 612 000f 10       		.uleb128 0x10
+ 613 0010 17       		.uleb128 0x17
+ 614 0011 00       		.byte	0
+ 615 0012 00       		.byte	0
+ 616 0013 02       		.uleb128 0x2
+ 617 0014 24       		.uleb128 0x24
+ 618 0015 00       		.byte	0
+ 619 0016 0B       		.uleb128 0xb
+ 620 0017 0B       		.uleb128 0xb
+ 621 0018 3E       		.uleb128 0x3e
+ 622 0019 0B       		.uleb128 0xb
+ 623 001a 03       		.uleb128 0x3
+ 624 001b 0E       		.uleb128 0xe
+ 625 001c 00       		.byte	0
+ 626 001d 00       		.byte	0
+ 627 001e 03       		.uleb128 0x3
+ 628 001f 24       		.uleb128 0x24
+ 629 0020 00       		.byte	0
+ 630 0021 0B       		.uleb128 0xb
+ 631 0022 0B       		.uleb128 0xb
+ 632 0023 3E       		.uleb128 0x3e
+ 633 0024 0B       		.uleb128 0xb
+ 634 0025 03       		.uleb128 0x3
+ 635 0026 08       		.uleb128 0x8
+ 636 0027 00       		.byte	0
+ 637 0028 00       		.byte	0
+ 638 0029 04       		.uleb128 0x4
+ 639 002a 16       		.uleb128 0x16
+ 640 002b 00       		.byte	0
+ 641 002c 03       		.uleb128 0x3
+ 642 002d 0E       		.uleb128 0xe
+ 643 002e 3A       		.uleb128 0x3a
+ 644 002f 0B       		.uleb128 0xb
+ 645 0030 3B       		.uleb128 0x3b
+ 646 0031 0B       		.uleb128 0xb
+ 647 0032 49       		.uleb128 0x49
+ 648 0033 13       		.uleb128 0x13
+ 649 0034 00       		.byte	0
+ 650 0035 00       		.byte	0
+ 651 0036 05       		.uleb128 0x5
+ 652 0037 16       		.uleb128 0x16
+ 653 0038 00       		.byte	0
+ 654 0039 03       		.uleb128 0x3
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 17
+
+
+ 655 003a 0E       		.uleb128 0xe
+ 656 003b 3A       		.uleb128 0x3a
+ 657 003c 0B       		.uleb128 0xb
+ 658 003d 3B       		.uleb128 0x3b
+ 659 003e 05       		.uleb128 0x5
+ 660 003f 49       		.uleb128 0x49
+ 661 0040 13       		.uleb128 0x13
+ 662 0041 00       		.byte	0
+ 663 0042 00       		.byte	0
+ 664 0043 06       		.uleb128 0x6
+ 665 0044 2E       		.uleb128 0x2e
+ 666 0045 00       		.byte	0
+ 667 0046 3F       		.uleb128 0x3f
+ 668 0047 19       		.uleb128 0x19
+ 669 0048 03       		.uleb128 0x3
+ 670 0049 0E       		.uleb128 0xe
+ 671 004a 3A       		.uleb128 0x3a
+ 672 004b 0B       		.uleb128 0xb
+ 673 004c 3B       		.uleb128 0x3b
+ 674 004d 0B       		.uleb128 0xb
+ 675 004e 27       		.uleb128 0x27
+ 676 004f 19       		.uleb128 0x19
+ 677 0050 11       		.uleb128 0x11
+ 678 0051 01       		.uleb128 0x1
+ 679 0052 12       		.uleb128 0x12
+ 680 0053 06       		.uleb128 0x6
+ 681 0054 40       		.uleb128 0x40
+ 682 0055 18       		.uleb128 0x18
+ 683 0056 9642     		.uleb128 0x2116
+ 684 0058 19       		.uleb128 0x19
+ 685 0059 00       		.byte	0
+ 686 005a 00       		.byte	0
+ 687 005b 07       		.uleb128 0x7
+ 688 005c 2E       		.uleb128 0x2e
+ 689 005d 01       		.byte	0x1
+ 690 005e 3F       		.uleb128 0x3f
+ 691 005f 19       		.uleb128 0x19
+ 692 0060 03       		.uleb128 0x3
+ 693 0061 0E       		.uleb128 0xe
+ 694 0062 3A       		.uleb128 0x3a
+ 695 0063 0B       		.uleb128 0xb
+ 696 0064 3B       		.uleb128 0x3b
+ 697 0065 0B       		.uleb128 0xb
+ 698 0066 27       		.uleb128 0x27
+ 699 0067 19       		.uleb128 0x19
+ 700 0068 49       		.uleb128 0x49
+ 701 0069 13       		.uleb128 0x13
+ 702 006a 11       		.uleb128 0x11
+ 703 006b 01       		.uleb128 0x1
+ 704 006c 12       		.uleb128 0x12
+ 705 006d 06       		.uleb128 0x6
+ 706 006e 40       		.uleb128 0x40
+ 707 006f 18       		.uleb128 0x18
+ 708 0070 9642     		.uleb128 0x2116
+ 709 0072 19       		.uleb128 0x19
+ 710 0073 01       		.uleb128 0x1
+ 711 0074 13       		.uleb128 0x13
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 18
+
+
+ 712 0075 00       		.byte	0
+ 713 0076 00       		.byte	0
+ 714 0077 08       		.uleb128 0x8
+ 715 0078 05       		.uleb128 0x5
+ 716 0079 00       		.byte	0
+ 717 007a 03       		.uleb128 0x3
+ 718 007b 0E       		.uleb128 0xe
+ 719 007c 3A       		.uleb128 0x3a
+ 720 007d 0B       		.uleb128 0xb
+ 721 007e 3B       		.uleb128 0x3b
+ 722 007f 0B       		.uleb128 0xb
+ 723 0080 49       		.uleb128 0x49
+ 724 0081 13       		.uleb128 0x13
+ 725 0082 02       		.uleb128 0x2
+ 726 0083 18       		.uleb128 0x18
+ 727 0084 00       		.byte	0
+ 728 0085 00       		.byte	0
+ 729 0086 09       		.uleb128 0x9
+ 730 0087 34       		.uleb128 0x34
+ 731 0088 00       		.byte	0
+ 732 0089 03       		.uleb128 0x3
+ 733 008a 0E       		.uleb128 0xe
+ 734 008b 3A       		.uleb128 0x3a
+ 735 008c 0B       		.uleb128 0xb
+ 736 008d 3B       		.uleb128 0x3b
+ 737 008e 0B       		.uleb128 0xb
+ 738 008f 49       		.uleb128 0x49
+ 739 0090 13       		.uleb128 0x13
+ 740 0091 02       		.uleb128 0x2
+ 741 0092 18       		.uleb128 0x18
+ 742 0093 00       		.byte	0
+ 743 0094 00       		.byte	0
+ 744 0095 0A       		.uleb128 0xa
+ 745 0096 0F       		.uleb128 0xf
+ 746 0097 00       		.byte	0
+ 747 0098 0B       		.uleb128 0xb
+ 748 0099 0B       		.uleb128 0xb
+ 749 009a 49       		.uleb128 0x49
+ 750 009b 13       		.uleb128 0x13
+ 751 009c 00       		.byte	0
+ 752 009d 00       		.byte	0
+ 753 009e 0B       		.uleb128 0xb
+ 754 009f 26       		.uleb128 0x26
+ 755 00a0 00       		.byte	0
+ 756 00a1 49       		.uleb128 0x49
+ 757 00a2 13       		.uleb128 0x13
+ 758 00a3 00       		.byte	0
+ 759 00a4 00       		.byte	0
+ 760 00a5 00       		.byte	0
+ 761              		.section	.debug_aranges,"",%progbits
+ 762 0000 3C000000 		.4byte	0x3c
+ 763 0004 0200     		.2byte	0x2
+ 764 0006 00000000 		.4byte	.Ldebug_info0
+ 765 000a 04       		.byte	0x4
+ 766 000b 00       		.byte	0
+ 767 000c 0000     		.2byte	0
+ 768 000e 0000     		.2byte	0
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 19
+
+
+ 769 0010 00000000 		.4byte	.LFB0
+ 770 0014 12000000 		.4byte	.LFE0-.LFB0
+ 771 0018 00000000 		.4byte	.LFB1
+ 772 001c 0A000000 		.4byte	.LFE1-.LFB1
+ 773 0020 00000000 		.4byte	.LFB2
+ 774 0024 0E000000 		.4byte	.LFE2-.LFB2
+ 775 0028 00000000 		.4byte	.LFB3
+ 776 002c 46000000 		.4byte	.LFE3-.LFB3
+ 777 0030 00000000 		.4byte	.LFB4
+ 778 0034 EE000000 		.4byte	.LFE4-.LFB4
+ 779 0038 00000000 		.4byte	0
+ 780 003c 00000000 		.4byte	0
+ 781              		.section	.debug_ranges,"",%progbits
+ 782              	.Ldebug_ranges0:
+ 783 0000 00000000 		.4byte	.LFB0
+ 784 0004 12000000 		.4byte	.LFE0
+ 785 0008 00000000 		.4byte	.LFB1
+ 786 000c 0A000000 		.4byte	.LFE1
+ 787 0010 00000000 		.4byte	.LFB2
+ 788 0014 0E000000 		.4byte	.LFE2
+ 789 0018 00000000 		.4byte	.LFB3
+ 790 001c 46000000 		.4byte	.LFE3
+ 791 0020 00000000 		.4byte	.LFB4
+ 792 0024 EE000000 		.4byte	.LFE4
+ 793 0028 00000000 		.4byte	0
+ 794 002c 00000000 		.4byte	0
+ 795              		.section	.debug_line,"",%progbits
+ 796              	.Ldebug_line0:
+ 797 0000 06010000 		.section	.debug_str,"MS",%progbits,1
+ 797      02004A00 
+ 797      00000201 
+ 797      FB0E0D00 
+ 797      01010101 
+ 798              	.LASF14:
+ 799 0000 63797374 		.ascii	"cystatus\000"
+ 799      61747573 
+ 799      00
+ 800              	.LASF30:
+ 801 0009 73746174 		.ascii	"status\000"
+ 801      757300
+ 802              	.LASF28:
+ 803 0010 74656D70 		.ascii	"tempCount\000"
+ 803      436F756E 
+ 803      7400
+ 804              	.LASF24:
+ 805 001a 55415254 		.ascii	"UART_1_CyBtldrCommRead\000"
+ 805      5F315F43 
+ 805      7942746C 
+ 805      6472436F 
+ 805      6D6D5265 
+ 806              	.LASF21:
+ 807 0031 636F756E 		.ascii	"count\000"
+ 807      7400
+ 808              	.LASF3:
+ 809 0037 73686F72 		.ascii	"short unsigned int\000"
+ 809      7420756E 
+ 809      7369676E 
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 20
+
+
+ 809      65642069 
+ 809      6E7400
+ 810              	.LASF18:
+ 811 004a 55415254 		.ascii	"UART_1_CyBtldrCommReset\000"
+ 811      5F315F43 
+ 811      7942746C 
+ 811      6472436F 
+ 811      6D6D5265 
+ 812              	.LASF27:
+ 813 0062 64617461 		.ascii	"dataIndexCntr\000"
+ 813      496E6465 
+ 813      78436E74 
+ 813      7200
+ 814              	.LASF16:
+ 815 0070 55415254 		.ascii	"UART_1_CyBtldrCommStart\000"
+ 815      5F315F43 
+ 815      7942746C 
+ 815      6472436F 
+ 815      6D6D5374 
+ 816              	.LASF11:
+ 817 0088 666C6F61 		.ascii	"float\000"
+ 817      7400
+ 818              	.LASF20:
+ 819 008e 73697A65 		.ascii	"size\000"
+ 819      00
+ 820              	.LASF31:
+ 821 0093 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 821      4320342E 
+ 821      382E3420 
+ 821      32303134 
+ 821      30353236 
+ 822 00c6 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m3 -mthumb -g -O"
+ 822      20726576 
+ 822      6973696F 
+ 822      6E203231 
+ 822      31333538 
+ 823 00f9 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 823      66756E63 
+ 823      74696F6E 
+ 823      2D736563 
+ 823      74696F6E 
+ 824              	.LASF5:
+ 825 010f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 825      20756E73 
+ 825      69676E65 
+ 825      6420696E 
+ 825      7400
+ 826              	.LASF9:
+ 827 0121 75696E74 		.ascii	"uint8\000"
+ 827      3800
+ 828              	.LASF33:
+ 829 0127 433A5C55 		.ascii	"C:\\Users\\SISTEMAS INSEPET\\Documents\\Projects\\M"
+ 829      73657273 
+ 829      5C534953 
+ 829      54454D41 
+ 829      5320494E 
+ 830 0155 55585C50 		.ascii	"UX\\Programa\\Bootloader550M\\Bootloader550M\\Bootl"
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 21
+
+
+ 830      726F6772 
+ 830      616D615C 
+ 830      426F6F74 
+ 830      6C6F6164 
+ 831 0184 6F616465 		.ascii	"oader550M.cydsn\000"
+ 831      72353530 
+ 831      4D2E6379 
+ 831      64736E00 
+ 832              	.LASF32:
+ 833 0194 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\UART_1_BOOT.c\000"
+ 833      6E657261 
+ 833      7465645F 
+ 833      536F7572 
+ 833      63655C50 
+ 834              	.LASF1:
+ 835 01bb 756E7369 		.ascii	"unsigned char\000"
+ 835      676E6564 
+ 835      20636861 
+ 835      7200
+ 836              	.LASF12:
+ 837 01c9 646F7562 		.ascii	"double\000"
+ 837      6C6500
+ 838              	.LASF10:
+ 839 01d0 75696E74 		.ascii	"uint16\000"
+ 839      313600
+ 840              	.LASF23:
+ 841 01d7 55415254 		.ascii	"UART_1_CyBtldrCommWrite\000"
+ 841      5F315F43 
+ 841      7942746C 
+ 841      6472436F 
+ 841      6D6D5772 
+ 842              	.LASF29:
+ 843 01ef 6F6C6444 		.ascii	"oldDataCount\000"
+ 843      61746143 
+ 843      6F756E74 
+ 843      00
+ 844              	.LASF8:
+ 845 01fc 756E7369 		.ascii	"unsigned int\000"
+ 845      676E6564 
+ 845      20696E74 
+ 845      00
+ 846              	.LASF7:
+ 847 0209 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 847      206C6F6E 
+ 847      6720756E 
+ 847      7369676E 
+ 847      65642069 
+ 848              	.LASF25:
+ 849 0220 62756649 		.ascii	"bufIndex\000"
+ 849      6E646578 
+ 849      00
+ 850              	.LASF15:
+ 851 0229 73697A65 		.ascii	"sizetype\000"
+ 851      74797065 
+ 851      00
+ 852              	.LASF6:
+ 853 0232 6C6F6E67 		.ascii	"long long int\000"
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccMxBhb2.s 			page 22
+
+
+ 853      206C6F6E 
+ 853      6720696E 
+ 853      7400
+ 854              	.LASF13:
+ 855 0240 63686172 		.ascii	"char\000"
+ 855      00
+ 856              	.LASF2:
+ 857 0245 73686F72 		.ascii	"short int\000"
+ 857      7420696E 
+ 857      7400
+ 858              	.LASF22:
+ 859 024f 74696D65 		.ascii	"timeOut\000"
+ 859      4F757400 
+ 860              	.LASF19:
+ 861 0257 70446174 		.ascii	"pData\000"
+ 861      6100
+ 862              	.LASF4:
+ 863 025d 6C6F6E67 		.ascii	"long int\000"
+ 863      20696E74 
+ 863      00
+ 864              	.LASF0:
+ 865 0266 7369676E 		.ascii	"signed char\000"
+ 865      65642063 
+ 865      68617200 
+ 866              	.LASF26:
+ 867 0272 69436E74 		.ascii	"iCntr\000"
+ 867      7200
+ 868              	.LASF17:
+ 869 0278 55415254 		.ascii	"UART_1_CyBtldrCommStop\000"
+ 869      5F315F43 
+ 869      7942746C 
+ 869      6472436F 
+ 869      6D6D5374 
+ 870              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Bootloader550M\Bootloader550M\Bootloader550M.cydwr">
+<ExpandedNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\TopDesign</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M.cydwr</v>
+<v>Bootloader550M\Bootloader550M\Header Files</v>
+<v>Bootloader550M\Bootloader550M\Source Files</v>
+<v>Bootloader550M\Bootloader550M\Source Files\main.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1\Bootloader_1.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1\Bootloader_1.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1\Bootloader_1_PVT.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1\UART_1.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1\UART_1.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1\UART_1_BOOT.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1\UART_1_INT.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1\UART_1_PM.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1_IntClock</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydevice.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cyfitter.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cymetadata.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\TopDesign</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M.cydwr</v>
+<v>Bootloader550M\Bootloader550M\Header Files</v>
+<v>Bootloader550M\Bootloader550M\Source Files</v>
+<v>Bootloader550M\Bootloader550M\Source Files\main.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1\Bootloader_1.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1\Bootloader_1.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\Bootloader_1\Bootloader_1_PVT.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>Bootloader550M\Bootloader550M\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\TopDesign</v>
+<v>Bootloader550M\Bootloader550M\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\TopDesign</v>
+<v>Bootloader550M\Bootloader550M\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\CortexM3</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\Bootloader_1.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\Cm3Start.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyDmac.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyFlash.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyLib.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CySpc.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Bootloader550M.elf</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Bootloader550M.hex</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Bootloader550M.map</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M.gpdsc</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M.rpt</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\CortexM3</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\Bootloader_1.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\Cm3Start.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyDmac.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyFlash.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CyLib.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\CySpc.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Bootloader550M.elf</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Bootloader550M.hex</v>
+<v>Bootloader550M\Bootloader550M\CortexM3\ARM_GCC_484\Debug\Bootloader550M.map</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M.gpdsc</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M.rpt</v>
+<v>Bootloader550M\Bootloader550M\Bootloader550M_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\PSoC 5 Architecture TRM</v>
+<v>Bootloader550M\Bootloader550M\CY8C58LP Family Datasheet</v>
+<v>Bootloader550M\Bootloader550M\System Reference Guides</v>
+<v>Bootloader550M\Bootloader550M\System Reference Guides\cy_boot_v5_0</v>
+<v>Bootloader550M\Bootloader550M\Bootloader_v1_30</v>
+<v>Bootloader550M\Bootloader550M\cy_pins_v2_10</v>
+<v>Bootloader550M\Bootloader550M\UART_v2_50</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M</v>
+<v>Bootloader550M\Bootloader550M\PSoC 5 Architecture TRM</v>
+<v>Bootloader550M\Bootloader550M\CY8C58LP Family Datasheet</v>
+<v>Bootloader550M\Bootloader550M\System Reference Guides</v>
+<v>Bootloader550M\Bootloader550M\System Reference Guides\cy_boot_v5_0</v>
+<v>Bootloader550M\Bootloader550M\Bootloader_v1_30</v>
+<v>Bootloader550M\Bootloader550M\cy_pins_v2_10</v>
+<v>Bootloader550M\Bootloader550M\UART_v2_50</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Bootloader550M.cydsn\main.c" />
+<name v=".\Bootloader550M.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Bootloader550M.cydsn\Bootloader550M.cydwr" />
+</OpenDocs>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

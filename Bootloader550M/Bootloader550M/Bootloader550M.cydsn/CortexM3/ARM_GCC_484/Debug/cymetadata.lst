@@ -1,0 +1,854 @@
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_meta_loader
+  19              		.section	.cyloadermeta,"a",%progbits
+  20              		.align	2
+  21              		.type	cy_meta_loader, %object
+  22              		.size	cy_meta_loader, 64
+  23              	cy_meta_loader:
+  24 0000 00       		.byte	0
+  25 0001 00       		.byte	0
+  26 0002 00       		.byte	0
+  27 0003 00       		.byte	0
+  28 0004 00       		.byte	0
+  29 0005 00       		.byte	0
+  30 0006 00       		.byte	0
+  31 0007 00       		.byte	0
+  32 0008 00       		.byte	0
+  33 0009 00       		.byte	0
+  34 000a 00       		.byte	0
+  35 000b 00       		.byte	0
+  36 000c 00       		.byte	0
+  37 000d 00       		.byte	0
+  38 000e 00       		.byte	0
+  39 000f 00       		.byte	0
+  40 0010 00       		.byte	0
+  41 0011 00       		.byte	0
+  42 0012 01       		.byte	1
+  43 0013 00       		.byte	0
+  44 0014 01       		.byte	1
+  45 0015 00       		.byte	0
+  46 0016 01       		.byte	1
+  47 0017 00       		.byte	0
+  48 0018 00       		.byte	0
+  49 0019 00       		.byte	0
+  50 001a 00       		.byte	0
+  51 001b 00       		.byte	0
+  52 001c 00       		.byte	0
+  53 001d 00       		.byte	0
+  54 001e 00       		.byte	0
+  55 001f 00       		.byte	0
+  56 0020 00       		.byte	0
+  57 0021 00       		.byte	0
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 2
+
+
+  58 0022 00       		.byte	0
+  59 0023 00       		.byte	0
+  60 0024 00       		.byte	0
+  61 0025 00       		.byte	0
+  62 0026 00       		.byte	0
+  63 0027 00       		.byte	0
+  64 0028 00       		.byte	0
+  65 0029 00       		.byte	0
+  66 002a 00       		.byte	0
+  67 002b 00       		.byte	0
+  68 002c 00       		.byte	0
+  69 002d 00       		.byte	0
+  70 002e 00       		.byte	0
+  71 002f 00       		.byte	0
+  72 0030 00       		.byte	0
+  73 0031 00       		.byte	0
+  74 0032 00       		.byte	0
+  75 0033 00       		.byte	0
+  76 0034 00       		.byte	0
+  77 0035 00       		.byte	0
+  78 0036 00       		.byte	0
+  79 0037 00       		.byte	0
+  80 0038 00       		.byte	0
+  81 0039 00       		.byte	0
+  82 003a 00       		.byte	0
+  83 003b 00       		.byte	0
+  84 003c 00       		.byte	0
+  85 003d 00       		.byte	0
+  86 003e 00       		.byte	0
+  87 003f 00       		.byte	0
+  88              		.global	cy_meta_configecc
+  89              		.section	.cyconfigecc,"a",%progbits
+  90              		.align	2
+  91              		.type	cy_meta_configecc, %object
+  92              		.size	cy_meta_configecc, 1
+  93              	cy_meta_configecc:
+  94 0000 00       		.space	1
+  95              		.global	cy_meta_custnvl
+  96 0001 000000   		.section	.cycustnvl,"a",%progbits
+  97              		.align	2
+  98              		.type	cy_meta_custnvl, %object
+  99              		.size	cy_meta_custnvl, 4
+ 100              	cy_meta_custnvl:
+ 101 0000 00       		.byte	0
+ 102 0001 00       		.byte	0
+ 103 0002 00       		.byte	0
+ 104 0003 05       		.byte	5
+ 105              		.global	cy_meta_wonvl
+ 106              		.section	.cywolatch,"a",%progbits
+ 107              		.align	2
+ 108              		.type	cy_meta_wonvl, %object
+ 109              		.size	cy_meta_wonvl, 4
+ 110              	cy_meta_wonvl:
+ 111 0000 BC       		.byte	-68
+ 112 0001 90       		.byte	-112
+ 113 0002 AC       		.byte	-84
+ 114 0003 AF       		.byte	-81
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 3
+
+
+ 115              		.global	cy_meta_flashprotect
+ 116              		.section	.cyflashprotect,"a",%progbits
+ 117              		.align	2
+ 118              		.type	cy_meta_flashprotect, %object
+ 119              		.size	cy_meta_flashprotect, 256
+ 120              	cy_meta_flashprotect:
+ 121 0000 55       		.byte	85
+ 122 0001 55       		.byte	85
+ 123 0002 55       		.byte	85
+ 124 0003 55       		.byte	85
+ 125 0004 55       		.byte	85
+ 126 0005 55       		.byte	85
+ 127 0006 55       		.byte	85
+ 128 0007 55       		.byte	85
+ 129 0008 55       		.byte	85
+ 130 0009 55       		.byte	85
+ 131 000a 55       		.byte	85
+ 132 000b 55       		.byte	85
+ 133 000c 55       		.byte	85
+ 134 000d 55       		.byte	85
+ 135 000e 55       		.byte	85
+ 136 000f 55       		.byte	85
+ 137 0010 55       		.byte	85
+ 138 0011 55       		.byte	85
+ 139 0012 55       		.byte	85
+ 140 0013 55       		.byte	85
+ 141 0014 55       		.byte	85
+ 142 0015 55       		.byte	85
+ 143 0016 55       		.byte	85
+ 144 0017 55       		.byte	85
+ 145 0018 55       		.byte	85
+ 146 0019 55       		.byte	85
+ 147 001a 55       		.byte	85
+ 148 001b 55       		.byte	85
+ 149 001c 55       		.byte	85
+ 150 001d 55       		.byte	85
+ 151 001e 55       		.byte	85
+ 152 001f 55       		.byte	85
+ 153 0020 55       		.byte	85
+ 154 0021 55       		.byte	85
+ 155 0022 55       		.byte	85
+ 156 0023 55       		.byte	85
+ 157 0024 55       		.byte	85
+ 158 0025 55       		.byte	85
+ 159 0026 55       		.byte	85
+ 160 0027 55       		.byte	85
+ 161 0028 55       		.byte	85
+ 162 0029 55       		.byte	85
+ 163 002a 55       		.byte	85
+ 164 002b 55       		.byte	85
+ 165 002c 55       		.byte	85
+ 166 002d 55       		.byte	85
+ 167 002e 55       		.byte	85
+ 168 002f 55       		.byte	85
+ 169 0030 55       		.byte	85
+ 170 0031 55       		.byte	85
+ 171 0032 55       		.byte	85
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 4
+
+
+ 172 0033 55       		.byte	85
+ 173 0034 55       		.byte	85
+ 174 0035 55       		.byte	85
+ 175 0036 55       		.byte	85
+ 176 0037 55       		.byte	85
+ 177 0038 55       		.byte	85
+ 178 0039 55       		.byte	85
+ 179 003a 55       		.byte	85
+ 180 003b 55       		.byte	85
+ 181 003c 55       		.byte	85
+ 182 003d 55       		.byte	85
+ 183 003e 55       		.byte	85
+ 184 003f 55       		.byte	85
+ 185 0040 55       		.byte	85
+ 186 0041 55       		.byte	85
+ 187 0042 55       		.byte	85
+ 188 0043 55       		.byte	85
+ 189 0044 55       		.byte	85
+ 190 0045 55       		.byte	85
+ 191 0046 55       		.byte	85
+ 192 0047 55       		.byte	85
+ 193 0048 55       		.byte	85
+ 194 0049 55       		.byte	85
+ 195 004a 55       		.byte	85
+ 196 004b 55       		.byte	85
+ 197 004c 55       		.byte	85
+ 198 004d 55       		.byte	85
+ 199 004e 55       		.byte	85
+ 200 004f 55       		.byte	85
+ 201 0050 55       		.byte	85
+ 202 0051 55       		.byte	85
+ 203 0052 55       		.byte	85
+ 204 0053 55       		.byte	85
+ 205 0054 55       		.byte	85
+ 206 0055 55       		.byte	85
+ 207 0056 55       		.byte	85
+ 208 0057 55       		.byte	85
+ 209 0058 55       		.byte	85
+ 210 0059 55       		.byte	85
+ 211 005a 55       		.byte	85
+ 212 005b 55       		.byte	85
+ 213 005c 55       		.byte	85
+ 214 005d 55       		.byte	85
+ 215 005e 55       		.byte	85
+ 216 005f 55       		.byte	85
+ 217 0060 55       		.byte	85
+ 218 0061 55       		.byte	85
+ 219 0062 55       		.byte	85
+ 220 0063 55       		.byte	85
+ 221 0064 55       		.byte	85
+ 222 0065 55       		.byte	85
+ 223 0066 55       		.byte	85
+ 224 0067 55       		.byte	85
+ 225 0068 55       		.byte	85
+ 226 0069 55       		.byte	85
+ 227 006a 55       		.byte	85
+ 228 006b 55       		.byte	85
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 5
+
+
+ 229 006c 55       		.byte	85
+ 230 006d 55       		.byte	85
+ 231 006e 55       		.byte	85
+ 232 006f 55       		.byte	85
+ 233 0070 55       		.byte	85
+ 234 0071 55       		.byte	85
+ 235 0072 55       		.byte	85
+ 236 0073 55       		.byte	85
+ 237 0074 55       		.byte	85
+ 238 0075 55       		.byte	85
+ 239 0076 55       		.byte	85
+ 240 0077 55       		.byte	85
+ 241 0078 55       		.byte	85
+ 242 0079 55       		.byte	85
+ 243 007a 55       		.byte	85
+ 244 007b 55       		.byte	85
+ 245 007c 55       		.byte	85
+ 246 007d 55       		.byte	85
+ 247 007e 55       		.byte	85
+ 248 007f 55       		.byte	85
+ 249 0080 55       		.byte	85
+ 250 0081 55       		.byte	85
+ 251 0082 55       		.byte	85
+ 252 0083 55       		.byte	85
+ 253 0084 55       		.byte	85
+ 254 0085 55       		.byte	85
+ 255 0086 55       		.byte	85
+ 256 0087 55       		.byte	85
+ 257 0088 55       		.byte	85
+ 258 0089 55       		.byte	85
+ 259 008a 55       		.byte	85
+ 260 008b 55       		.byte	85
+ 261 008c 55       		.byte	85
+ 262 008d 55       		.byte	85
+ 263 008e 55       		.byte	85
+ 264 008f 55       		.byte	85
+ 265 0090 55       		.byte	85
+ 266 0091 55       		.byte	85
+ 267 0092 55       		.byte	85
+ 268 0093 55       		.byte	85
+ 269 0094 55       		.byte	85
+ 270 0095 55       		.byte	85
+ 271 0096 55       		.byte	85
+ 272 0097 55       		.byte	85
+ 273 0098 55       		.byte	85
+ 274 0099 55       		.byte	85
+ 275 009a 55       		.byte	85
+ 276 009b 55       		.byte	85
+ 277 009c 55       		.byte	85
+ 278 009d 55       		.byte	85
+ 279 009e 55       		.byte	85
+ 280 009f 55       		.byte	85
+ 281 00a0 55       		.byte	85
+ 282 00a1 55       		.byte	85
+ 283 00a2 55       		.byte	85
+ 284 00a3 55       		.byte	85
+ 285 00a4 55       		.byte	85
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 6
+
+
+ 286 00a5 55       		.byte	85
+ 287 00a6 55       		.byte	85
+ 288 00a7 55       		.byte	85
+ 289 00a8 55       		.byte	85
+ 290 00a9 55       		.byte	85
+ 291 00aa 55       		.byte	85
+ 292 00ab 55       		.byte	85
+ 293 00ac 55       		.byte	85
+ 294 00ad 55       		.byte	85
+ 295 00ae 55       		.byte	85
+ 296 00af 55       		.byte	85
+ 297 00b0 55       		.byte	85
+ 298 00b1 55       		.byte	85
+ 299 00b2 55       		.byte	85
+ 300 00b3 55       		.byte	85
+ 301 00b4 55       		.byte	85
+ 302 00b5 55       		.byte	85
+ 303 00b6 55       		.byte	85
+ 304 00b7 55       		.byte	85
+ 305 00b8 55       		.byte	85
+ 306 00b9 55       		.byte	85
+ 307 00ba 55       		.byte	85
+ 308 00bb 55       		.byte	85
+ 309 00bc 55       		.byte	85
+ 310 00bd 55       		.byte	85
+ 311 00be 55       		.byte	85
+ 312 00bf 55       		.byte	85
+ 313 00c0 55       		.byte	85
+ 314 00c1 55       		.byte	85
+ 315 00c2 55       		.byte	85
+ 316 00c3 55       		.byte	85
+ 317 00c4 55       		.byte	85
+ 318 00c5 55       		.byte	85
+ 319 00c6 55       		.byte	85
+ 320 00c7 55       		.byte	85
+ 321 00c8 55       		.byte	85
+ 322 00c9 55       		.byte	85
+ 323 00ca 55       		.byte	85
+ 324 00cb 55       		.byte	85
+ 325 00cc 55       		.byte	85
+ 326 00cd 55       		.byte	85
+ 327 00ce 55       		.byte	85
+ 328 00cf 55       		.byte	85
+ 329 00d0 55       		.byte	85
+ 330 00d1 55       		.byte	85
+ 331 00d2 55       		.byte	85
+ 332 00d3 55       		.byte	85
+ 333 00d4 55       		.byte	85
+ 334 00d5 55       		.byte	85
+ 335 00d6 55       		.byte	85
+ 336 00d7 55       		.byte	85
+ 337 00d8 55       		.byte	85
+ 338 00d9 55       		.byte	85
+ 339 00da 55       		.byte	85
+ 340 00db 55       		.byte	85
+ 341 00dc 55       		.byte	85
+ 342 00dd 55       		.byte	85
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 7
+
+
+ 343 00de 55       		.byte	85
+ 344 00df 55       		.byte	85
+ 345 00e0 55       		.byte	85
+ 346 00e1 55       		.byte	85
+ 347 00e2 55       		.byte	85
+ 348 00e3 55       		.byte	85
+ 349 00e4 55       		.byte	85
+ 350 00e5 55       		.byte	85
+ 351 00e6 55       		.byte	85
+ 352 00e7 55       		.byte	85
+ 353 00e8 55       		.byte	85
+ 354 00e9 55       		.byte	85
+ 355 00ea 55       		.byte	85
+ 356 00eb 55       		.byte	85
+ 357 00ec 55       		.byte	85
+ 358 00ed 55       		.byte	85
+ 359 00ee 55       		.byte	85
+ 360 00ef 55       		.byte	85
+ 361 00f0 55       		.byte	85
+ 362 00f1 55       		.byte	85
+ 363 00f2 55       		.byte	85
+ 364 00f3 55       		.byte	85
+ 365 00f4 55       		.byte	85
+ 366 00f5 55       		.byte	85
+ 367 00f6 55       		.byte	85
+ 368 00f7 55       		.byte	85
+ 369 00f8 55       		.byte	85
+ 370 00f9 55       		.byte	85
+ 371 00fa 55       		.byte	85
+ 372 00fb 55       		.byte	85
+ 373 00fc 55       		.byte	85
+ 374 00fd 55       		.byte	85
+ 375 00fe 55       		.byte	85
+ 376 00ff 55       		.byte	85
+ 377              		.global	cy_metadata
+ 378              		.section	.cymeta,"a",%progbits
+ 379              		.align	2
+ 380              		.type	cy_metadata, %object
+ 381              		.size	cy_metadata, 12
+ 382              	cy_metadata:
+ 383 0000 00       		.byte	0
+ 384 0001 01       		.byte	1
+ 385 0002 2E       		.byte	46
+ 386 0003 12       		.byte	18
+ 387 0004 30       		.byte	48
+ 388 0005 69       		.byte	105
+ 389 0006 00       		.byte	0
+ 390 0007 00       		.byte	0
+ 391 0008 00       		.byte	0
+ 392 0009 00       		.byte	0
+ 393 000a 00       		.byte	0
+ 394 000b 00       		.byte	0
+ 395              		.text
+ 396              	.Letext0:
+ 397              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 398              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 399              		.section	.debug_info,"",%progbits
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 8
+
+
+ 400              	.Ldebug_info0:
+ 401 0000 5B010000 		.4byte	0x15b
+ 402 0004 0400     		.2byte	0x4
+ 403 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 404 000a 04       		.byte	0x4
+ 405 000b 01       		.uleb128 0x1
+ 406 000c 34010000 		.4byte	.LASF19
+ 407 0010 01       		.byte	0x1
+ 408 0011 00000000 		.4byte	.LASF20
+ 409 0015 7A000000 		.4byte	.LASF21
+ 410 0019 00000000 		.4byte	.Ldebug_line0
+ 411 001d 02       		.uleb128 0x2
+ 412 001e 01       		.byte	0x1
+ 413 001f 06       		.byte	0x6
+ 414 0020 08020000 		.4byte	.LASF0
+ 415 0024 02       		.uleb128 0x2
+ 416 0025 01       		.byte	0x1
+ 417 0026 08       		.byte	0x8
+ 418 0027 47000000 		.4byte	.LASF1
+ 419 002b 02       		.uleb128 0x2
+ 420 002c 02       		.byte	0x2
+ 421 002d 05       		.byte	0x5
+ 422 002e EF010000 		.4byte	.LASF2
+ 423 0032 02       		.uleb128 0x2
+ 424 0033 02       		.byte	0x2
+ 425 0034 07       		.byte	0x7
+ 426 0035 67000000 		.4byte	.LASF3
+ 427 0039 02       		.uleb128 0x2
+ 428 003a 04       		.byte	0x4
+ 429 003b 05       		.byte	0x5
+ 430 003c FF010000 		.4byte	.LASF4
+ 431 0040 02       		.uleb128 0x2
+ 432 0041 04       		.byte	0x4
+ 433 0042 07       		.byte	0x7
+ 434 0043 55000000 		.4byte	.LASF5
+ 435 0047 02       		.uleb128 0x2
+ 436 0048 08       		.byte	0x8
+ 437 0049 05       		.byte	0x5
+ 438 004a DC010000 		.4byte	.LASF6
+ 439 004e 02       		.uleb128 0x2
+ 440 004f 08       		.byte	0x8
+ 441 0050 07       		.byte	0x7
+ 442 0051 1D010000 		.4byte	.LASF7
+ 443 0055 03       		.uleb128 0x3
+ 444 0056 04       		.byte	0x4
+ 445 0057 05       		.byte	0x5
+ 446 0058 696E7400 		.ascii	"int\000"
+ 447 005c 02       		.uleb128 0x2
+ 448 005d 04       		.byte	0x4
+ 449 005e 07       		.byte	0x7
+ 450 005f 10010000 		.4byte	.LASF8
+ 451 0063 04       		.uleb128 0x4
+ 452 0064 F9010000 		.4byte	.LASF22
+ 453 0068 02       		.byte	0x2
+ 454 0069 B3       		.byte	0xb3
+ 455 006a 24000000 		.4byte	0x24
+ 456 006e 02       		.uleb128 0x2
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 9
+
+
+ 457 006f 04       		.byte	0x4
+ 458 0070 04       		.byte	0x4
+ 459 0071 41000000 		.4byte	.LASF9
+ 460 0075 02       		.uleb128 0x2
+ 461 0076 08       		.byte	0x8
+ 462 0077 04       		.byte	0x4
+ 463 0078 E7000000 		.4byte	.LASF10
+ 464 007c 02       		.uleb128 0x2
+ 465 007d 01       		.byte	0x1
+ 466 007e 08       		.byte	0x8
+ 467 007f EA010000 		.4byte	.LASF11
+ 468 0083 05       		.uleb128 0x5
+ 469 0084 63000000 		.4byte	0x63
+ 470 0088 93000000 		.4byte	0x93
+ 471 008c 06       		.uleb128 0x6
+ 472 008d 93000000 		.4byte	0x93
+ 473 0091 3F       		.byte	0x3f
+ 474 0092 00       		.byte	0
+ 475 0093 02       		.uleb128 0x2
+ 476 0094 04       		.byte	0x4
+ 477 0095 07       		.byte	0x7
+ 478 0096 D3010000 		.4byte	.LASF12
+ 479 009a 07       		.uleb128 0x7
+ 480 009b 26000000 		.4byte	.LASF13
+ 481 009f 01       		.byte	0x1
+ 482 00a0 1C       		.byte	0x1c
+ 483 00a1 AB000000 		.4byte	0xab
+ 484 00a5 05       		.uleb128 0x5
+ 485 00a6 03       		.byte	0x3
+ 486 00a7 00000000 		.4byte	cy_meta_loader
+ 487 00ab 08       		.uleb128 0x8
+ 488 00ac 83000000 		.4byte	0x83
+ 489 00b0 05       		.uleb128 0x5
+ 490 00b1 63000000 		.4byte	0x63
+ 491 00b5 C0000000 		.4byte	0xc0
+ 492 00b9 06       		.uleb128 0x6
+ 493 00ba 93000000 		.4byte	0x93
+ 494 00be 00       		.byte	0
+ 495 00bf 00       		.byte	0
+ 496 00c0 07       		.uleb128 0x7
+ 497 00c1 FE000000 		.4byte	.LASF14
+ 498 00c5 01       		.byte	0x1
+ 499 00c6 2E       		.byte	0x2e
+ 500 00c7 D1000000 		.4byte	0xd1
+ 501 00cb 05       		.uleb128 0x5
+ 502 00cc 03       		.byte	0x3
+ 503 00cd 00000000 		.4byte	cy_meta_configecc
+ 504 00d1 08       		.uleb128 0x8
+ 505 00d2 B0000000 		.4byte	0xb0
+ 506 00d6 05       		.uleb128 0x5
+ 507 00d7 63000000 		.4byte	0x63
+ 508 00db E6000000 		.4byte	0xe6
+ 509 00df 06       		.uleb128 0x6
+ 510 00e0 93000000 		.4byte	0x93
+ 511 00e4 03       		.byte	0x3
+ 512 00e5 00       		.byte	0
+ 513 00e6 07       		.uleb128 0x7
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 10
+
+
+ 514 00e7 EE000000 		.4byte	.LASF15
+ 515 00eb 01       		.byte	0x1
+ 516 00ec 39       		.byte	0x39
+ 517 00ed F7000000 		.4byte	0xf7
+ 518 00f1 05       		.uleb128 0x5
+ 519 00f2 03       		.byte	0x3
+ 520 00f3 00000000 		.4byte	cy_meta_custnvl
+ 521 00f7 08       		.uleb128 0x8
+ 522 00f8 D6000000 		.4byte	0xd6
+ 523 00fc 07       		.uleb128 0x7
+ 524 00fd C5010000 		.4byte	.LASF16
+ 525 0101 01       		.byte	0x1
+ 526 0102 44       		.byte	0x44
+ 527 0103 0D010000 		.4byte	0x10d
+ 528 0107 05       		.uleb128 0x5
+ 529 0108 03       		.byte	0x3
+ 530 0109 00000000 		.4byte	cy_meta_wonvl
+ 531 010d 08       		.uleb128 0x8
+ 532 010e D6000000 		.4byte	0xd6
+ 533 0112 05       		.uleb128 0x5
+ 534 0113 63000000 		.4byte	0x63
+ 535 0117 22010000 		.4byte	0x122
+ 536 011b 06       		.uleb128 0x6
+ 537 011c 93000000 		.4byte	0x93
+ 538 0120 FF       		.byte	0xff
+ 539 0121 00       		.byte	0
+ 540 0122 07       		.uleb128 0x7
+ 541 0123 B0010000 		.4byte	.LASF17
+ 542 0127 01       		.byte	0x1
+ 543 0128 4F       		.byte	0x4f
+ 544 0129 33010000 		.4byte	0x133
+ 545 012d 05       		.uleb128 0x5
+ 546 012e 03       		.byte	0x3
+ 547 012f 00000000 		.4byte	cy_meta_flashprotect
+ 548 0133 08       		.uleb128 0x8
+ 549 0134 12010000 		.4byte	0x112
+ 550 0138 05       		.uleb128 0x5
+ 551 0139 63000000 		.4byte	0x63
+ 552 013d 48010000 		.4byte	0x148
+ 553 0141 06       		.uleb128 0x6
+ 554 0142 93000000 		.4byte	0x93
+ 555 0146 0B       		.byte	0xb
+ 556 0147 00       		.byte	0
+ 557 0148 07       		.uleb128 0x7
+ 558 0149 35000000 		.4byte	.LASF18
+ 559 014d 01       		.byte	0x1
+ 560 014e 79       		.byte	0x79
+ 561 014f 59010000 		.4byte	0x159
+ 562 0153 05       		.uleb128 0x5
+ 563 0154 03       		.byte	0x3
+ 564 0155 00000000 		.4byte	cy_metadata
+ 565 0159 08       		.uleb128 0x8
+ 566 015a 38010000 		.4byte	0x138
+ 567 015e 00       		.byte	0
+ 568              		.section	.debug_abbrev,"",%progbits
+ 569              	.Ldebug_abbrev0:
+ 570 0000 01       		.uleb128 0x1
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 11
+
+
+ 571 0001 11       		.uleb128 0x11
+ 572 0002 01       		.byte	0x1
+ 573 0003 25       		.uleb128 0x25
+ 574 0004 0E       		.uleb128 0xe
+ 575 0005 13       		.uleb128 0x13
+ 576 0006 0B       		.uleb128 0xb
+ 577 0007 03       		.uleb128 0x3
+ 578 0008 0E       		.uleb128 0xe
+ 579 0009 1B       		.uleb128 0x1b
+ 580 000a 0E       		.uleb128 0xe
+ 581 000b 10       		.uleb128 0x10
+ 582 000c 17       		.uleb128 0x17
+ 583 000d 00       		.byte	0
+ 584 000e 00       		.byte	0
+ 585 000f 02       		.uleb128 0x2
+ 586 0010 24       		.uleb128 0x24
+ 587 0011 00       		.byte	0
+ 588 0012 0B       		.uleb128 0xb
+ 589 0013 0B       		.uleb128 0xb
+ 590 0014 3E       		.uleb128 0x3e
+ 591 0015 0B       		.uleb128 0xb
+ 592 0016 03       		.uleb128 0x3
+ 593 0017 0E       		.uleb128 0xe
+ 594 0018 00       		.byte	0
+ 595 0019 00       		.byte	0
+ 596 001a 03       		.uleb128 0x3
+ 597 001b 24       		.uleb128 0x24
+ 598 001c 00       		.byte	0
+ 599 001d 0B       		.uleb128 0xb
+ 600 001e 0B       		.uleb128 0xb
+ 601 001f 3E       		.uleb128 0x3e
+ 602 0020 0B       		.uleb128 0xb
+ 603 0021 03       		.uleb128 0x3
+ 604 0022 08       		.uleb128 0x8
+ 605 0023 00       		.byte	0
+ 606 0024 00       		.byte	0
+ 607 0025 04       		.uleb128 0x4
+ 608 0026 16       		.uleb128 0x16
+ 609 0027 00       		.byte	0
+ 610 0028 03       		.uleb128 0x3
+ 611 0029 0E       		.uleb128 0xe
+ 612 002a 3A       		.uleb128 0x3a
+ 613 002b 0B       		.uleb128 0xb
+ 614 002c 3B       		.uleb128 0x3b
+ 615 002d 0B       		.uleb128 0xb
+ 616 002e 49       		.uleb128 0x49
+ 617 002f 13       		.uleb128 0x13
+ 618 0030 00       		.byte	0
+ 619 0031 00       		.byte	0
+ 620 0032 05       		.uleb128 0x5
+ 621 0033 01       		.uleb128 0x1
+ 622 0034 01       		.byte	0x1
+ 623 0035 49       		.uleb128 0x49
+ 624 0036 13       		.uleb128 0x13
+ 625 0037 01       		.uleb128 0x1
+ 626 0038 13       		.uleb128 0x13
+ 627 0039 00       		.byte	0
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 12
+
+
+ 628 003a 00       		.byte	0
+ 629 003b 06       		.uleb128 0x6
+ 630 003c 21       		.uleb128 0x21
+ 631 003d 00       		.byte	0
+ 632 003e 49       		.uleb128 0x49
+ 633 003f 13       		.uleb128 0x13
+ 634 0040 2F       		.uleb128 0x2f
+ 635 0041 0B       		.uleb128 0xb
+ 636 0042 00       		.byte	0
+ 637 0043 00       		.byte	0
+ 638 0044 07       		.uleb128 0x7
+ 639 0045 34       		.uleb128 0x34
+ 640 0046 00       		.byte	0
+ 641 0047 03       		.uleb128 0x3
+ 642 0048 0E       		.uleb128 0xe
+ 643 0049 3A       		.uleb128 0x3a
+ 644 004a 0B       		.uleb128 0xb
+ 645 004b 3B       		.uleb128 0x3b
+ 646 004c 0B       		.uleb128 0xb
+ 647 004d 49       		.uleb128 0x49
+ 648 004e 13       		.uleb128 0x13
+ 649 004f 3F       		.uleb128 0x3f
+ 650 0050 19       		.uleb128 0x19
+ 651 0051 02       		.uleb128 0x2
+ 652 0052 18       		.uleb128 0x18
+ 653 0053 00       		.byte	0
+ 654 0054 00       		.byte	0
+ 655 0055 08       		.uleb128 0x8
+ 656 0056 26       		.uleb128 0x26
+ 657 0057 00       		.byte	0
+ 658 0058 49       		.uleb128 0x49
+ 659 0059 13       		.uleb128 0x13
+ 660 005a 00       		.byte	0
+ 661 005b 00       		.byte	0
+ 662 005c 00       		.byte	0
+ 663              		.section	.debug_aranges,"",%progbits
+ 664 0000 14000000 		.4byte	0x14
+ 665 0004 0200     		.2byte	0x2
+ 666 0006 00000000 		.4byte	.Ldebug_info0
+ 667 000a 04       		.byte	0x4
+ 668 000b 00       		.byte	0
+ 669 000c 0000     		.2byte	0
+ 670 000e 0000     		.2byte	0
+ 671 0010 00000000 		.4byte	0
+ 672 0014 00000000 		.4byte	0
+ 673              		.section	.debug_line,"",%progbits
+ 674              	.Ldebug_line0:
+ 675 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 675      02004900 
+ 675      00000201 
+ 675      FB0E0D00 
+ 675      01010101 
+ 676              	.LASF20:
+ 677 0000 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 677      6E657261 
+ 677      7465645F 
+ 677      536F7572 
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 13
+
+
+ 677      63655C50 
+ 678              	.LASF13:
+ 679 0026 63795F6D 		.ascii	"cy_meta_loader\000"
+ 679      6574615F 
+ 679      6C6F6164 
+ 679      657200
+ 680              	.LASF18:
+ 681 0035 63795F6D 		.ascii	"cy_metadata\000"
+ 681      65746164 
+ 681      61746100 
+ 682              	.LASF9:
+ 683 0041 666C6F61 		.ascii	"float\000"
+ 683      7400
+ 684              	.LASF1:
+ 685 0047 756E7369 		.ascii	"unsigned char\000"
+ 685      676E6564 
+ 685      20636861 
+ 685      7200
+ 686              	.LASF5:
+ 687 0055 6C6F6E67 		.ascii	"long unsigned int\000"
+ 687      20756E73 
+ 687      69676E65 
+ 687      6420696E 
+ 687      7400
+ 688              	.LASF3:
+ 689 0067 73686F72 		.ascii	"short unsigned int\000"
+ 689      7420756E 
+ 689      7369676E 
+ 689      65642069 
+ 689      6E7400
+ 690              	.LASF21:
+ 691 007a 433A5C55 		.ascii	"C:\\Users\\SISTEMAS INSEPET\\Documents\\Projects\\M"
+ 691      73657273 
+ 691      5C534953 
+ 691      54454D41 
+ 691      5320494E 
+ 692 00a8 55585C50 		.ascii	"UX\\Programa\\Bootloader550M\\Bootloader550M\\Bootl"
+ 692      726F6772 
+ 692      616D615C 
+ 692      426F6F74 
+ 692      6C6F6164 
+ 693 00d7 6F616465 		.ascii	"oader550M.cydsn\000"
+ 693      72353530 
+ 693      4D2E6379 
+ 693      64736E00 
+ 694              	.LASF10:
+ 695 00e7 646F7562 		.ascii	"double\000"
+ 695      6C6500
+ 696              	.LASF15:
+ 697 00ee 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 697      6574615F 
+ 697      63757374 
+ 697      6E766C00 
+ 698              	.LASF14:
+ 699 00fe 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 699      6574615F 
+ 699      636F6E66 
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 14
+
+
+ 699      69676563 
+ 699      6300
+ 700              	.LASF8:
+ 701 0110 756E7369 		.ascii	"unsigned int\000"
+ 701      676E6564 
+ 701      20696E74 
+ 701      00
+ 702              	.LASF7:
+ 703 011d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 703      206C6F6E 
+ 703      6720756E 
+ 703      7369676E 
+ 703      65642069 
+ 704              	.LASF19:
+ 705 0134 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 705      4320342E 
+ 705      382E3420 
+ 705      32303134 
+ 705      30353236 
+ 706 0167 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m3 -mthumb -g -O"
+ 706      20726576 
+ 706      6973696F 
+ 706      6E203231 
+ 706      31333538 
+ 707 019a 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 707      66756E63 
+ 707      74696F6E 
+ 707      2D736563 
+ 707      74696F6E 
+ 708              	.LASF17:
+ 709 01b0 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 709      6574615F 
+ 709      666C6173 
+ 709      6870726F 
+ 709      74656374 
+ 710              	.LASF16:
+ 711 01c5 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 711      6574615F 
+ 711      776F6E76 
+ 711      6C00
+ 712              	.LASF12:
+ 713 01d3 73697A65 		.ascii	"sizetype\000"
+ 713      74797065 
+ 713      00
+ 714              	.LASF6:
+ 715 01dc 6C6F6E67 		.ascii	"long long int\000"
+ 715      206C6F6E 
+ 715      6720696E 
+ 715      7400
+ 716              	.LASF11:
+ 717 01ea 63686172 		.ascii	"char\000"
+ 717      00
+ 718              	.LASF2:
+ 719 01ef 73686F72 		.ascii	"short int\000"
+ 719      7420696E 
+ 719      7400
+ 720              	.LASF22:
+ARM GAS  C:\Users\SISTEM~1\AppData\Local\Temp\ccutu255.s 			page 15
+
+
+ 721 01f9 75696E74 		.ascii	"uint8\000"
+ 721      3800
+ 722              	.LASF4:
+ 723 01ff 6C6F6E67 		.ascii	"long int\000"
+ 723      20696E74 
+ 723      00
+ 724              	.LASF0:
+ 725 0208 7369676E 		.ascii	"signed char\000"
+ 725      65642063 
+ 725      68617200 
+ 726              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

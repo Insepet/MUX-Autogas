@@ -1,0 +1,2517 @@
+
+======================================================
+UDB 0
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_2:BUART:tx_ctrl_mark_last\
+			\LCD_2:BUART:rx_state_0\
+			\LCD_2:BUART:rx_state_2\
+			\LCD_2:BUART:rx_state_3\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN17_0
+			MODIN17_1
+			MODIN20_4
+			MODIN20_5
+			MODIN20_6
+			Net_1281_SYNCOUT
+			\LCD_2:BUART:rx_bitclk_enable\
+			\LCD_2:BUART:rx_last\
+			\LCD_2:BUART:rx_state_0\
+			\LCD_2:BUART:rx_state_2\
+			\LCD_2:BUART:rx_state_3\
+			\LCD_2:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LCD_2:BUART:rx_state_0\
+			\LCD_2:BUART:rx_state_2\
+			\LCD_2:BUART:rx_state_3\
+			\LCD_2:BUART:tx_ctrl_mark_last\
+
+		 Product terms:
+			!MODIN17_0 * !MODIN17_1 * !\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_2\
+			!MODIN17_1 * !Net_1281_SYNCOUT * !\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_2\
+			!MODIN20_4 * !MODIN20_6 * !\LCD_2:BUART:rx_state_2\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_state_0\
+			!MODIN20_5 * !MODIN20_6 * !\LCD_2:BUART:rx_state_2\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_state_0\
+			!Net_1281_SYNCOUT * !\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:rx_state_2\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_last\
+			!\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_2\
+			!\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_2\ * \LCD_2:BUART:rx_state_3\
+			!\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_3\
+
+	PLD 1:
+		 Instances:
+			\LCD_2:BUART:rx_counter_load\
+			\LCD_2:BUART:rx_load_fifo\
+			\LCD_2:BUART:rx_status_3\
+			\LCD_2:BUART:rx_state_stop1_reg\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN17_0
+			MODIN17_1
+			MODIN20_4
+			MODIN20_5
+			MODIN20_6
+			Net_1281_SYNCOUT
+			\LCD_2:BUART:rx_bitclk_enable\
+			\LCD_2:BUART:rx_state_0\
+			\LCD_2:BUART:rx_state_2\
+			\LCD_2:BUART:rx_state_3\
+			\LCD_2:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LCD_2:BUART:rx_counter_load\
+			\LCD_2:BUART:rx_load_fifo\
+			\LCD_2:BUART:rx_state_stop1_reg\
+			\LCD_2:BUART:rx_status_3\
+
+		 Product terms:
+			!MODIN17_0 * !MODIN17_1 * !\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_2\ * \LCD_2:BUART:rx_state_3\
+			!MODIN17_1 * !Net_1281_SYNCOUT * !\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_2\ * \LCD_2:BUART:rx_state_3\
+			!MODIN20_4 * !MODIN20_6 * !\LCD_2:BUART:rx_state_2\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_state_0\
+			!MODIN20_5 * !MODIN20_6 * !\LCD_2:BUART:rx_state_2\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_state_0\
+			!\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:rx_state_2\ * !\LCD_2:BUART:rx_state_3\ * !\LCD_2:BUART:tx_ctrl_mark_last\
+			!\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:rx_state_2\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_bitclk_enable\ * \LCD_2:BUART:rx_state_3\
+			!\LCD_2:BUART:rx_state_0\ * !\LCD_2:BUART:tx_ctrl_mark_last\ * \LCD_2:BUART:rx_state_2\ * \LCD_2:BUART:rx_state_3\
+
+	Datapath:
+		 Instances:
+			\LCD_2:BUART:sRX:RxShifter:u0\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LCD_2:BUART:rx_bitclk_enable\
+			\LCD_2:BUART:rx_load_fifo\
+			\LCD_2:BUART:rx_postpoll\
+			\LCD_2:BUART:rx_state_0\
+			\LCD_2:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LCD_2:BUART:rx_fifofull\
+			\LCD_2:BUART:rx_fifonotempty\
+
+	Control, status and sync:
+		 Instances:
+			\LCD_2:BUART:sRX:RxBitCounter\ : count7cell
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_2:BUART:rx_counter_load\
+
+		 Output nets:
+			MODIN20_4
+			MODIN20_5
+			MODIN20_6
+			\LCD_2:BUART:rx_count_0\
+			\LCD_2:BUART:rx_count_1\
+			\LCD_2:BUART:rx_count_2\
+
+	Local clock and reset nets:
+
+======================================================
+UDB 1
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_1:BUART:tx_ctrl_mark_last\
+			\LCD_1:BUART:rx_state_3\
+			\LCD_1:BUART:rx_state_0\
+			\LCD_1:BUART:rx_state_2\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN5_0
+			MODIN5_1
+			MODIN8_4
+			MODIN8_5
+			MODIN8_6
+			Net_697_SYNCOUT
+			\LCD_1:BUART:rx_bitclk_enable\
+			\LCD_1:BUART:rx_last\
+			\LCD_1:BUART:rx_state_0\
+			\LCD_1:BUART:rx_state_2\
+			\LCD_1:BUART:rx_state_3\
+			\LCD_1:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LCD_1:BUART:rx_state_0\
+			\LCD_1:BUART:rx_state_2\
+			\LCD_1:BUART:rx_state_3\
+			\LCD_1:BUART:tx_ctrl_mark_last\
+
+		 Product terms:
+			!MODIN5_0 * !MODIN5_1 * !\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_2\
+			!MODIN5_1 * !Net_697_SYNCOUT * !\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_2\
+			!MODIN8_4 * !MODIN8_6 * !\LCD_1:BUART:rx_state_2\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_state_0\
+			!MODIN8_5 * !MODIN8_6 * !\LCD_1:BUART:rx_state_2\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_state_0\
+			!Net_697_SYNCOUT * !\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:rx_state_2\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_last\
+			!\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_2\
+			!\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_2\ * \LCD_1:BUART:rx_state_3\
+			!\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_3\
+
+	PLD 1:
+		 Instances:
+			\LCD_1:BUART:rx_counter_load\
+			\LCD_1:BUART:rx_status_3\
+			\LCD_1:BUART:rx_state_stop1_reg\
+			\LCD_1:BUART:rx_load_fifo\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN5_0
+			MODIN5_1
+			MODIN8_4
+			MODIN8_5
+			MODIN8_6
+			Net_697_SYNCOUT
+			\LCD_1:BUART:rx_bitclk_enable\
+			\LCD_1:BUART:rx_state_0\
+			\LCD_1:BUART:rx_state_2\
+			\LCD_1:BUART:rx_state_3\
+			\LCD_1:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LCD_1:BUART:rx_counter_load\
+			\LCD_1:BUART:rx_load_fifo\
+			\LCD_1:BUART:rx_state_stop1_reg\
+			\LCD_1:BUART:rx_status_3\
+
+		 Product terms:
+			!MODIN5_0 * !MODIN5_1 * !\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_2\ * \LCD_1:BUART:rx_state_3\
+			!MODIN5_1 * !Net_697_SYNCOUT * !\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_2\ * \LCD_1:BUART:rx_state_3\
+			!MODIN8_4 * !MODIN8_6 * !\LCD_1:BUART:rx_state_2\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_state_0\
+			!MODIN8_5 * !MODIN8_6 * !\LCD_1:BUART:rx_state_2\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_state_0\
+			!\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:rx_state_2\ * !\LCD_1:BUART:rx_state_3\ * !\LCD_1:BUART:tx_ctrl_mark_last\
+			!\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:rx_state_2\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_bitclk_enable\ * \LCD_1:BUART:rx_state_3\
+			!\LCD_1:BUART:rx_state_0\ * !\LCD_1:BUART:tx_ctrl_mark_last\ * \LCD_1:BUART:rx_state_2\ * \LCD_1:BUART:rx_state_3\
+
+	Datapath:
+		 Instances:
+			\LCD_1:BUART:sRX:RxShifter:u0\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LCD_1:BUART:rx_bitclk_enable\
+			\LCD_1:BUART:rx_load_fifo\
+			\LCD_1:BUART:rx_postpoll\
+			\LCD_1:BUART:rx_state_0\
+			\LCD_1:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LCD_1:BUART:rx_fifofull\
+			\LCD_1:BUART:rx_fifonotempty\
+
+	Control, status and sync:
+		 Instances:
+			\LCD_1:BUART:sRX:RxBitCounter\ : count7cell
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:rx_counter_load\
+
+		 Output nets:
+			MODIN8_4
+			MODIN8_5
+			MODIN8_6
+			\LCD_1:BUART:rx_count_0\
+			\LCD_1:BUART:rx_count_1\
+			\LCD_1:BUART:rx_count_2\
+
+	Local clock and reset nets:
+
+======================================================
+UDB 10
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Surtidor:BUART:tx_bitclk\
+			\Surtidor:BUART:tx_state_1\
+			\Surtidor:BUART:tx_state_0\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Surtidor:BUART:tx_bitclk\
+			\Surtidor:BUART:tx_bitclk_enable_pre\
+			\Surtidor:BUART:tx_counter_dp\
+			\Surtidor:BUART:tx_fifo_empty\
+			\Surtidor:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_1\
+			\Surtidor:BUART:tx_state_2\
+
+		 Output nets:
+			\Surtidor:BUART:tx_bitclk\
+			\Surtidor:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_1\
+
+		 Product terms:
+			!\Surtidor:BUART:tx_bitclk_enable_pre\
+			!\Surtidor:BUART:tx_fifo_empty\ * !\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_1\ * !\Surtidor:BUART:tx_state_2\
+			!\Surtidor:BUART:tx_fifo_empty\ * !\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_bitclk_enable_pre\
+			!\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_state_2\
+			!\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_counter_dp\ * \Surtidor:BUART:tx_state_1\
+			!\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_state_0\
+			\Surtidor:BUART:tx_bitclk_enable_pre\ * \Surtidor:BUART:tx_fifo_empty\ * \Surtidor:BUART:tx_state_0\ * \Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_state_2\
+			\Surtidor:BUART:tx_bitclk_enable_pre\ * \Surtidor:BUART:tx_state_0\ * \Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_state_2\
+
+	PLD 1:
+		 Instances:
+			\LP:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_2\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:tx_bitclk\
+			\LP:BUART:tx_bitclk_enable_pre\
+			\LP:BUART:tx_counter_dp\
+			\LP:BUART:tx_fifo_empty\
+			\LP:BUART:tx_state_0\
+			\LP:BUART:tx_state_1\
+			\LP:BUART:tx_state_2\
+			\Surtidor:BUART:tx_bitclk\
+			\Surtidor:BUART:tx_bitclk_enable_pre\
+			\Surtidor:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_1\
+			\Surtidor:BUART:tx_state_2\
+
+		 Output nets:
+			\LP:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_2\
+
+		 Product terms:
+			!\LP:BUART:tx_fifo_empty\ * !\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_1\ * !\LP:BUART:tx_state_2\
+			!\LP:BUART:tx_fifo_empty\ * !\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_1\ * \LP:BUART:tx_bitclk_enable_pre\
+			!\LP:BUART:tx_state_2\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_counter_dp\ * \LP:BUART:tx_state_1\
+			!\LP:BUART:tx_state_2\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_state_0\
+			!\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_bitclk_enable_pre\ * \Surtidor:BUART:tx_state_2\
+			!\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_state_0\ * \Surtidor:BUART:tx_state_1\
+			\LP:BUART:tx_bitclk_enable_pre\ * \LP:BUART:tx_fifo_empty\ * \LP:BUART:tx_state_0\ * \LP:BUART:tx_state_1\ * \LP:BUART:tx_state_2\
+			\Surtidor:BUART:tx_bitclk_enable_pre\ * \Surtidor:BUART:tx_state_0\ * \Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_state_2\
+
+	Datapath:
+		 Instances:
+			\Surtidor:BUART:sTX:TxShifter:u0\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\Surtidor:BUART:tx_bitclk_enable_pre\
+			\Surtidor:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_1\
+
+		 Output nets:
+			\Surtidor:BUART:tx_fifo_empty\
+			\Surtidor:BUART:tx_fifo_notfull\
+			\Surtidor:BUART:tx_shift_out\
+
+	Control, status and sync:
+		 Instances:
+			\Surtidor:BUART:sTX:TxSts\ : statusicell
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Surtidor:BUART:tx_fifo_empty\
+			\Surtidor:BUART:tx_fifo_notfull\
+			\Surtidor:BUART:tx_status_0\
+			\Surtidor:BUART:tx_status_2\
+
+		 Output nets:
+
+	Local clock and reset nets:
+
+======================================================
+UDB 11
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\PC:BUART:tx_bitclk\
+			\PC:BUART:tx_state_2\
+			\PC:BUART:tx_status_0\
+			\PC:BUART:tx_state_1\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\PC:BUART:tx_bitclk\
+			\PC:BUART:tx_bitclk_enable_pre\
+			\PC:BUART:tx_counter_dp\
+			\PC:BUART:tx_fifo_empty\
+			\PC:BUART:tx_state_0\
+			\PC:BUART:tx_state_1\
+			\PC:BUART:tx_state_2\
+
+		 Output nets:
+			\PC:BUART:tx_bitclk\
+			\PC:BUART:tx_state_1\
+			\PC:BUART:tx_state_2\
+			\PC:BUART:tx_status_0\
+
+		 Product terms:
+			!\PC:BUART:tx_bitclk_enable_pre\
+			!\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_1\ * \PC:BUART:tx_bitclk_enable_pre\ * \PC:BUART:tx_fifo_empty\ * \PC:BUART:tx_state_2\
+			!\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_1\ * \PC:BUART:tx_bitclk_enable_pre\ * \PC:BUART:tx_state_2\
+			!\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_1\ * \PC:BUART:tx_state_2\
+			!\PC:BUART:tx_state_2\ * \PC:BUART:tx_bitclk\ * \PC:BUART:tx_counter_dp\ * \PC:BUART:tx_state_1\
+			!\PC:BUART:tx_state_2\ * \PC:BUART:tx_bitclk\ * \PC:BUART:tx_state_0\
+			!\PC:BUART:tx_state_2\ * \PC:BUART:tx_bitclk\ * \PC:BUART:tx_state_0\ * \PC:BUART:tx_state_1\
+			\PC:BUART:tx_bitclk_enable_pre\ * \PC:BUART:tx_state_0\ * \PC:BUART:tx_state_1\ * \PC:BUART:tx_state_2\
+
+	PLD 1:
+		 Instances:
+			Net_692
+			\Impresora:BUART:tx_status_2\
+			\PC:BUART:tx_state_0\
+			\PC:BUART:counter_load_not\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:tx_fifo_notfull\
+			\LCD_1:BUART:txn\
+			\PC:BUART:tx_bitclk\
+			\PC:BUART:tx_bitclk_enable_pre\
+			\PC:BUART:tx_fifo_empty\
+			\PC:BUART:tx_state_0\
+			\PC:BUART:tx_state_1\
+			\PC:BUART:tx_state_2\
+
+		 Output nets:
+			Net_692
+			\Impresora:BUART:tx_status_2\
+			\PC:BUART:counter_load_not\
+			\PC:BUART:tx_state_0\
+
+		 Product terms:
+			!\Impresora:BUART:tx_fifo_notfull\
+			!\LCD_1:BUART:txn\
+			!\PC:BUART:tx_fifo_empty\ * !\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_1\ * !\PC:BUART:tx_state_2\
+			!\PC:BUART:tx_fifo_empty\ * !\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_1\ * \PC:BUART:tx_bitclk_enable_pre\
+			!\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_1\ * !\PC:BUART:tx_state_2\
+			!\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_1\ * \PC:BUART:tx_bitclk_enable_pre\
+			!\PC:BUART:tx_state_2\ * \PC:BUART:tx_bitclk\ * \PC:BUART:tx_state_0\
+			\PC:BUART:tx_bitclk_enable_pre\ * \PC:BUART:tx_fifo_empty\ * \PC:BUART:tx_state_0\ * \PC:BUART:tx_state_1\ * \PC:BUART:tx_state_2\
+
+	Datapath:
+		 Instances:
+			\PC:BUART:sTX:sCLOCK:TxBitClkGen\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\PC:BUART:counter_load_not\
+
+		 Output nets:
+			\PC:BUART:tx_bitclk_enable_pre\
+			\PC:BUART:tx_counter_dp\
+
+	Control, status and sync:
+		 Instances:
+			\PC:BUART:sTX:TxSts\ : statusicell
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\PC:BUART:tx_fifo_empty\
+			\PC:BUART:tx_fifo_notfull\
+			\PC:BUART:tx_status_0\
+			\PC:BUART:tx_status_2\
+
+		 Output nets:
+
+	Local clock and reset nets:
+
+======================================================
+UDB 12
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_1:BUART:tx_state_2\
+			\LCD_1:BUART:tx_bitclk\
+			MODIN5_0
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN5_0
+			Net_697_SYNCOUT
+			\LCD_1:BUART:rx_count_1\
+			\LCD_1:BUART:rx_count_2\
+			\LCD_1:BUART:tx_bitclk\
+			\LCD_1:BUART:tx_bitclk_enable_pre\
+			\LCD_1:BUART:tx_counter_dp\
+			\LCD_1:BUART:tx_state_0\
+			\LCD_1:BUART:tx_state_1\
+			\LCD_1:BUART:tx_state_2\
+
+		 Output nets:
+			MODIN5_0
+			\LCD_1:BUART:tx_bitclk\
+			\LCD_1:BUART:tx_state_2\
+
+		 Product terms:
+			!MODIN5_0 * !\LCD_1:BUART:rx_count_1\ * !\LCD_1:BUART:rx_count_2\ * Net_697_SYNCOUT
+			!Net_697_SYNCOUT * !\LCD_1:BUART:rx_count_1\ * !\LCD_1:BUART:rx_count_2\ * MODIN5_0
+			!\LCD_1:BUART:tx_bitclk_enable_pre\
+			!\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_bitclk_enable_pre\ * \LCD_1:BUART:tx_state_2\
+			!\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_state_2\
+			!\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_bitclk\ * \LCD_1:BUART:tx_counter_dp\ * \LCD_1:BUART:tx_state_1\
+			!\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_bitclk\ * \LCD_1:BUART:tx_state_0\ * \LCD_1:BUART:tx_state_1\
+			\LCD_1:BUART:tx_bitclk_enable_pre\ * \LCD_1:BUART:tx_state_0\ * \LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_state_2\
+
+	PLD 1:
+		 Instances:
+			\LCD_2:BUART:tx_state_0\
+			\LCD_1:BUART:rx_postpoll\
+			\LCD_2:BUART:tx_bitclk\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN5_0
+			MODIN5_1
+			Net_697_SYNCOUT
+			\LCD_2:BUART:tx_bitclk\
+			\LCD_2:BUART:tx_bitclk_enable_pre\
+			\LCD_2:BUART:tx_fifo_empty\
+			\LCD_2:BUART:tx_state_0\
+			\LCD_2:BUART:tx_state_1\
+			\LCD_2:BUART:tx_state_2\
+
+		 Output nets:
+			\LCD_1:BUART:rx_postpoll\
+			\LCD_2:BUART:tx_bitclk\
+			\LCD_2:BUART:tx_state_0\
+
+		 Product terms:
+			!\LCD_2:BUART:tx_bitclk_enable_pre\
+			!\LCD_2:BUART:tx_fifo_empty\ * !\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_1\ * !\LCD_2:BUART:tx_state_2\
+			!\LCD_2:BUART:tx_fifo_empty\ * !\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_bitclk_enable_pre\
+			!\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_state_2\
+			!\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_bitclk\ * \LCD_2:BUART:tx_state_0\
+			MODIN5_0 * Net_697_SYNCOUT
+			MODIN5_1
+			\LCD_2:BUART:tx_bitclk_enable_pre\ * \LCD_2:BUART:tx_fifo_empty\ * \LCD_2:BUART:tx_state_0\ * \LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_state_2\
+
+	Datapath:
+		 Instances:
+			\LCD_1:BUART:sTX:sCLOCK:TxBitClkGen\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LCD_1:BUART:counter_load_not\
+
+		 Output nets:
+			\LCD_1:BUART:tx_bitclk_enable_pre\
+			\LCD_1:BUART:tx_counter_dp\
+
+	Control, status and sync:
+		 Instances:
+			Rx_LCD_1(0)_SYNC : synccell
+
+		 Clock net: ClockBlock_BUS_CLK
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_697
+
+		 Output nets:
+			Net_697_SYNCOUT
+
+	Local clock and reset nets:
+
+======================================================
+UDB 13
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_2:BUART:tx_state_2\
+			MODIN17_1
+			\LCD_2:BUART:rx_bitclk_enable\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN17_0
+			MODIN17_1
+			Net_1281_SYNCOUT
+			\LCD_2:BUART:rx_count_0\
+			\LCD_2:BUART:rx_count_1\
+			\LCD_2:BUART:rx_count_2\
+			\LCD_2:BUART:tx_bitclk\
+			\LCD_2:BUART:tx_bitclk_enable_pre\
+			\LCD_2:BUART:tx_counter_dp\
+			\LCD_2:BUART:tx_state_0\
+			\LCD_2:BUART:tx_state_1\
+			\LCD_2:BUART:tx_state_2\
+
+		 Output nets:
+			MODIN17_1
+			\LCD_2:BUART:rx_bitclk_enable\
+			\LCD_2:BUART:tx_state_2\
+
+		 Product terms:
+			!MODIN17_0 * !\LCD_2:BUART:rx_count_1\ * !\LCD_2:BUART:rx_count_2\ * MODIN17_1
+			!MODIN17_1 * !\LCD_2:BUART:rx_count_1\ * !\LCD_2:BUART:rx_count_2\ * MODIN17_0 * Net_1281_SYNCOUT
+			!Net_1281_SYNCOUT * !\LCD_2:BUART:rx_count_1\ * !\LCD_2:BUART:rx_count_2\ * MODIN17_1
+			!\LCD_2:BUART:rx_count_0\ * !\LCD_2:BUART:rx_count_1\ * !\LCD_2:BUART:rx_count_2\
+			!\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_bitclk_enable_pre\ * \LCD_2:BUART:tx_state_2\
+			!\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_bitclk\ * \LCD_2:BUART:tx_counter_dp\ * \LCD_2:BUART:tx_state_1\
+			!\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_bitclk\ * \LCD_2:BUART:tx_state_0\ * \LCD_2:BUART:tx_state_1\
+			\LCD_2:BUART:tx_bitclk_enable_pre\ * \LCD_2:BUART:tx_state_0\ * \LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_state_2\
+
+	PLD 1:
+		 Instances:
+			\Surtidor:BUART:tx_status_2\
+			\LCD_1:BUART:tx_state_0\
+			Net_1304
+			\LCD_2:BUART:rx_postpoll\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN17_0
+			MODIN17_1
+			Net_1281_SYNCOUT
+			\LCD_1:BUART:tx_bitclk\
+			\LCD_1:BUART:tx_bitclk_enable_pre\
+			\LCD_1:BUART:tx_fifo_empty\
+			\LCD_1:BUART:tx_state_0\
+			\LCD_1:BUART:tx_state_1\
+			\LCD_1:BUART:tx_state_2\
+			\PC:BUART:txn\
+			\Surtidor:BUART:tx_fifo_notfull\
+
+		 Output nets:
+			Net_1304
+			\LCD_1:BUART:tx_state_0\
+			\LCD_2:BUART:rx_postpoll\
+			\Surtidor:BUART:tx_status_2\
+
+		 Product terms:
+			!\LCD_1:BUART:tx_fifo_empty\ * !\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_1\ * !\LCD_1:BUART:tx_state_2\
+			!\LCD_1:BUART:tx_fifo_empty\ * !\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_bitclk_enable_pre\
+			!\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_bitclk\ * \LCD_1:BUART:tx_state_0\
+			!\PC:BUART:txn\
+			!\Surtidor:BUART:tx_fifo_notfull\
+			MODIN17_0 * Net_1281_SYNCOUT
+			MODIN17_1
+			\LCD_1:BUART:tx_bitclk_enable_pre\ * \LCD_1:BUART:tx_fifo_empty\ * \LCD_1:BUART:tx_state_0\ * \LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_state_2\
+
+	Datapath:
+		 Instances:
+			\LCD_2:BUART:sTX:sCLOCK:TxBitClkGen\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LCD_2:BUART:counter_load_not\
+
+		 Output nets:
+			\LCD_2:BUART:tx_bitclk_enable_pre\
+			\LCD_2:BUART:tx_counter_dp\
+
+	Control, status and sync:
+		 Instances:
+			Rx_LCD_2(0)_SYNC : synccell
+
+		 Clock net: ClockBlock_BUS_CLK
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1281
+
+		 Output nets:
+			Net_1281_SYNCOUT
+
+	Local clock and reset nets:
+
+======================================================
+UDB 14
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Surtidor:BUART:tx_parity_bit\
+			\Surtidor:BUART:counter_load_not\
+			\LP:BUART:pollcount_1\
+			Net_1501
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1508_SYNCOUT
+			\LP:BUART:pollcount_0\
+			\LP:BUART:pollcount_1\
+			\LP:BUART:rx_count_1\
+			\LP:BUART:rx_count_2\
+			\Surtidor:BUART:tx_bitclk\
+			\Surtidor:BUART:tx_bitclk_enable_pre\
+			\Surtidor:BUART:tx_parity_bit\
+			\Surtidor:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_1\
+			\Surtidor:BUART:tx_state_2\
+			\Surtidor:BUART:txn\
+
+		 Output nets:
+			Net_1501
+			\LP:BUART:pollcount_1\
+			\Surtidor:BUART:counter_load_not\
+			\Surtidor:BUART:tx_parity_bit\
+
+		 Product terms:
+			!Net_1508_SYNCOUT * !\LP:BUART:rx_count_1\ * !\LP:BUART:rx_count_2\ * \LP:BUART:pollcount_1\
+			!\LP:BUART:pollcount_0\ * !\LP:BUART:rx_count_1\ * !\LP:BUART:rx_count_2\ * \LP:BUART:pollcount_1\
+			!\LP:BUART:pollcount_1\ * !\LP:BUART:rx_count_1\ * !\LP:BUART:rx_count_2\ * Net_1508_SYNCOUT * \LP:BUART:pollcount_0\
+			!\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_1\ * !\Surtidor:BUART:tx_state_2\
+			!\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_bitclk_enable_pre\
+			!\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_2\ * !\Surtidor:BUART:txn\ * \Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_state_1\
+			!\Surtidor:BUART:tx_state_1\ * !\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_parity_bit\ * \Surtidor:BUART:tx_state_0\
+			!\Surtidor:BUART:txn\
+
+	PLD 1:
+		 Instances:
+			\LP:BUART:rx_last\
+			\LP:BUART:rx_bitclk_enable\
+			\LP:BUART:pollcount_0\
+			\LP:BUART:rx_postpoll\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1508_SYNCOUT
+			\LP:BUART:pollcount_0\
+			\LP:BUART:pollcount_1\
+			\LP:BUART:rx_count_0\
+			\LP:BUART:rx_count_1\
+			\LP:BUART:rx_count_2\
+
+		 Output nets:
+			\LP:BUART:pollcount_0\
+			\LP:BUART:rx_bitclk_enable\
+			\LP:BUART:rx_last\
+			\LP:BUART:rx_postpoll\
+
+		 Product terms:
+			!Net_1508_SYNCOUT * !\LP:BUART:rx_count_1\ * !\LP:BUART:rx_count_2\ * \LP:BUART:pollcount_0\
+			!\LP:BUART:pollcount_0\ * !\LP:BUART:rx_count_1\ * !\LP:BUART:rx_count_2\ * Net_1508_SYNCOUT
+			!\LP:BUART:rx_count_0\ * !\LP:BUART:rx_count_1\ * !\LP:BUART:rx_count_2\
+			Net_1508_SYNCOUT
+			Net_1508_SYNCOUT * \LP:BUART:pollcount_0\
+			\LP:BUART:pollcount_1\
+
+	Datapath:
+		 Instances:
+			\Surtidor:BUART:sTX:sCLOCK:TxBitClkGen\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\Surtidor:BUART:counter_load_not\
+
+		 Output nets:
+			\Surtidor:BUART:tx_bitclk_enable_pre\
+			\Surtidor:BUART:tx_counter_dp\
+
+	Control, status and sync:
+		 Instances:
+			Rx_LP(0)_SYNC : synccell
+
+		 Clock net: ClockBlock_BUS_CLK
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1508
+
+		 Output nets:
+			Net_1508_SYNCOUT
+
+	Local clock and reset nets:
+
+======================================================
+UDB 15
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LP:BUART:tx_bitclk\
+			\LP:BUART:tx_state_1\
+			\LP:BUART:tx_parity_bit\
+			\LP:BUART:tx_state_2\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:tx_bitclk\
+			\LP:BUART:tx_bitclk_enable_pre\
+			\LP:BUART:tx_parity_bit\
+			\LP:BUART:tx_state_0\
+			\LP:BUART:tx_state_1\
+			\LP:BUART:tx_state_2\
+			\LP:BUART:txn\
+
+		 Output nets:
+			\LP:BUART:tx_bitclk\
+			\LP:BUART:tx_parity_bit\
+			\LP:BUART:tx_state_1\
+			\LP:BUART:tx_state_2\
+
+		 Product terms:
+			!\LP:BUART:tx_bitclk_enable_pre\
+			!\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_1\ * \LP:BUART:tx_bitclk_enable_pre\ * \LP:BUART:tx_state_2\
+			!\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_1\ * \LP:BUART:tx_state_2\
+			!\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_2\ * !\LP:BUART:txn\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_state_1\
+			!\LP:BUART:tx_state_1\ * !\LP:BUART:tx_state_2\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_parity_bit\ * \LP:BUART:tx_state_0\
+			!\LP:BUART:tx_state_2\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_state_0\
+			!\LP:BUART:tx_state_2\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_state_0\ * \LP:BUART:tx_state_1\
+			\LP:BUART:tx_bitclk_enable_pre\ * \LP:BUART:tx_state_0\ * \LP:BUART:tx_state_1\ * \LP:BUART:tx_state_2\
+
+	PLD 1:
+		 Instances:
+			\LP:BUART:tx_status_2\
+			\LP:BUART:counter_load_not\
+			Net_1509
+
+		 Clock net: 
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:tx_bitclk_enable_pre\
+			\LP:BUART:tx_fifo_notfull\
+			\LP:BUART:tx_state_0\
+			\LP:BUART:tx_state_1\
+			\LP:BUART:tx_state_2\
+			\LP:BUART:txn\
+
+		 Output nets:
+			Net_1509
+			\LP:BUART:counter_load_not\
+			\LP:BUART:tx_status_2\
+
+		 Product terms:
+			!\LP:BUART:tx_fifo_notfull\
+			!\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_1\ * !\LP:BUART:tx_state_2\
+			!\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_1\ * \LP:BUART:tx_bitclk_enable_pre\
+			!\LP:BUART:txn\
+
+	Datapath:
+		 Instances:
+			\LP:BUART:sTX:sCLOCK:TxBitClkGen\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LP:BUART:counter_load_not\
+
+		 Output nets:
+			\LP:BUART:tx_bitclk_enable_pre\
+			\LP:BUART:tx_counter_dp\
+
+	Control, status and sync:
+		 Instances:
+			\LP:BUART:sRX:RxSts\ : statusicell
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:rx_status_2\
+			\LP:BUART:rx_status_3\
+			\LP:BUART:rx_status_4\
+			\LP:BUART:rx_status_5\
+
+		 Output nets:
+			Net_1487
+
+	Local clock and reset nets:
+
+======================================================
+UDB 16
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\PC:BUART:rx_postpoll\
+			\PC:BUART:rx_bitclk_enable\
+			MODIN13_1
+			MODIN13_0
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN13_0
+			MODIN13_1
+			Net_1305_SYNCOUT
+			\PC:BUART:rx_count_0\
+			\PC:BUART:rx_count_1\
+			\PC:BUART:rx_count_2\
+
+		 Output nets:
+			MODIN13_0
+			MODIN13_1
+			\PC:BUART:rx_bitclk_enable\
+			\PC:BUART:rx_postpoll\
+
+		 Product terms:
+			!MODIN13_0 * !\PC:BUART:rx_count_1\ * !\PC:BUART:rx_count_2\ * MODIN13_1
+			!MODIN13_0 * !\PC:BUART:rx_count_1\ * !\PC:BUART:rx_count_2\ * Net_1305_SYNCOUT
+			!MODIN13_1 * !\PC:BUART:rx_count_1\ * !\PC:BUART:rx_count_2\ * MODIN13_0 * Net_1305_SYNCOUT
+			!Net_1305_SYNCOUT * !\PC:BUART:rx_count_1\ * !\PC:BUART:rx_count_2\ * MODIN13_0
+			!Net_1305_SYNCOUT * !\PC:BUART:rx_count_1\ * !\PC:BUART:rx_count_2\ * MODIN13_1
+			!\PC:BUART:rx_count_0\ * !\PC:BUART:rx_count_1\ * !\PC:BUART:rx_count_2\
+			MODIN13_0 * Net_1305_SYNCOUT
+			MODIN13_1
+
+	PLD 1:
+		 Instances:
+			\PC:BUART:rx_last\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1305_SYNCOUT
+
+		 Output nets:
+			\PC:BUART:rx_last\
+
+		 Product terms:
+			Net_1305_SYNCOUT
+
+	Datapath:
+
+	Control, status and sync:
+		 Instances:
+			Rx_PC(0)_SYNC : synccell
+
+		 Clock net: ClockBlock_BUS_CLK
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1305
+
+		 Output nets:
+			Net_1305_SYNCOUT
+
+	Local clock and reset nets:
+
+======================================================
+UDB 17
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			MODIN5_1
+			\LCD_1:BUART:rx_last\
+			\LCD_1:BUART:rx_bitclk_enable\
+			\Surtidor:BUART:rx_counter_load\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN5_0
+			MODIN5_1
+			Net_697_SYNCOUT
+			\LCD_1:BUART:rx_count_0\
+			\LCD_1:BUART:rx_count_1\
+			\LCD_1:BUART:rx_count_2\
+			\Surtidor:BUART:rx_state_0\
+			\Surtidor:BUART:rx_state_2\
+			\Surtidor:BUART:rx_state_3\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			MODIN5_1
+			\LCD_1:BUART:rx_bitclk_enable\
+			\LCD_1:BUART:rx_last\
+			\Surtidor:BUART:rx_counter_load\
+
+		 Product terms:
+			!MODIN5_0 * !\LCD_1:BUART:rx_count_1\ * !\LCD_1:BUART:rx_count_2\ * MODIN5_1
+			!MODIN5_1 * !\LCD_1:BUART:rx_count_1\ * !\LCD_1:BUART:rx_count_2\ * MODIN5_0 * Net_697_SYNCOUT
+			!Net_697_SYNCOUT * !\LCD_1:BUART:rx_count_1\ * !\LCD_1:BUART:rx_count_2\ * MODIN5_1
+			!\LCD_1:BUART:rx_count_0\ * !\LCD_1:BUART:rx_count_1\ * !\LCD_1:BUART:rx_count_2\
+			!\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\
+			Net_697_SYNCOUT
+
+	PLD 1:
+		 Instances:
+			\LP:BUART:rx_state_stop1_reg\
+			\Surtidor:BUART:rx_state_stop1_reg\
+			\Surtidor:BUART:rx_status_5\
+			\LP:BUART:rx_counter_load\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:rx_state_0\
+			\LP:BUART:rx_state_2\
+			\LP:BUART:rx_state_3\
+			\Surtidor:BUART:rx_fifonotempty\
+			\Surtidor:BUART:rx_state_0\
+			\Surtidor:BUART:rx_state_2\
+			\Surtidor:BUART:rx_state_3\
+			\Surtidor:BUART:rx_state_stop1_reg\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LP:BUART:rx_counter_load\
+			\LP:BUART:rx_state_stop1_reg\
+			\Surtidor:BUART:rx_state_stop1_reg\
+			\Surtidor:BUART:rx_status_5\
+
+		 Product terms:
+			!\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_2\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\
+			!\LP:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_state_2\ * \LP:BUART:rx_state_3\
+			!\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_state_2\ * \Surtidor:BUART:rx_state_3\
+			\Surtidor:BUART:rx_fifonotempty\ * \Surtidor:BUART:rx_state_stop1_reg\
+
+	Datapath:
+
+	Control, status and sync:
+		 Instances:
+			\Surtidor:BUART:sRX:RxSts\ : statusicell
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Surtidor:BUART:rx_status_2\
+			\Surtidor:BUART:rx_status_3\
+			\Surtidor:BUART:rx_status_4\
+			\Surtidor:BUART:rx_status_5\
+
+		 Output nets:
+			Net_1336
+
+	Local clock and reset nets:
+
+======================================================
+UDB 18
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Impresora:BUART:rx_postpoll\
+			MODIN9_1
+			\Impresora:BUART:rx_bitclk_enable\
+			MODIN9_0
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN9_0
+			MODIN9_1
+			Net_1506_SYNCOUT
+			\Impresora:BUART:rx_count_0\
+			\Impresora:BUART:rx_count_1\
+			\Impresora:BUART:rx_count_2\
+
+		 Output nets:
+			MODIN9_0
+			MODIN9_1
+			\Impresora:BUART:rx_bitclk_enable\
+			\Impresora:BUART:rx_postpoll\
+
+		 Product terms:
+			!MODIN9_0 * !\Impresora:BUART:rx_count_1\ * !\Impresora:BUART:rx_count_2\ * MODIN9_1
+			!MODIN9_0 * !\Impresora:BUART:rx_count_1\ * !\Impresora:BUART:rx_count_2\ * Net_1506_SYNCOUT
+			!MODIN9_1 * !\Impresora:BUART:rx_count_1\ * !\Impresora:BUART:rx_count_2\ * MODIN9_0 * Net_1506_SYNCOUT
+			!Net_1506_SYNCOUT * !\Impresora:BUART:rx_count_1\ * !\Impresora:BUART:rx_count_2\ * MODIN9_0
+			!Net_1506_SYNCOUT * !\Impresora:BUART:rx_count_1\ * !\Impresora:BUART:rx_count_2\ * MODIN9_1
+			!\Impresora:BUART:rx_count_0\ * !\Impresora:BUART:rx_count_1\ * !\Impresora:BUART:rx_count_2\
+			MODIN9_0 * Net_1506_SYNCOUT
+			MODIN9_1
+
+	PLD 1:
+		 Instances:
+			\Impresora:BUART:rx_last\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1506_SYNCOUT
+
+		 Output nets:
+			\Impresora:BUART:rx_last\
+
+		 Product terms:
+			Net_1506_SYNCOUT
+
+	Datapath:
+
+	Control, status and sync:
+		 Instances:
+			Rx_Print(0)_SYNC : synccell
+
+		 Clock net: ClockBlock_BUS_CLK
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1506
+
+		 Output nets:
+			Net_1506_SYNCOUT
+
+	Local clock and reset nets:
+
+======================================================
+UDB 19
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Surtidor:BUART:rx_bitclk_enable\
+			MODIN1_0
+			MODIN1_1
+			\Surtidor:BUART:rx_postpoll\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN1_0
+			MODIN1_1
+			Net_1500_SYNCOUT
+			\Surtidor:BUART:rx_count_0\
+			\Surtidor:BUART:rx_count_1\
+			\Surtidor:BUART:rx_count_2\
+
+		 Output nets:
+			MODIN1_0
+			MODIN1_1
+			\Surtidor:BUART:rx_bitclk_enable\
+			\Surtidor:BUART:rx_postpoll\
+
+		 Product terms:
+			!MODIN1_0 * !\Surtidor:BUART:rx_count_1\ * !\Surtidor:BUART:rx_count_2\ * MODIN1_1
+			!MODIN1_0 * !\Surtidor:BUART:rx_count_1\ * !\Surtidor:BUART:rx_count_2\ * Net_1500_SYNCOUT
+			!MODIN1_1 * !\Surtidor:BUART:rx_count_1\ * !\Surtidor:BUART:rx_count_2\ * MODIN1_0 * Net_1500_SYNCOUT
+			!Net_1500_SYNCOUT * !\Surtidor:BUART:rx_count_1\ * !\Surtidor:BUART:rx_count_2\ * MODIN1_0
+			!Net_1500_SYNCOUT * !\Surtidor:BUART:rx_count_1\ * !\Surtidor:BUART:rx_count_2\ * MODIN1_1
+			!\Surtidor:BUART:rx_count_0\ * !\Surtidor:BUART:rx_count_1\ * !\Surtidor:BUART:rx_count_2\
+			MODIN1_0 * Net_1500_SYNCOUT
+			MODIN1_1
+
+	PLD 1:
+		 Instances:
+			\Surtidor:BUART:rx_last\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1500_SYNCOUT
+
+		 Output nets:
+			\Surtidor:BUART:rx_last\
+
+		 Product terms:
+			Net_1500_SYNCOUT
+
+	Datapath:
+
+	Control, status and sync:
+		 Instances:
+			Rx_TW(0)_SYNC : synccell
+
+		 Clock net: ClockBlock_BUS_CLK
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1500
+
+		 Output nets:
+			Net_1500_SYNCOUT
+
+	Local clock and reset nets:
+
+======================================================
+UDB 2
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\PC:BUART:rx_state_0\
+			\PC:BUART:rx_state_2\
+			\PC:BUART:tx_ctrl_mark_last\
+			\PC:BUART:rx_state_3\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN13_0
+			MODIN13_1
+			MODIN16_4
+			MODIN16_5
+			MODIN16_6
+			Net_1305_SYNCOUT
+			\PC:BUART:rx_bitclk_enable\
+			\PC:BUART:rx_last\
+			\PC:BUART:rx_state_0\
+			\PC:BUART:rx_state_2\
+			\PC:BUART:rx_state_3\
+			\PC:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\PC:BUART:rx_state_0\
+			\PC:BUART:rx_state_2\
+			\PC:BUART:rx_state_3\
+			\PC:BUART:tx_ctrl_mark_last\
+
+		 Product terms:
+			!MODIN13_0 * !MODIN13_1 * !\PC:BUART:rx_state_0\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_2\
+			!MODIN13_1 * !Net_1305_SYNCOUT * !\PC:BUART:rx_state_0\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_2\
+			!MODIN16_4 * !MODIN16_6 * !\PC:BUART:rx_state_2\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_state_0\
+			!MODIN16_5 * !MODIN16_6 * !\PC:BUART:rx_state_2\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_state_0\
+			!Net_1305_SYNCOUT * !\PC:BUART:rx_state_0\ * !\PC:BUART:rx_state_2\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_last\
+			!\PC:BUART:rx_state_0\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_2\
+			!\PC:BUART:rx_state_0\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_2\ * \PC:BUART:rx_state_3\
+			!\PC:BUART:rx_state_0\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_3\
+
+	PLD 1:
+		 Instances:
+			\PC:BUART:rx_load_fifo\
+			\PC:BUART:rx_state_stop1_reg\
+			\PC:BUART:rx_counter_load\
+			\PC:BUART:rx_status_3\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN13_0
+			MODIN13_1
+			MODIN16_4
+			MODIN16_5
+			MODIN16_6
+			Net_1305_SYNCOUT
+			\PC:BUART:rx_bitclk_enable\
+			\PC:BUART:rx_state_0\
+			\PC:BUART:rx_state_2\
+			\PC:BUART:rx_state_3\
+			\PC:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\PC:BUART:rx_counter_load\
+			\PC:BUART:rx_load_fifo\
+			\PC:BUART:rx_state_stop1_reg\
+			\PC:BUART:rx_status_3\
+
+		 Product terms:
+			!MODIN13_0 * !MODIN13_1 * !\PC:BUART:rx_state_0\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_2\ * \PC:BUART:rx_state_3\
+			!MODIN13_1 * !Net_1305_SYNCOUT * !\PC:BUART:rx_state_0\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_2\ * \PC:BUART:rx_state_3\
+			!MODIN16_4 * !MODIN16_6 * !\PC:BUART:rx_state_2\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_state_0\
+			!MODIN16_5 * !MODIN16_6 * !\PC:BUART:rx_state_2\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_state_0\
+			!\PC:BUART:rx_state_0\ * !\PC:BUART:rx_state_2\ * !\PC:BUART:rx_state_3\ * !\PC:BUART:tx_ctrl_mark_last\
+			!\PC:BUART:rx_state_0\ * !\PC:BUART:rx_state_2\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_bitclk_enable\ * \PC:BUART:rx_state_3\
+			!\PC:BUART:rx_state_0\ * !\PC:BUART:tx_ctrl_mark_last\ * \PC:BUART:rx_state_2\ * \PC:BUART:rx_state_3\
+
+	Datapath:
+		 Instances:
+			\PC:BUART:sRX:RxShifter:u0\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\PC:BUART:rx_bitclk_enable\
+			\PC:BUART:rx_load_fifo\
+			\PC:BUART:rx_postpoll\
+			\PC:BUART:rx_state_0\
+			\PC:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\PC:BUART:rx_fifofull\
+			\PC:BUART:rx_fifonotempty\
+
+	Control, status and sync:
+		 Instances:
+			\PC:BUART:sRX:RxBitCounter\ : count7cell
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\PC:BUART:rx_counter_load\
+
+		 Output nets:
+			MODIN16_4
+			MODIN16_5
+			MODIN16_6
+			\PC:BUART:rx_count_0\
+			\PC:BUART:rx_count_1\
+			\PC:BUART:rx_count_2\
+
+	Local clock and reset nets:
+
+======================================================
+UDB 20
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			MODIN17_0
+			\Impresora:BUART:counter_load_not\
+			\Impresora:BUART:rx_counter_load\
+			\LCD_2:BUART:rx_last\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN17_0
+			Net_1281_SYNCOUT
+			\Impresora:BUART:rx_state_0\
+			\Impresora:BUART:rx_state_2\
+			\Impresora:BUART:rx_state_3\
+			\Impresora:BUART:tx_bitclk_enable_pre\
+			\Impresora:BUART:tx_ctrl_mark_last\
+			\Impresora:BUART:tx_state_0\
+			\Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_state_2\
+			\LCD_2:BUART:rx_count_1\
+			\LCD_2:BUART:rx_count_2\
+
+		 Output nets:
+			MODIN17_0
+			\Impresora:BUART:counter_load_not\
+			\Impresora:BUART:rx_counter_load\
+			\LCD_2:BUART:rx_last\
+
+		 Product terms:
+			!MODIN17_0 * !\LCD_2:BUART:rx_count_1\ * !\LCD_2:BUART:rx_count_2\ * Net_1281_SYNCOUT
+			!Net_1281_SYNCOUT * !\LCD_2:BUART:rx_count_1\ * !\LCD_2:BUART:rx_count_2\ * MODIN17_0
+			!\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\
+			!\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_1\ * !\Impresora:BUART:tx_state_2\
+			!\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_1\ * \Impresora:BUART:tx_bitclk_enable_pre\
+			Net_1281_SYNCOUT
+
+	PLD 1:
+		 Instances:
+			\Impresora:BUART:rx_status_5\
+			\Impresora:BUART:rx_state_stop1_reg\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:rx_fifonotempty\
+			\Impresora:BUART:rx_state_0\
+			\Impresora:BUART:rx_state_2\
+			\Impresora:BUART:rx_state_3\
+			\Impresora:BUART:rx_state_stop1_reg\
+			\Impresora:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\Impresora:BUART:rx_state_stop1_reg\
+			\Impresora:BUART:rx_status_5\
+
+		 Product terms:
+			!\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_state_2\ * \Impresora:BUART:rx_state_3\
+			\Impresora:BUART:rx_fifonotempty\ * \Impresora:BUART:rx_state_stop1_reg\
+
+	Datapath:
+		 Instances:
+			\Impresora:BUART:sTX:sCLOCK:TxBitClkGen\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\Impresora:BUART:counter_load_not\
+
+		 Output nets:
+			\Impresora:BUART:tx_bitclk_enable_pre\
+			\Impresora:BUART:tx_counter_dp\
+
+	Control, status and sync:
+		 Instances:
+			\Impresora:BUART:sRX:RxSts\ : statusicell
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:rx_status_2\
+			\Impresora:BUART:rx_status_3\
+			\Impresora:BUART:rx_status_4\
+			\Impresora:BUART:rx_status_5\
+
+		 Output nets:
+			Net_1324
+
+	Local clock and reset nets:
+
+======================================================
+UDB 21
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_1:BUART:rx_status_5\
+			\PC:BUART:rx_status_5\
+			\PC:BUART:rx_status_4\
+			\LP:BUART:rx_status_5\
+
+		 Clock net: 
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:rx_fifonotempty\
+			\LCD_1:BUART:rx_state_stop1_reg\
+			\LP:BUART:rx_fifonotempty\
+			\LP:BUART:rx_state_stop1_reg\
+			\PC:BUART:rx_fifofull\
+			\PC:BUART:rx_fifonotempty\
+			\PC:BUART:rx_load_fifo\
+			\PC:BUART:rx_state_stop1_reg\
+
+		 Output nets:
+			\LCD_1:BUART:rx_status_5\
+			\LP:BUART:rx_status_5\
+			\PC:BUART:rx_status_4\
+			\PC:BUART:rx_status_5\
+
+		 Product terms:
+			\LCD_1:BUART:rx_fifonotempty\ * \LCD_1:BUART:rx_state_stop1_reg\
+			\LP:BUART:rx_fifonotempty\ * \LP:BUART:rx_state_stop1_reg\
+			\PC:BUART:rx_fifofull\ * \PC:BUART:rx_load_fifo\
+			\PC:BUART:rx_fifonotempty\ * \PC:BUART:rx_state_stop1_reg\
+
+	PLD 1:
+		 Instances:
+			\Impresora:BUART:rx_status_4\
+
+		 Clock net: 
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:rx_fifofull\
+			\Impresora:BUART:rx_load_fifo\
+
+		 Output nets:
+			\Impresora:BUART:rx_status_4\
+
+		 Product terms:
+			\Impresora:BUART:rx_fifofull\ * \Impresora:BUART:rx_load_fifo\
+
+	Datapath:
+
+	Control, status and sync:
+		 Instances:
+			\PC:BUART:sRX:RxSts\ : statusicell
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\PC:BUART:rx_status_3\
+			\PC:BUART:rx_status_4\
+			\PC:BUART:rx_status_5\
+
+		 Output nets:
+			Net_1312
+
+	Local clock and reset nets:
+
+======================================================
+UDB 22
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_2:BUART:rx_status_5\
+			\LP:BUART:rx_status_4\
+			\Surtidor:BUART:rx_status_4\
+			\LCD_1:BUART:rx_status_4\
+
+		 Clock net: 
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:rx_fifofull\
+			\LCD_1:BUART:rx_load_fifo\
+			\LCD_2:BUART:rx_fifonotempty\
+			\LCD_2:BUART:rx_state_stop1_reg\
+			\LP:BUART:rx_fifofull\
+			\LP:BUART:rx_load_fifo\
+			\Surtidor:BUART:rx_fifofull\
+			\Surtidor:BUART:rx_load_fifo\
+
+		 Output nets:
+			\LCD_1:BUART:rx_status_4\
+			\LCD_2:BUART:rx_status_5\
+			\LP:BUART:rx_status_4\
+			\Surtidor:BUART:rx_status_4\
+
+		 Product terms:
+			\LCD_1:BUART:rx_fifofull\ * \LCD_1:BUART:rx_load_fifo\
+			\LCD_2:BUART:rx_fifonotempty\ * \LCD_2:BUART:rx_state_stop1_reg\
+			\LP:BUART:rx_fifofull\ * \LP:BUART:rx_load_fifo\
+			\Surtidor:BUART:rx_fifofull\ * \Surtidor:BUART:rx_load_fifo\
+
+	PLD 1:
+		 Instances:
+			\LCD_2:BUART:rx_status_4\
+
+		 Clock net: 
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_2:BUART:rx_fifofull\
+			\LCD_2:BUART:rx_load_fifo\
+
+		 Output nets:
+			\LCD_2:BUART:rx_status_4\
+
+		 Product terms:
+			\LCD_2:BUART:rx_fifofull\ * \LCD_2:BUART:rx_load_fifo\
+
+	Datapath:
+
+	Control, status and sync:
+		 Instances:
+			\LCD_2:BUART:sRX:RxSts\ : statusicell
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_2:BUART:rx_status_3\
+			\LCD_2:BUART:rx_status_4\
+			\LCD_2:BUART:rx_status_5\
+
+		 Output nets:
+			Net_1288
+
+	Local clock and reset nets:
+
+======================================================
+UDB 23
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\PC:BUART:tx_status_2\
+			\LCD_1:BUART:tx_status_2\
+			\LCD_2:BUART:tx_status_2\
+			Net_729
+
+		 Clock net: 
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:tx_fifo_notfull\
+			\LCD_2:BUART:tx_fifo_notfull\
+			\LCD_2:BUART:txn\
+			\PC:BUART:tx_fifo_notfull\
+
+		 Output nets:
+			Net_729
+			\LCD_1:BUART:tx_status_2\
+			\LCD_2:BUART:tx_status_2\
+			\PC:BUART:tx_status_2\
+
+		 Product terms:
+			!\LCD_1:BUART:tx_fifo_notfull\
+			!\LCD_2:BUART:tx_fifo_notfull\
+			!\LCD_2:BUART:txn\
+			!\PC:BUART:tx_fifo_notfull\
+
+	PLD 1:
+		 Instances:
+			Net_1507
+
+		 Clock net: 
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:txn\
+
+		 Output nets:
+			Net_1507
+
+		 Product terms:
+			!\Impresora:BUART:txn\
+
+	Datapath:
+		 Instances:
+			\PC:BUART:sTX:TxShifter:u0\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\PC:BUART:tx_bitclk_enable_pre\
+			\PC:BUART:tx_state_0\
+			\PC:BUART:tx_state_1\
+
+		 Output nets:
+			\PC:BUART:tx_fifo_empty\
+			\PC:BUART:tx_fifo_notfull\
+			\PC:BUART:tx_shift_out\
+
+	Control, status and sync:
+		 Instances:
+			\LCD_1:BUART:sRX:RxSts\ : statusicell
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:rx_status_3\
+			\LCD_1:BUART:rx_status_4\
+			\LCD_1:BUART:rx_status_5\
+
+		 Output nets:
+			Net_1299
+
+	Local clock and reset nets:
+
+======================================================
+UDB 24
+------------------------------------------------------
+	PLD 0:
+
+	PLD 1:
+
+	Datapath:
+
+	Control, status and sync:
+		 Instances:
+			SCL_1(0)_SYNC : synccell
+			SDA_1(0)_SYNC : synccell
+
+		 Clock net: ClockBlock_BUS_CLK
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\I2C_1:Net_1109_0\
+			\I2C_1:Net_1109_1\
+
+		 Output nets:
+
+	Local clock and reset nets:
+
+======================================================
+UDB 3
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Impresora:BUART:rx_state_0\
+			\Impresora:BUART:rx_status_3\
+			\Impresora:BUART:rx_state_3\
+			\Impresora:BUART:rx_parity_bit\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN12_4
+			MODIN12_5
+			MODIN12_6
+			\Impresora:BUART:rx_bitclk_enable\
+			\Impresora:BUART:rx_parity_bit\
+			\Impresora:BUART:rx_postpoll\
+			\Impresora:BUART:rx_state_0\
+			\Impresora:BUART:rx_state_2\
+			\Impresora:BUART:rx_state_3\
+			\Impresora:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\Impresora:BUART:rx_parity_bit\
+			\Impresora:BUART:rx_state_0\
+			\Impresora:BUART:rx_state_3\
+			\Impresora:BUART:rx_status_3\
+
+		 Product terms:
+			!MODIN12_4 * !MODIN12_6 * !\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_state_0\
+			!MODIN12_5 * !MODIN12_6 * !\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_state_0\
+			!\Impresora:BUART:rx_postpoll\ * !\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_parity_bit\ * \Impresora:BUART:rx_state_2\
+			!\Impresora:BUART:rx_postpoll\ * !\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_state_2\
+			!\Impresora:BUART:rx_postpoll\ * !\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_state_2\ * \Impresora:BUART:rx_state_3\
+			!\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_state_2\ * \Impresora:BUART:rx_state_3\
+			!\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_postpoll\ * \Impresora:BUART:rx_state_0\
+
+	PLD 1:
+		 Instances:
+			\Impresora:BUART:rx_load_fifo\
+			\Impresora:BUART:rx_parity_error_pre\
+			\Impresora:BUART:rx_status_2\
+			\Impresora:BUART:rx_state_2\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1506_SYNCOUT
+			\Impresora:BUART:rx_bitclk_enable\
+			\Impresora:BUART:rx_last\
+			\Impresora:BUART:rx_parity_bit\
+			\Impresora:BUART:rx_parity_error_pre\
+			\Impresora:BUART:rx_postpoll\
+			\Impresora:BUART:rx_state_0\
+			\Impresora:BUART:rx_state_2\
+			\Impresora:BUART:rx_state_3\
+			\Impresora:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\Impresora:BUART:rx_load_fifo\
+			\Impresora:BUART:rx_parity_error_pre\
+			\Impresora:BUART:rx_state_2\
+			\Impresora:BUART:rx_status_2\
+
+		 Product terms:
+			!Net_1506_SYNCOUT * !\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_last\
+			!\Impresora:BUART:rx_parity_bit\ * !\Impresora:BUART:rx_parity_error_pre\ * !\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_postpoll\ * \Impresora:BUART:rx_state_3\
+			!\Impresora:BUART:rx_parity_error_pre\ * !\Impresora:BUART:rx_postpoll\ * !\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_parity_bit\ * \Impresora:BUART:rx_state_3\
+			!\Impresora:BUART:rx_postpoll\ * !\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_3\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_parity_error_pre\ * \Impresora:BUART:rx_state_2\
+			!\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:rx_state_2\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_state_3\
+			!\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_parity_error_pre\ * \Impresora:BUART:rx_state_2\ * \Impresora:BUART:rx_state_3\
+			!\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_state_2\
+			!\Impresora:BUART:rx_state_0\ * !\Impresora:BUART:tx_ctrl_mark_last\ * \Impresora:BUART:rx_bitclk_enable\ * \Impresora:BUART:rx_state_3\
+
+	Datapath:
+		 Instances:
+			\Impresora:BUART:sRX:RxShifter:u0\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\Impresora:BUART:rx_bitclk_enable\
+			\Impresora:BUART:rx_load_fifo\
+			\Impresora:BUART:rx_postpoll\
+			\Impresora:BUART:rx_state_0\
+			\Impresora:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\Impresora:BUART:rx_fifofull\
+			\Impresora:BUART:rx_fifonotempty\
+
+	Control, status and sync:
+		 Instances:
+			\Impresora:BUART:sRX:RxBitCounter\ : count7cell
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:rx_counter_load\
+
+		 Output nets:
+			MODIN12_4
+			MODIN12_5
+			MODIN12_6
+			\Impresora:BUART:rx_count_0\
+			\Impresora:BUART:rx_count_1\
+			\Impresora:BUART:rx_count_2\
+
+	Local clock and reset nets:
+
+======================================================
+UDB 4
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Surtidor:BUART:rx_parity_bit\
+			\Surtidor:BUART:rx_state_0\
+			\Surtidor:BUART:rx_status_3\
+			\Surtidor:BUART:rx_state_3\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			MODIN4_4
+			MODIN4_5
+			MODIN4_6
+			\Surtidor:BUART:rx_bitclk_enable\
+			\Surtidor:BUART:rx_parity_bit\
+			\Surtidor:BUART:rx_postpoll\
+			\Surtidor:BUART:rx_state_0\
+			\Surtidor:BUART:rx_state_2\
+			\Surtidor:BUART:rx_state_3\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\Surtidor:BUART:rx_parity_bit\
+			\Surtidor:BUART:rx_state_0\
+			\Surtidor:BUART:rx_state_3\
+			\Surtidor:BUART:rx_status_3\
+
+		 Product terms:
+			!MODIN4_4 * !MODIN4_6 * !\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_state_0\
+			!MODIN4_5 * !MODIN4_6 * !\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_state_0\
+			!\Surtidor:BUART:rx_postpoll\ * !\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_parity_bit\ * \Surtidor:BUART:rx_state_2\
+			!\Surtidor:BUART:rx_postpoll\ * !\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_state_2\
+			!\Surtidor:BUART:rx_postpoll\ * !\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_state_2\ * \Surtidor:BUART:rx_state_3\
+			!\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_state_2\ * \Surtidor:BUART:rx_state_3\
+			!\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_postpoll\ * \Surtidor:BUART:rx_state_0\
+
+	PLD 1:
+		 Instances:
+			\Surtidor:BUART:rx_load_fifo\
+			\Surtidor:BUART:rx_state_2\
+			\Surtidor:BUART:rx_parity_error_pre\
+			\Surtidor:BUART:rx_status_2\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1500_SYNCOUT
+			\Surtidor:BUART:rx_bitclk_enable\
+			\Surtidor:BUART:rx_last\
+			\Surtidor:BUART:rx_parity_bit\
+			\Surtidor:BUART:rx_parity_error_pre\
+			\Surtidor:BUART:rx_postpoll\
+			\Surtidor:BUART:rx_state_0\
+			\Surtidor:BUART:rx_state_2\
+			\Surtidor:BUART:rx_state_3\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\Surtidor:BUART:rx_load_fifo\
+			\Surtidor:BUART:rx_parity_error_pre\
+			\Surtidor:BUART:rx_state_2\
+			\Surtidor:BUART:rx_status_2\
+
+		 Product terms:
+			!Net_1500_SYNCOUT * !\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_last\
+			!\Surtidor:BUART:rx_parity_bit\ * !\Surtidor:BUART:rx_parity_error_pre\ * !\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_postpoll\ * \Surtidor:BUART:rx_state_3\
+			!\Surtidor:BUART:rx_parity_error_pre\ * !\Surtidor:BUART:rx_postpoll\ * !\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_parity_bit\ * \Surtidor:BUART:rx_state_3\
+			!\Surtidor:BUART:rx_postpoll\ * !\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_parity_error_pre\ * \Surtidor:BUART:rx_state_2\
+			!\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:rx_state_2\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_state_3\
+			!\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_parity_error_pre\ * \Surtidor:BUART:rx_state_2\ * \Surtidor:BUART:rx_state_3\
+			!\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_state_2\
+			!\Surtidor:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \Surtidor:BUART:rx_bitclk_enable\ * \Surtidor:BUART:rx_state_3\
+
+	Datapath:
+		 Instances:
+			\Surtidor:BUART:sRX:RxShifter:u0\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\Surtidor:BUART:rx_bitclk_enable\
+			\Surtidor:BUART:rx_load_fifo\
+			\Surtidor:BUART:rx_postpoll\
+			\Surtidor:BUART:rx_state_0\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\Surtidor:BUART:rx_fifofull\
+			\Surtidor:BUART:rx_fifonotempty\
+
+	Control, status and sync:
+		 Instances:
+			\Surtidor:BUART:sRX:RxBitCounter\ : count7cell
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Surtidor:BUART:rx_counter_load\
+
+		 Output nets:
+			MODIN4_4
+			MODIN4_5
+			MODIN4_6
+			\Surtidor:BUART:rx_count_0\
+			\Surtidor:BUART:rx_count_1\
+			\Surtidor:BUART:rx_count_2\
+
+	Local clock and reset nets:
+
+======================================================
+UDB 5
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LP:BUART:rx_parity_bit\
+			\LP:BUART:rx_state_0\
+			\LP:BUART:rx_status_3\
+			\LP:BUART:rx_state_3\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:rx_bitclk_enable\
+			\LP:BUART:rx_count_4\
+			\LP:BUART:rx_count_5\
+			\LP:BUART:rx_count_6\
+			\LP:BUART:rx_parity_bit\
+			\LP:BUART:rx_postpoll\
+			\LP:BUART:rx_state_0\
+			\LP:BUART:rx_state_2\
+			\LP:BUART:rx_state_3\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LP:BUART:rx_parity_bit\
+			\LP:BUART:rx_state_0\
+			\LP:BUART:rx_state_3\
+			\LP:BUART:rx_status_3\
+
+		 Product terms:
+			!\LP:BUART:rx_count_4\ * !\LP:BUART:rx_count_6\ * !\LP:BUART:rx_state_2\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_state_0\
+			!\LP:BUART:rx_count_5\ * !\LP:BUART:rx_count_6\ * !\LP:BUART:rx_state_2\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_state_0\
+			!\LP:BUART:rx_postpoll\ * !\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_parity_bit\ * \LP:BUART:rx_state_2\
+			!\LP:BUART:rx_postpoll\ * !\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_state_2\
+			!\LP:BUART:rx_postpoll\ * !\LP:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_state_2\ * \LP:BUART:rx_state_3\
+			!\LP:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_state_2\ * \LP:BUART:rx_state_3\
+			!\LP:BUART:rx_state_2\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_postpoll\ * \LP:BUART:rx_state_0\
+
+	PLD 1:
+		 Instances:
+			\LP:BUART:rx_load_fifo\
+			\LP:BUART:rx_state_2\
+			\LP:BUART:rx_parity_error_pre\
+			\LP:BUART:rx_status_2\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			Net_1508_SYNCOUT
+			\LP:BUART:rx_bitclk_enable\
+			\LP:BUART:rx_last\
+			\LP:BUART:rx_parity_bit\
+			\LP:BUART:rx_parity_error_pre\
+			\LP:BUART:rx_postpoll\
+			\LP:BUART:rx_state_0\
+			\LP:BUART:rx_state_2\
+			\LP:BUART:rx_state_3\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LP:BUART:rx_load_fifo\
+			\LP:BUART:rx_parity_error_pre\
+			\LP:BUART:rx_state_2\
+			\LP:BUART:rx_status_2\
+
+		 Product terms:
+			!Net_1508_SYNCOUT * !\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_2\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_last\
+			!\LP:BUART:rx_parity_bit\ * !\LP:BUART:rx_parity_error_pre\ * !\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_2\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_postpoll\ * \LP:BUART:rx_state_3\
+			!\LP:BUART:rx_parity_error_pre\ * !\LP:BUART:rx_postpoll\ * !\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_2\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_parity_bit\ * \LP:BUART:rx_state_3\
+			!\LP:BUART:rx_postpoll\ * !\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_3\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_parity_error_pre\ * \LP:BUART:rx_state_2\
+			!\LP:BUART:rx_state_0\ * !\LP:BUART:rx_state_2\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_state_3\
+			!\LP:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_parity_error_pre\ * \LP:BUART:rx_state_2\ * \LP:BUART:rx_state_3\
+			!\LP:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_state_2\
+			!\LP:BUART:rx_state_0\ * !\Surtidor:BUART:tx_ctrl_mark_last\ * \LP:BUART:rx_bitclk_enable\ * \LP:BUART:rx_state_3\
+
+	Datapath:
+		 Instances:
+			\LP:BUART:sRX:RxShifter:u0\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LP:BUART:rx_bitclk_enable\
+			\LP:BUART:rx_load_fifo\
+			\LP:BUART:rx_postpoll\
+			\LP:BUART:rx_state_0\
+			\Surtidor:BUART:tx_ctrl_mark_last\
+
+		 Output nets:
+			\LP:BUART:rx_fifofull\
+			\LP:BUART:rx_fifonotempty\
+
+	Control, status and sync:
+		 Instances:
+			\LP:BUART:sRX:RxBitCounter\ : count7cell
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:rx_counter_load\
+
+		 Output nets:
+			\LP:BUART:rx_count_0\
+			\LP:BUART:rx_count_1\
+			\LP:BUART:rx_count_2\
+			\LP:BUART:rx_count_4\
+			\LP:BUART:rx_count_5\
+			\LP:BUART:rx_count_6\
+
+	Local clock and reset nets:
+
+======================================================
+UDB 6
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Impresora:BUART:tx_status_0\
+			\Impresora:BUART:txn\
+			__ONE__
+			\Impresora:BUART:tx_ctrl_mark_last\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:tx_bitclk\
+			\Impresora:BUART:tx_bitclk_enable_pre\
+			\Impresora:BUART:tx_counter_dp\
+			\Impresora:BUART:tx_fifo_empty\
+			\Impresora:BUART:tx_parity_bit\
+			\Impresora:BUART:tx_shift_out\
+			\Impresora:BUART:tx_state_0\
+			\Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_state_2\
+			\Impresora:BUART:txn\
+
+		 Output nets:
+			\Impresora:BUART:tx_ctrl_mark_last\
+			\Impresora:BUART:tx_status_0\
+			\Impresora:BUART:txn\
+			__ONE__
+
+		 Product terms:
+			!\Impresora:BUART:tx_bitclk\ * !\Impresora:BUART:tx_state_1\ * !\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_state_0\
+			!\Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_state_1\ * \Impresora:BUART:txn\
+			!\Impresora:BUART:tx_counter_dp\ * !\Impresora:BUART:tx_shift_out\ * !\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_state_1\
+			!\Impresora:BUART:tx_parity_bit\ * !\Impresora:BUART:tx_state_0\ * \Impresora:BUART:tx_counter_dp\ * \Impresora:BUART:tx_state_1\ * \Impresora:BUART:txn\
+			!\Impresora:BUART:tx_shift_out\ * !\Impresora:BUART:tx_state_1\ * !\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_state_0\
+			!\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_1\ * \Impresora:BUART:tx_bitclk_enable_pre\ * \Impresora:BUART:tx_fifo_empty\ * \Impresora:BUART:tx_state_2\
+			!\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_2\ * !\Impresora:BUART:txn\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_counter_dp\ * \Impresora:BUART:tx_parity_bit\ * \Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_state_2\ * \Impresora:BUART:txn\
+
+	PLD 1:
+		 Instances:
+			\Impresora:BUART:tx_state_2\
+			\Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_bitclk\
+			\Impresora:BUART:tx_parity_bit\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:tx_bitclk\
+			\Impresora:BUART:tx_bitclk_enable_pre\
+			\Impresora:BUART:tx_parity_bit\
+			\Impresora:BUART:tx_state_0\
+			\Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_state_2\
+			\Impresora:BUART:txn\
+
+		 Output nets:
+			\Impresora:BUART:tx_bitclk\
+			\Impresora:BUART:tx_parity_bit\
+			\Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_state_2\
+
+		 Product terms:
+			!\Impresora:BUART:tx_bitclk_enable_pre\
+			!\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_1\ * \Impresora:BUART:tx_bitclk_enable_pre\ * \Impresora:BUART:tx_state_2\
+			!\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_1\ * \Impresora:BUART:tx_state_2\
+			!\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_2\ * !\Impresora:BUART:txn\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_state_1\
+			!\Impresora:BUART:tx_state_1\ * !\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_parity_bit\ * \Impresora:BUART:tx_state_0\
+			!\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_state_0\
+			!\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_state_0\ * \Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_bitclk_enable_pre\ * \Impresora:BUART:tx_state_0\ * \Impresora:BUART:tx_state_1\ * \Impresora:BUART:tx_state_2\
+
+	Datapath:
+		 Instances:
+			\Impresora:BUART:sTX:TxShifter:u0\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\Impresora:BUART:tx_bitclk_enable_pre\
+			\Impresora:BUART:tx_state_0\
+			\Impresora:BUART:tx_state_1\
+
+		 Output nets:
+			\Impresora:BUART:tx_fifo_empty\
+			\Impresora:BUART:tx_fifo_notfull\
+			\Impresora:BUART:tx_shift_out\
+
+	Control, status and sync:
+		 Instances:
+			\Impresora:BUART:sTX:TxSts\ : statusicell
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:tx_fifo_empty\
+			\Impresora:BUART:tx_fifo_notfull\
+			\Impresora:BUART:tx_status_0\
+			\Impresora:BUART:tx_status_2\
+
+		 Output nets:
+
+	Local clock and reset nets:
+
+======================================================
+UDB 7
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\Surtidor:BUART:tx_ctrl_mark_last\
+			\Surtidor:BUART:txn\
+			\Surtidor:BUART:tx_status_0\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Surtidor:BUART:tx_bitclk\
+			\Surtidor:BUART:tx_bitclk_enable_pre\
+			\Surtidor:BUART:tx_counter_dp\
+			\Surtidor:BUART:tx_fifo_empty\
+			\Surtidor:BUART:tx_parity_bit\
+			\Surtidor:BUART:tx_shift_out\
+			\Surtidor:BUART:tx_state_0\
+			\Surtidor:BUART:tx_state_1\
+			\Surtidor:BUART:tx_state_2\
+			\Surtidor:BUART:txn\
+
+		 Output nets:
+			\Surtidor:BUART:tx_ctrl_mark_last\
+			\Surtidor:BUART:tx_status_0\
+			\Surtidor:BUART:txn\
+
+		 Product terms:
+			!\Surtidor:BUART:tx_bitclk\ * !\Surtidor:BUART:tx_state_1\ * !\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:tx_state_0\
+			!\Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:txn\
+			!\Surtidor:BUART:tx_counter_dp\ * !\Surtidor:BUART:tx_shift_out\ * !\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_state_1\
+			!\Surtidor:BUART:tx_parity_bit\ * !\Surtidor:BUART:tx_state_0\ * \Surtidor:BUART:tx_counter_dp\ * \Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:txn\
+			!\Surtidor:BUART:tx_shift_out\ * !\Surtidor:BUART:tx_state_1\ * !\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:tx_state_0\
+			!\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_1\ * \Surtidor:BUART:tx_bitclk_enable_pre\ * \Surtidor:BUART:tx_fifo_empty\ * \Surtidor:BUART:tx_state_2\
+			!\Surtidor:BUART:tx_state_0\ * !\Surtidor:BUART:tx_state_2\ * !\Surtidor:BUART:txn\ * \Surtidor:BUART:tx_bitclk\ * \Surtidor:BUART:tx_counter_dp\ * \Surtidor:BUART:tx_parity_bit\ * \Surtidor:BUART:tx_state_1\
+			\Surtidor:BUART:tx_state_2\ * \Surtidor:BUART:txn\
+
+	PLD 1:
+		 Instances:
+			\LP:BUART:txn\
+			\LP:BUART:tx_status_0\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:tx_bitclk\
+			\LP:BUART:tx_bitclk_enable_pre\
+			\LP:BUART:tx_counter_dp\
+			\LP:BUART:tx_fifo_empty\
+			\LP:BUART:tx_parity_bit\
+			\LP:BUART:tx_shift_out\
+			\LP:BUART:tx_state_0\
+			\LP:BUART:tx_state_1\
+			\LP:BUART:tx_state_2\
+			\LP:BUART:txn\
+
+		 Output nets:
+			\LP:BUART:tx_status_0\
+			\LP:BUART:txn\
+
+		 Product terms:
+			!\LP:BUART:tx_bitclk\ * !\LP:BUART:tx_state_1\ * !\LP:BUART:tx_state_2\ * \LP:BUART:tx_state_0\
+			!\LP:BUART:tx_bitclk\ * \LP:BUART:tx_state_1\ * \LP:BUART:txn\
+			!\LP:BUART:tx_counter_dp\ * !\LP:BUART:tx_shift_out\ * !\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_2\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_state_1\
+			!\LP:BUART:tx_parity_bit\ * !\LP:BUART:tx_state_0\ * \LP:BUART:tx_counter_dp\ * \LP:BUART:tx_state_1\ * \LP:BUART:txn\
+			!\LP:BUART:tx_shift_out\ * !\LP:BUART:tx_state_1\ * !\LP:BUART:tx_state_2\ * \LP:BUART:tx_state_0\
+			!\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_1\ * \LP:BUART:tx_bitclk_enable_pre\ * \LP:BUART:tx_fifo_empty\ * \LP:BUART:tx_state_2\
+			!\LP:BUART:tx_state_0\ * !\LP:BUART:tx_state_2\ * !\LP:BUART:txn\ * \LP:BUART:tx_bitclk\ * \LP:BUART:tx_counter_dp\ * \LP:BUART:tx_parity_bit\ * \LP:BUART:tx_state_1\
+			\LP:BUART:tx_state_2\ * \LP:BUART:txn\
+
+	Datapath:
+		 Instances:
+			\LP:BUART:sTX:TxShifter:u0\
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LP:BUART:tx_bitclk_enable_pre\
+			\LP:BUART:tx_state_0\
+			\LP:BUART:tx_state_1\
+
+		 Output nets:
+			\LP:BUART:tx_fifo_empty\
+			\LP:BUART:tx_fifo_notfull\
+			\LP:BUART:tx_shift_out\
+
+	Control, status and sync:
+		 Instances:
+			\LP:BUART:sTX:TxSts\ : statusicell
+
+		 Clock net: Net_1452
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LP:BUART:tx_fifo_empty\
+			\LP:BUART:tx_fifo_notfull\
+			\LP:BUART:tx_status_0\
+			\LP:BUART:tx_status_2\
+
+		 Output nets:
+
+	Local clock and reset nets:
+
+======================================================
+UDB 8
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_1:BUART:txn\
+			\LCD_1:BUART:tx_state_1\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:tx_bitclk\
+			\LCD_1:BUART:tx_bitclk_enable_pre\
+			\LCD_1:BUART:tx_counter_dp\
+			\LCD_1:BUART:tx_shift_out\
+			\LCD_1:BUART:tx_state_0\
+			\LCD_1:BUART:tx_state_1\
+			\LCD_1:BUART:tx_state_2\
+			\LCD_1:BUART:txn\
+
+		 Output nets:
+			\LCD_1:BUART:tx_state_1\
+			\LCD_1:BUART:txn\
+
+		 Product terms:
+			!\LCD_1:BUART:tx_bitclk\ * !\LCD_1:BUART:tx_state_1\ * !\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_state_0\
+			!\LCD_1:BUART:tx_bitclk\ * \LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:txn\
+			!\LCD_1:BUART:tx_counter_dp\ * !\LCD_1:BUART:tx_shift_out\ * !\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_bitclk\ * \LCD_1:BUART:tx_state_1\
+			!\LCD_1:BUART:tx_shift_out\ * !\LCD_1:BUART:tx_state_1\ * !\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_state_0\
+			!\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_bitclk\ * \LCD_1:BUART:tx_counter_dp\ * \LCD_1:BUART:tx_state_1\
+			!\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:tx_bitclk\ * \LCD_1:BUART:tx_state_0\
+			\LCD_1:BUART:tx_bitclk_enable_pre\ * \LCD_1:BUART:tx_state_0\ * \LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_state_2\
+			\LCD_1:BUART:tx_state_2\ * \LCD_1:BUART:txn\
+
+	PLD 1:
+		 Instances:
+			\PC:BUART:txn\
+			\LCD_1:BUART:counter_load_not\
+			\LCD_1:BUART:tx_status_0\
+
+		 Clock net: \PC:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:tx_bitclk_enable_pre\
+			\LCD_1:BUART:tx_fifo_empty\
+			\LCD_1:BUART:tx_state_0\
+			\LCD_1:BUART:tx_state_1\
+			\LCD_1:BUART:tx_state_2\
+			\PC:BUART:tx_bitclk\
+			\PC:BUART:tx_counter_dp\
+			\PC:BUART:tx_shift_out\
+			\PC:BUART:tx_state_0\
+			\PC:BUART:tx_state_1\
+			\PC:BUART:tx_state_2\
+			\PC:BUART:txn\
+
+		 Output nets:
+			\LCD_1:BUART:counter_load_not\
+			\LCD_1:BUART:tx_status_0\
+			\PC:BUART:txn\
+
+		 Product terms:
+			!\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_1\ * !\LCD_1:BUART:tx_state_2\
+			!\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_bitclk_enable_pre\
+			!\LCD_1:BUART:tx_state_0\ * !\LCD_1:BUART:tx_state_1\ * \LCD_1:BUART:tx_bitclk_enable_pre\ * \LCD_1:BUART:tx_fifo_empty\ * \LCD_1:BUART:tx_state_2\
+			!\PC:BUART:tx_bitclk\ * !\PC:BUART:tx_state_1\ * !\PC:BUART:tx_state_2\ * \PC:BUART:tx_state_0\
+			!\PC:BUART:tx_bitclk\ * \PC:BUART:tx_state_1\ * \PC:BUART:txn\
+			!\PC:BUART:tx_counter_dp\ * !\PC:BUART:tx_shift_out\ * !\PC:BUART:tx_state_0\ * !\PC:BUART:tx_state_2\ * \PC:BUART:tx_bitclk\ * \PC:BUART:tx_state_1\
+			!\PC:BUART:tx_shift_out\ * !\PC:BUART:tx_state_1\ * !\PC:BUART:tx_state_2\ * \PC:BUART:tx_state_0\
+			\PC:BUART:tx_state_2\ * \PC:BUART:txn\
+
+	Datapath:
+		 Instances:
+			\LCD_1:BUART:sTX:TxShifter:u0\
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LCD_1:BUART:tx_bitclk_enable_pre\
+			\LCD_1:BUART:tx_state_0\
+			\LCD_1:BUART:tx_state_1\
+
+		 Output nets:
+			\LCD_1:BUART:tx_fifo_empty\
+			\LCD_1:BUART:tx_fifo_notfull\
+			\LCD_1:BUART:tx_shift_out\
+
+	Control, status and sync:
+		 Instances:
+			\LCD_1:BUART:sTX:TxSts\ : statusicell
+
+		 Clock net: \LCD_1:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_1:BUART:tx_fifo_empty\
+			\LCD_1:BUART:tx_fifo_notfull\
+			\LCD_1:BUART:tx_status_0\
+			\LCD_1:BUART:tx_status_2\
+
+		 Output nets:
+
+	Local clock and reset nets:
+
+======================================================
+UDB 9
+------------------------------------------------------
+	PLD 0:
+		 Instances:
+			\LCD_2:BUART:txn\
+			\LCD_2:BUART:tx_state_1\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_2:BUART:tx_bitclk\
+			\LCD_2:BUART:tx_bitclk_enable_pre\
+			\LCD_2:BUART:tx_counter_dp\
+			\LCD_2:BUART:tx_shift_out\
+			\LCD_2:BUART:tx_state_0\
+			\LCD_2:BUART:tx_state_1\
+			\LCD_2:BUART:tx_state_2\
+			\LCD_2:BUART:txn\
+
+		 Output nets:
+			\LCD_2:BUART:tx_state_1\
+			\LCD_2:BUART:txn\
+
+		 Product terms:
+			!\LCD_2:BUART:tx_bitclk\ * !\LCD_2:BUART:tx_state_1\ * !\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_state_0\
+			!\LCD_2:BUART:tx_bitclk\ * \LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:txn\
+			!\LCD_2:BUART:tx_counter_dp\ * !\LCD_2:BUART:tx_shift_out\ * !\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_bitclk\ * \LCD_2:BUART:tx_state_1\
+			!\LCD_2:BUART:tx_shift_out\ * !\LCD_2:BUART:tx_state_1\ * !\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_state_0\
+			!\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_bitclk\ * \LCD_2:BUART:tx_counter_dp\ * \LCD_2:BUART:tx_state_1\
+			!\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:tx_bitclk\ * \LCD_2:BUART:tx_state_0\
+			\LCD_2:BUART:tx_bitclk_enable_pre\ * \LCD_2:BUART:tx_state_0\ * \LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_state_2\
+			\LCD_2:BUART:tx_state_2\ * \LCD_2:BUART:txn\
+
+	PLD 1:
+		 Instances:
+			\Impresora:BUART:tx_state_0\
+			\LCD_2:BUART:counter_load_not\
+			\LCD_2:BUART:tx_status_0\
+
+		 Clock net: \Impresora:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\Impresora:BUART:tx_bitclk\
+			\Impresora:BUART:tx_bitclk_enable_pre\
+			\Impresora:BUART:tx_counter_dp\
+			\Impresora:BUART:tx_fifo_empty\
+			\Impresora:BUART:tx_state_0\
+			\Impresora:BUART:tx_state_1\
+			\Impresora:BUART:tx_state_2\
+			\LCD_2:BUART:tx_bitclk_enable_pre\
+			\LCD_2:BUART:tx_fifo_empty\
+			\LCD_2:BUART:tx_state_0\
+			\LCD_2:BUART:tx_state_1\
+			\LCD_2:BUART:tx_state_2\
+
+		 Output nets:
+			\Impresora:BUART:tx_state_0\
+			\LCD_2:BUART:counter_load_not\
+			\LCD_2:BUART:tx_status_0\
+
+		 Product terms:
+			!\Impresora:BUART:tx_fifo_empty\ * !\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_1\ * !\Impresora:BUART:tx_state_2\
+			!\Impresora:BUART:tx_fifo_empty\ * !\Impresora:BUART:tx_state_0\ * !\Impresora:BUART:tx_state_1\ * \Impresora:BUART:tx_bitclk_enable_pre\
+			!\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_counter_dp\ * \Impresora:BUART:tx_state_1\
+			!\Impresora:BUART:tx_state_2\ * \Impresora:BUART:tx_bitclk\ * \Impresora:BUART:tx_state_0\
+			!\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_1\ * !\LCD_2:BUART:tx_state_2\
+			!\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_bitclk_enable_pre\
+			!\LCD_2:BUART:tx_state_0\ * !\LCD_2:BUART:tx_state_1\ * \LCD_2:BUART:tx_bitclk_enable_pre\ * \LCD_2:BUART:tx_fifo_empty\ * \LCD_2:BUART:tx_state_2\
+			\Impresora:BUART:tx_bitclk_enable_pre\ * \Impresora:BUART:tx_fifo_empty\ * \Impresora:BUART:tx_state_0\ * \Impresora:BUART:tx_state_1\ * \Impresora:BUART:tx_state_2\
+
+	Datapath:
+		 Instances:
+			\LCD_2:BUART:sTX:TxShifter:u0\
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			ClockBlock_BUS_CLK
+			\LCD_2:BUART:tx_bitclk_enable_pre\
+			\LCD_2:BUART:tx_state_0\
+			\LCD_2:BUART:tx_state_1\
+
+		 Output nets:
+			\LCD_2:BUART:tx_fifo_empty\
+			\LCD_2:BUART:tx_fifo_notfull\
+			\LCD_2:BUART:tx_shift_out\
+
+	Control, status and sync:
+		 Instances:
+			\LCD_2:BUART:sTX:TxSts\ : statusicell
+
+		 Clock net: \LCD_2:Net_9\
+		 Set/Reset net: 
+		 Enable net: 
+
+		 Input nets:
+			\LCD_2:BUART:tx_fifo_empty\
+			\LCD_2:BUART:tx_fifo_notfull\
+			\LCD_2:BUART:tx_status_0\
+			\LCD_2:BUART:tx_status_2\
+
+		 Output nets:
+
+	Local clock and reset nets:

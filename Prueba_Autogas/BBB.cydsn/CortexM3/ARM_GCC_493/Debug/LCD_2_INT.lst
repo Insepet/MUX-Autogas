@@ -1,0 +1,885 @@
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"LCD_2_INT.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.LCD_2_RXISR,"ax",%progbits
+  19              		.align	2
+  20              		.global	LCD_2_RXISR
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	LCD_2_RXISR, %function
+  24              	LCD_2_RXISR:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\LCD_2_INT.c"
+   1:.\Generated_Source\PSoC5/LCD_2_INT.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/LCD_2_INT.c **** * File Name: LCD_2INT.c
+   3:.\Generated_Source\PSoC5/LCD_2_INT.c **** * Version 2.50
+   4:.\Generated_Source\PSoC5/LCD_2_INT.c **** *
+   5:.\Generated_Source\PSoC5/LCD_2_INT.c **** * Description:
+   6:.\Generated_Source\PSoC5/LCD_2_INT.c **** *  This file provides all Interrupt Service functionality of the UART component
+   7:.\Generated_Source\PSoC5/LCD_2_INT.c **** *
+   8:.\Generated_Source\PSoC5/LCD_2_INT.c **** ********************************************************************************
+   9:.\Generated_Source\PSoC5/LCD_2_INT.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  10:.\Generated_Source\PSoC5/LCD_2_INT.c **** * You may use this file only in accordance with the license, terms, conditions,
+  11:.\Generated_Source\PSoC5/LCD_2_INT.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:.\Generated_Source\PSoC5/LCD_2_INT.c **** * the software package with which this file was provided.
+  13:.\Generated_Source\PSoC5/LCD_2_INT.c **** *******************************************************************************/
+  14:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  15:.\Generated_Source\PSoC5/LCD_2_INT.c **** #include "LCD_2.h"
+  16:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  17:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  18:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  19:.\Generated_Source\PSoC5/LCD_2_INT.c **** /***************************************
+  20:.\Generated_Source\PSoC5/LCD_2_INT.c **** * Custom Declarations
+  21:.\Generated_Source\PSoC5/LCD_2_INT.c **** ***************************************/
+  22:.\Generated_Source\PSoC5/LCD_2_INT.c **** /* `#START CUSTOM_DECLARATIONS` Place your declaration here */
+  23:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  24:.\Generated_Source\PSoC5/LCD_2_INT.c **** /* `#END` */
+  25:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  26:.\Generated_Source\PSoC5/LCD_2_INT.c **** #if (LCD_2_RX_INTERRUPT_ENABLED && (LCD_2_RX_ENABLED || LCD_2_HD_ENABLED))
+  27:.\Generated_Source\PSoC5/LCD_2_INT.c ****     /*******************************************************************************
+  28:.\Generated_Source\PSoC5/LCD_2_INT.c ****     * Function Name: LCD_2_RXISR
+  29:.\Generated_Source\PSoC5/LCD_2_INT.c ****     ********************************************************************************
+  30:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *
+  31:.\Generated_Source\PSoC5/LCD_2_INT.c ****     * Summary:
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  Interrupt Service Routine for RX portion of the UART
+  33:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *
+  34:.\Generated_Source\PSoC5/LCD_2_INT.c ****     * Parameters:
+  35:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  None.
+  36:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *
+  37:.\Generated_Source\PSoC5/LCD_2_INT.c ****     * Return:
+  38:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  None.
+  39:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *
+  40:.\Generated_Source\PSoC5/LCD_2_INT.c ****     * Global Variables:
+  41:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  LCD_2_rxBuffer - RAM buffer pointer for save received data.
+  42:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  LCD_2_rxBufferWrite - cyclic index for write to rxBuffer,
+  43:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     increments after each byte saved to buffer.
+  44:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  LCD_2_rxBufferRead - cyclic index for read from rxBuffer,
+  45:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     checked to detect overflow condition.
+  46:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  LCD_2_rxBufferOverflow - software overflow flag. Set to one
+  47:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     when LCD_2_rxBufferWrite index overtakes
+  48:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     LCD_2_rxBufferRead index.
+  49:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  LCD_2_rxBufferLoopDetect - additional variable to detect overflow.
+  50:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     Set to one when LCD_2_rxBufferWrite is equal to
+  51:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *    LCD_2_rxBufferRead
+  52:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  LCD_2_rxAddressMode - this variable contains the Address mode,
+  53:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     selected in customizer or set by UART_SetRxAddressMode() API.
+  54:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *  LCD_2_rxAddressDetected - set to 1 when correct address received,
+  55:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     and analysed to store following addressed data bytes to the buffer.
+  56:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *     When not correct address received, set to 0 to skip following data bytes.
+  57:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *
+  58:.\Generated_Source\PSoC5/LCD_2_INT.c ****     *******************************************************************************/
+  59:.\Generated_Source\PSoC5/LCD_2_INT.c ****     CY_ISR(LCD_2_RXISR)
+  60:.\Generated_Source\PSoC5/LCD_2_INT.c ****     {
+  27              		.loc 1 60 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 8
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32 0000 80B4     		push	{r7}
+  33              		.cfi_def_cfa_offset 4
+  34              		.cfi_offset 7, -4
+  35 0002 83B0     		sub	sp, sp, #12
+  36              		.cfi_def_cfa_offset 16
+  37 0004 00AF     		add	r7, sp, #0
+  38              		.cfi_def_cfa_register 7
+  61:.\Generated_Source\PSoC5/LCD_2_INT.c ****         uint8 readData;
+  62:.\Generated_Source\PSoC5/LCD_2_INT.c ****         uint8 readStatus;
+  63:.\Generated_Source\PSoC5/LCD_2_INT.c ****         uint8 increment_pointer = 0u;
+  39              		.loc 1 63 0
+  40 0006 0023     		movs	r3, #0
+  41 0008 FB71     		strb	r3, [r7, #7]
+  42              	.L6:
+  64:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  65:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #if(CY_PSOC3)
+  66:.\Generated_Source\PSoC5/LCD_2_INT.c ****         uint8 int_en;
+  67:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #endif /* (CY_PSOC3) */
+  68:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  69:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #ifdef LCD_2_RXISR_ENTRY_CALLBACK
+  70:.\Generated_Source\PSoC5/LCD_2_INT.c ****         LCD_2_RXISR_EntryCallback();
+  71:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #endif /* LCD_2_RXISR_ENTRY_CALLBACK */
+  72:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 3
+
+
+  73:.\Generated_Source\PSoC5/LCD_2_INT.c ****         /* User code required at start of ISR */
+  74:.\Generated_Source\PSoC5/LCD_2_INT.c ****         /* `#START LCD_2_RXISR_START` */
+  75:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  76:.\Generated_Source\PSoC5/LCD_2_INT.c ****         /* `#END` */
+  77:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  78:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #if(CY_PSOC3)   /* Make sure nested interrupt is enabled */
+  79:.\Generated_Source\PSoC5/LCD_2_INT.c ****         int_en = EA;
+  80:.\Generated_Source\PSoC5/LCD_2_INT.c ****         CyGlobalIntEnable;
+  81:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #endif /* (CY_PSOC3) */
+  82:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  83:.\Generated_Source\PSoC5/LCD_2_INT.c ****         do
+  84:.\Generated_Source\PSoC5/LCD_2_INT.c ****         {
+  85:.\Generated_Source\PSoC5/LCD_2_INT.c ****             /* Read receiver status register */
+  86:.\Generated_Source\PSoC5/LCD_2_INT.c ****             readStatus = LCD_2_RXSTATUS_REG;
+  43              		.loc 1 86 0
+  44 000a 2B4B     		ldr	r3, .L7
+  45 000c 1B78     		ldrb	r3, [r3]
+  46 000e BB71     		strb	r3, [r7, #6]
+  87:.\Generated_Source\PSoC5/LCD_2_INT.c ****             /* Copy the same status to readData variable for backward compatibility support 
+  88:.\Generated_Source\PSoC5/LCD_2_INT.c ****             *  of the user code in LCD_2_RXISR_ERROR` section. 
+  89:.\Generated_Source\PSoC5/LCD_2_INT.c ****             */
+  90:.\Generated_Source\PSoC5/LCD_2_INT.c ****             readData = readStatus;
+  47              		.loc 1 90 0
+  48 0010 BB79     		ldrb	r3, [r7, #6]
+  49 0012 7B71     		strb	r3, [r7, #5]
+  91:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+  92:.\Generated_Source\PSoC5/LCD_2_INT.c ****             if((readStatus & (LCD_2_RX_STS_BREAK | 
+  93:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             LCD_2_RX_STS_PAR_ERROR |
+  94:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             LCD_2_RX_STS_STOP_ERROR | 
+  95:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             LCD_2_RX_STS_OVERRUN)) != 0u)
+  50              		.loc 1 95 0
+  51 0014 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+  52 0016 03F01E03 		and	r3, r3, #30
+  92:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             LCD_2_RX_STS_PAR_ERROR |
+  53              		.loc 1 92 0
+  54 001a 002B     		cmp	r3, #0
+  55 001c 0BD0     		beq	.L2
+  96:.\Generated_Source\PSoC5/LCD_2_INT.c ****             {
+  97:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 /* ERROR handling. */
+  98:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 LCD_2_errorStatus |= readStatus & ( LCD_2_RX_STS_BREAK | 
+  56              		.loc 1 98 0
+  57 001e BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+  58 0020 03F01E03 		and	r3, r3, #30
+  59 0024 DAB2     		uxtb	r2, r3
+  60 0026 254B     		ldr	r3, .L7+4
+  61 0028 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  62 002a DBB2     		uxtb	r3, r3
+  63 002c 1343     		orrs	r3, r3, r2
+  64 002e DBB2     		uxtb	r3, r3
+  65 0030 DAB2     		uxtb	r2, r3
+  66 0032 224B     		ldr	r3, .L7+4
+  67 0034 1A70     		strb	r2, [r3]
+  68              	.L2:
+  99:.\Generated_Source\PSoC5/LCD_2_INT.c ****                                                             LCD_2_RX_STS_PAR_ERROR | 
+ 100:.\Generated_Source\PSoC5/LCD_2_INT.c ****                                                             LCD_2_RX_STS_STOP_ERROR | 
+ 101:.\Generated_Source\PSoC5/LCD_2_INT.c ****                                                             LCD_2_RX_STS_OVERRUN);
+ 102:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 /* `#START LCD_2_RXISR_ERROR` */
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 4
+
+
+ 103:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 104:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 /* `#END` */
+ 105:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 
+ 106:.\Generated_Source\PSoC5/LCD_2_INT.c ****             #ifdef LCD_2_RXISR_ERROR_CALLBACK
+ 107:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 LCD_2_RXISR_ERROR_Callback();
+ 108:.\Generated_Source\PSoC5/LCD_2_INT.c ****             #endif /* LCD_2_RXISR_ERROR_CALLBACK */
+ 109:.\Generated_Source\PSoC5/LCD_2_INT.c ****             }
+ 110:.\Generated_Source\PSoC5/LCD_2_INT.c ****             
+ 111:.\Generated_Source\PSoC5/LCD_2_INT.c ****             if((readStatus & LCD_2_RX_STS_FIFO_NOTEMPTY) != 0u)
+  69              		.loc 1 111 0
+  70 0036 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+  71 0038 03F02003 		and	r3, r3, #32
+  72 003c 002B     		cmp	r3, #0
+  73 003e 30D0     		beq	.L3
+ 112:.\Generated_Source\PSoC5/LCD_2_INT.c ****             {
+ 113:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 /* Read data from the RX data register */
+ 114:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 readData = LCD_2_RXDATA_REG;
+  74              		.loc 1 114 0
+  75 0040 1F4B     		ldr	r3, .L7+8
+  76 0042 1B78     		ldrb	r3, [r3]
+  77 0044 7B71     		strb	r3, [r7, #5]
+ 115:.\Generated_Source\PSoC5/LCD_2_INT.c ****             #if (LCD_2_RXHW_ADDRESS_ENABLED)
+ 116:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 if(LCD_2_rxAddressMode == (uint8)LCD_2__B_UART__AM_SW_DETECT_TO_BUFFER)
+ 117:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 {
+ 118:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     if((readStatus & LCD_2_RX_STS_MRKSPC) != 0u)
+ 119:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     {
+ 120:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         if ((readStatus & LCD_2_RX_STS_ADDR_MATCH) != 0u)
+ 121:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         {
+ 122:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             LCD_2_rxAddressDetected = 1u;
+ 123:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         }
+ 124:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         else
+ 125:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         {
+ 126:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             LCD_2_rxAddressDetected = 0u;
+ 127:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         }
+ 128:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     }
+ 129:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     if(LCD_2_rxAddressDetected != 0u)
+ 130:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     {   /* Store only addressed data */
+ 131:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         LCD_2_rxBuffer[LCD_2_rxBufferWrite] = readData;
+ 132:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         increment_pointer = 1u;
+ 133:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     }
+ 134:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 }
+ 135:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 else /* Without software addressing */
+ 136:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 {
+ 137:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     LCD_2_rxBuffer[LCD_2_rxBufferWrite] = readData;
+ 138:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     increment_pointer = 1u;
+ 139:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 }
+ 140:.\Generated_Source\PSoC5/LCD_2_INT.c ****             #else  /* Without addressing */
+ 141:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 LCD_2_rxBuffer[LCD_2_rxBufferWrite] = readData;
+  78              		.loc 1 141 0
+  79 0046 1F4B     		ldr	r3, .L7+12
+  80 0048 1B78     		ldrb	r3, [r3]
+  81 004a DBB2     		uxtb	r3, r3
+  82 004c 1946     		mov	r1, r3
+  83 004e 1E4A     		ldr	r2, .L7+16
+  84 0050 7B79     		ldrb	r3, [r7, #5]
+  85 0052 5354     		strb	r3, [r2, r1]
+ 142:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 increment_pointer = 1u;
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 5
+
+
+  86              		.loc 1 142 0
+  87 0054 0123     		movs	r3, #1
+  88 0056 FB71     		strb	r3, [r7, #7]
+ 143:.\Generated_Source\PSoC5/LCD_2_INT.c ****             #endif /* (LCD_2_RXHW_ADDRESS_ENABLED) */
+ 144:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 145:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 /* Do not increment buffer pointer when skip not addressed data */
+ 146:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 if(increment_pointer != 0u)
+  89              		.loc 1 146 0
+  90 0058 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+  91 005a 002B     		cmp	r3, #0
+  92 005c 21D0     		beq	.L3
+ 147:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 {
+ 148:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     if(LCD_2_rxBufferLoopDetect != 0u)
+  93              		.loc 1 148 0
+  94 005e 1B4B     		ldr	r3, .L7+20
+  95 0060 1B78     		ldrb	r3, [r3]
+  96 0062 DBB2     		uxtb	r3, r3
+  97 0064 002B     		cmp	r3, #0
+  98 0066 02D0     		beq	.L4
+ 149:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     {   /* Set Software Buffer status Overflow */
+ 150:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         LCD_2_rxBufferOverflow = 1u;
+  99              		.loc 1 150 0
+ 100 0068 194B     		ldr	r3, .L7+24
+ 101 006a 0122     		movs	r2, #1
+ 102 006c 1A70     		strb	r2, [r3]
+ 103              	.L4:
+ 151:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     }
+ 152:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     /* Set next pointer. */
+ 153:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     LCD_2_rxBufferWrite++;
+ 104              		.loc 1 153 0
+ 105 006e 154B     		ldr	r3, .L7+12
+ 106 0070 1B78     		ldrb	r3, [r3]
+ 107 0072 DBB2     		uxtb	r3, r3
+ 108 0074 0133     		adds	r3, r3, #1
+ 109 0076 DAB2     		uxtb	r2, r3
+ 110 0078 124B     		ldr	r3, .L7+12
+ 111 007a 1A70     		strb	r2, [r3]
+ 154:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 155:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     /* Check pointer for a loop condition */
+ 156:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     if(LCD_2_rxBufferWrite >= LCD_2_RX_BUFFER_SIZE)
+ 112              		.loc 1 156 0
+ 113 007c 114B     		ldr	r3, .L7+12
+ 114 007e 1B78     		ldrb	r3, [r3]
+ 115 0080 DBB2     		uxtb	r3, r3
+ 116 0082 072B     		cmp	r3, #7
+ 117 0084 02D9     		bls	.L5
+ 157:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     {
+ 158:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         LCD_2_rxBufferWrite = 0u;
+ 118              		.loc 1 158 0
+ 119 0086 0F4B     		ldr	r3, .L7+12
+ 120 0088 0022     		movs	r2, #0
+ 121 008a 1A70     		strb	r2, [r3]
+ 122              	.L5:
+ 159:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     }
+ 160:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 161:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     /* Detect pre-overload condition and set flag */
+ 162:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     if(LCD_2_rxBufferWrite == LCD_2_rxBufferRead)
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 6
+
+
+ 123              		.loc 1 162 0
+ 124 008c 0D4B     		ldr	r3, .L7+12
+ 125 008e 1B78     		ldrb	r3, [r3]
+ 126 0090 DAB2     		uxtb	r2, r3
+ 127 0092 104B     		ldr	r3, .L7+28
+ 128 0094 1B78     		ldrb	r3, [r3]
+ 129 0096 DBB2     		uxtb	r3, r3
+ 130 0098 9A42     		cmp	r2, r3
+ 131 009a 02D1     		bne	.L3
+ 163:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     {
+ 164:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         LCD_2_rxBufferLoopDetect = 1u;
+ 132              		.loc 1 164 0
+ 133 009c 0B4B     		ldr	r3, .L7+20
+ 134 009e 0122     		movs	r2, #1
+ 135 00a0 1A70     		strb	r2, [r3]
+ 136              	.L3:
+ 165:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         /* When Hardware Flow Control selected */
+ 166:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         #if (LCD_2_FLOW_CONTROL != 0u)
+ 167:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             /* Disable RX interrupt mask, it is enabled when user read data from th
+ 168:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             LCD_2_RXSTATUS_MASK_REG  &= (uint8)~LCD_2_RX_STS_FIFO_NOTEMPTY;
+ 169:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             CyIntClearPending(LCD_2_RX_VECT_NUM);
+ 170:.\Generated_Source\PSoC5/LCD_2_INT.c ****                             break; /* Break the reading of the FIFO loop, leave the data there for 
+ 171:.\Generated_Source\PSoC5/LCD_2_INT.c ****                         #endif /* (LCD_2_FLOW_CONTROL != 0u) */
+ 172:.\Generated_Source\PSoC5/LCD_2_INT.c ****                     }
+ 173:.\Generated_Source\PSoC5/LCD_2_INT.c ****                 }
+ 174:.\Generated_Source\PSoC5/LCD_2_INT.c ****             }
+ 175:.\Generated_Source\PSoC5/LCD_2_INT.c ****         }while((readStatus & LCD_2_RX_STS_FIFO_NOTEMPTY) != 0u);
+ 137              		.loc 1 175 0
+ 138 00a2 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 139 00a4 03F02003 		and	r3, r3, #32
+ 140 00a8 002B     		cmp	r3, #0
+ 141 00aa AED1     		bne	.L6
+ 176:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 177:.\Generated_Source\PSoC5/LCD_2_INT.c ****         /* User code required at end of ISR (Optional) */
+ 178:.\Generated_Source\PSoC5/LCD_2_INT.c ****         /* `#START LCD_2_RXISR_END` */
+ 179:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 180:.\Generated_Source\PSoC5/LCD_2_INT.c ****         /* `#END` */
+ 181:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 182:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #ifdef LCD_2_RXISR_EXIT_CALLBACK
+ 183:.\Generated_Source\PSoC5/LCD_2_INT.c ****         LCD_2_RXISR_ExitCallback();
+ 184:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #endif /* LCD_2_RXISR_EXIT_CALLBACK */
+ 185:.\Generated_Source\PSoC5/LCD_2_INT.c **** 
+ 186:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #if(CY_PSOC3)
+ 187:.\Generated_Source\PSoC5/LCD_2_INT.c ****         EA = int_en;
+ 188:.\Generated_Source\PSoC5/LCD_2_INT.c ****     #endif /* (CY_PSOC3) */
+ 189:.\Generated_Source\PSoC5/LCD_2_INT.c ****     }
+ 142              		.loc 1 189 0
+ 143 00ac 0C37     		adds	r7, r7, #12
+ 144              		.cfi_def_cfa_offset 4
+ 145 00ae BD46     		mov	sp, r7
+ 146              		.cfi_def_cfa_register 13
+ 147              		@ sp needed
+ 148 00b0 5DF8047B 		ldr	r7, [sp], #4
+ 149              		.cfi_restore 7
+ 150              		.cfi_def_cfa_offset 0
+ 151 00b4 7047     		bx	lr
+ 152              	.L8:
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 7
+
+
+ 153 00b6 00BF     		.align	2
+ 154              	.L7:
+ 155 00b8 6A640040 		.word	1073767530
+ 156 00bc 00000000 		.word	LCD_2_errorStatus
+ 157 00c0 4E640040 		.word	1073767502
+ 158 00c4 00000000 		.word	LCD_2_rxBufferWrite
+ 159 00c8 00000000 		.word	LCD_2_rxBuffer
+ 160 00cc 00000000 		.word	LCD_2_rxBufferLoopDetect
+ 161 00d0 00000000 		.word	LCD_2_rxBufferOverflow
+ 162 00d4 00000000 		.word	LCD_2_rxBufferRead
+ 163              		.cfi_endproc
+ 164              	.LFE0:
+ 165              		.size	LCD_2_RXISR, .-LCD_2_RXISR
+ 166              		.text
+ 167              	.Letext0:
+ 168              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 169              		.file 3 ".\\Generated_Source\\PSoC5\\LCD_2.h"
+ 170              		.section	.debug_info,"",%progbits
+ 171              	.Ldebug_info0:
+ 172 0000 3D010000 		.4byte	0x13d
+ 173 0004 0400     		.2byte	0x4
+ 174 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 175 000a 04       		.byte	0x4
+ 176 000b 01       		.uleb128 0x1
+ 177 000c CF000000 		.4byte	.LASF24
+ 178 0010 01       		.byte	0x1
+ 179 0011 A1000000 		.4byte	.LASF25
+ 180 0015 6E010000 		.4byte	.LASF26
+ 181 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 182 001d 00000000 		.4byte	0
+ 183 0021 00000000 		.4byte	.Ldebug_line0
+ 184 0025 02       		.uleb128 0x2
+ 185 0026 01       		.byte	0x1
+ 186 0027 06       		.byte	0x6
+ 187 0028 C9010000 		.4byte	.LASF0
+ 188 002c 02       		.uleb128 0x2
+ 189 002d 01       		.byte	0x1
+ 190 002e 08       		.byte	0x8
+ 191 002f 93000000 		.4byte	.LASF1
+ 192 0033 02       		.uleb128 0x2
+ 193 0034 02       		.byte	0x2
+ 194 0035 05       		.byte	0x5
+ 195 0036 5D010000 		.4byte	.LASF2
+ 196 003a 02       		.uleb128 0x2
+ 197 003b 02       		.byte	0x2
+ 198 003c 07       		.byte	0x7
+ 199 003d B6010000 		.4byte	.LASF3
+ 200 0041 02       		.uleb128 0x2
+ 201 0042 04       		.byte	0x4
+ 202 0043 05       		.byte	0x5
+ 203 0044 C6000000 		.4byte	.LASF4
+ 204 0048 02       		.uleb128 0x2
+ 205 0049 04       		.byte	0x4
+ 206 004a 07       		.byte	0x7
+ 207 004b 59000000 		.4byte	.LASF5
+ 208 004f 02       		.uleb128 0x2
+ 209 0050 08       		.byte	0x8
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 8
+
+
+ 210 0051 05       		.byte	0x5
+ 211 0052 00000000 		.4byte	.LASF6
+ 212 0056 02       		.uleb128 0x2
+ 213 0057 08       		.byte	0x8
+ 214 0058 07       		.byte	0x7
+ 215 0059 6B000000 		.4byte	.LASF7
+ 216 005d 03       		.uleb128 0x3
+ 217 005e 04       		.byte	0x4
+ 218 005f 05       		.byte	0x5
+ 219 0060 696E7400 		.ascii	"int\000"
+ 220 0064 02       		.uleb128 0x2
+ 221 0065 04       		.byte	0x4
+ 222 0066 07       		.byte	0x7
+ 223 0067 0E000000 		.4byte	.LASF8
+ 224 006b 04       		.uleb128 0x4
+ 225 006c 53000000 		.4byte	.LASF12
+ 226 0070 02       		.byte	0x2
+ 227 0071 B4       		.byte	0xb4
+ 228 0072 2C000000 		.4byte	0x2c
+ 229 0076 02       		.uleb128 0x2
+ 230 0077 04       		.byte	0x4
+ 231 0078 04       		.byte	0x4
+ 232 0079 F2010000 		.4byte	.LASF9
+ 233 007d 02       		.uleb128 0x2
+ 234 007e 08       		.byte	0x8
+ 235 007f 04       		.byte	0x4
+ 236 0080 67010000 		.4byte	.LASF10
+ 237 0084 02       		.uleb128 0x2
+ 238 0085 01       		.byte	0x1
+ 239 0086 08       		.byte	0x8
+ 240 0087 8E000000 		.4byte	.LASF11
+ 241 008b 05       		.uleb128 0x5
+ 242 008c 24020000 		.4byte	.LASF13
+ 243 0090 02       		.byte	0x2
+ 244 0091 5E01     		.2byte	0x15e
+ 245 0093 97000000 		.4byte	0x97
+ 246 0097 06       		.uleb128 0x6
+ 247 0098 6B000000 		.4byte	0x6b
+ 248 009c 02       		.uleb128 0x2
+ 249 009d 04       		.byte	0x4
+ 250 009e 07       		.byte	0x7
+ 251 009f 32020000 		.4byte	.LASF14
+ 252 00a3 07       		.uleb128 0x7
+ 253 00a4 82000000 		.4byte	.LASF27
+ 254 00a8 01       		.byte	0x1
+ 255 00a9 3B       		.byte	0x3b
+ 256 00aa 00000000 		.4byte	.LFB0
+ 257 00ae D8000000 		.4byte	.LFE0-.LFB0
+ 258 00b2 01       		.uleb128 0x1
+ 259 00b3 9C       		.byte	0x9c
+ 260 00b4 E3000000 		.4byte	0xe3
+ 261 00b8 08       		.uleb128 0x8
+ 262 00b9 29020000 		.4byte	.LASF15
+ 263 00bd 01       		.byte	0x1
+ 264 00be 3D       		.byte	0x3d
+ 265 00bf 6B000000 		.4byte	0x6b
+ 266 00c3 02       		.uleb128 0x2
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 9
+
+
+ 267 00c4 91       		.byte	0x91
+ 268 00c5 75       		.sleb128 -11
+ 269 00c6 08       		.uleb128 0x8
+ 270 00c7 E7010000 		.4byte	.LASF16
+ 271 00cb 01       		.byte	0x1
+ 272 00cc 3E       		.byte	0x3e
+ 273 00cd 6B000000 		.4byte	0x6b
+ 274 00d1 02       		.uleb128 0x2
+ 275 00d2 91       		.byte	0x91
+ 276 00d3 76       		.sleb128 -10
+ 277 00d4 08       		.uleb128 0x8
+ 278 00d5 1B000000 		.4byte	.LASF17
+ 279 00d9 01       		.byte	0x1
+ 280 00da 3F       		.byte	0x3f
+ 281 00db 6B000000 		.4byte	0x6b
+ 282 00df 02       		.uleb128 0x2
+ 283 00e0 91       		.byte	0x91
+ 284 00e1 77       		.sleb128 -9
+ 285 00e2 00       		.byte	0
+ 286 00e3 09       		.uleb128 0x9
+ 287 00e4 D5010000 		.4byte	.LASF18
+ 288 00e8 03       		.byte	0x3
+ 289 00e9 3D01     		.2byte	0x13d
+ 290 00eb 6B000000 		.4byte	0x6b
+ 291 00ef 0A       		.uleb128 0xa
+ 292 00f0 6B000000 		.4byte	0x6b
+ 293 00f4 FF000000 		.4byte	0xff
+ 294 00f8 0B       		.uleb128 0xb
+ 295 00f9 9C000000 		.4byte	0x9c
+ 296 00fd 07       		.byte	0x7
+ 297 00fe 00       		.byte	0
+ 298 00ff 09       		.uleb128 0x9
+ 299 0100 2D000000 		.4byte	.LASF19
+ 300 0104 03       		.byte	0x3
+ 301 0105 3E01     		.2byte	0x13e
+ 302 0107 0B010000 		.4byte	0x10b
+ 303 010b 06       		.uleb128 0x6
+ 304 010c EF000000 		.4byte	0xef
+ 305 0110 09       		.uleb128 0x9
+ 306 0111 11020000 		.4byte	.LASF20
+ 307 0115 03       		.byte	0x3
+ 308 0116 3F01     		.2byte	0x13f
+ 309 0118 97000000 		.4byte	0x97
+ 310 011c 09       		.uleb128 0x9
+ 311 011d A2010000 		.4byte	.LASF21
+ 312 0121 03       		.byte	0x3
+ 313 0122 4001     		.2byte	0x140
+ 314 0124 97000000 		.4byte	0x97
+ 315 0128 09       		.uleb128 0x9
+ 316 0129 F8010000 		.4byte	.LASF22
+ 317 012d 03       		.byte	0x3
+ 318 012e 4101     		.2byte	0x141
+ 319 0130 97000000 		.4byte	0x97
+ 320 0134 09       		.uleb128 0x9
+ 321 0135 3C000000 		.4byte	.LASF23
+ 322 0139 03       		.byte	0x3
+ 323 013a 4201     		.2byte	0x142
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 10
+
+
+ 324 013c 97000000 		.4byte	0x97
+ 325 0140 00       		.byte	0
+ 326              		.section	.debug_abbrev,"",%progbits
+ 327              	.Ldebug_abbrev0:
+ 328 0000 01       		.uleb128 0x1
+ 329 0001 11       		.uleb128 0x11
+ 330 0002 01       		.byte	0x1
+ 331 0003 25       		.uleb128 0x25
+ 332 0004 0E       		.uleb128 0xe
+ 333 0005 13       		.uleb128 0x13
+ 334 0006 0B       		.uleb128 0xb
+ 335 0007 03       		.uleb128 0x3
+ 336 0008 0E       		.uleb128 0xe
+ 337 0009 1B       		.uleb128 0x1b
+ 338 000a 0E       		.uleb128 0xe
+ 339 000b 55       		.uleb128 0x55
+ 340 000c 17       		.uleb128 0x17
+ 341 000d 11       		.uleb128 0x11
+ 342 000e 01       		.uleb128 0x1
+ 343 000f 10       		.uleb128 0x10
+ 344 0010 17       		.uleb128 0x17
+ 345 0011 00       		.byte	0
+ 346 0012 00       		.byte	0
+ 347 0013 02       		.uleb128 0x2
+ 348 0014 24       		.uleb128 0x24
+ 349 0015 00       		.byte	0
+ 350 0016 0B       		.uleb128 0xb
+ 351 0017 0B       		.uleb128 0xb
+ 352 0018 3E       		.uleb128 0x3e
+ 353 0019 0B       		.uleb128 0xb
+ 354 001a 03       		.uleb128 0x3
+ 355 001b 0E       		.uleb128 0xe
+ 356 001c 00       		.byte	0
+ 357 001d 00       		.byte	0
+ 358 001e 03       		.uleb128 0x3
+ 359 001f 24       		.uleb128 0x24
+ 360 0020 00       		.byte	0
+ 361 0021 0B       		.uleb128 0xb
+ 362 0022 0B       		.uleb128 0xb
+ 363 0023 3E       		.uleb128 0x3e
+ 364 0024 0B       		.uleb128 0xb
+ 365 0025 03       		.uleb128 0x3
+ 366 0026 08       		.uleb128 0x8
+ 367 0027 00       		.byte	0
+ 368 0028 00       		.byte	0
+ 369 0029 04       		.uleb128 0x4
+ 370 002a 16       		.uleb128 0x16
+ 371 002b 00       		.byte	0
+ 372 002c 03       		.uleb128 0x3
+ 373 002d 0E       		.uleb128 0xe
+ 374 002e 3A       		.uleb128 0x3a
+ 375 002f 0B       		.uleb128 0xb
+ 376 0030 3B       		.uleb128 0x3b
+ 377 0031 0B       		.uleb128 0xb
+ 378 0032 49       		.uleb128 0x49
+ 379 0033 13       		.uleb128 0x13
+ 380 0034 00       		.byte	0
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 11
+
+
+ 381 0035 00       		.byte	0
+ 382 0036 05       		.uleb128 0x5
+ 383 0037 16       		.uleb128 0x16
+ 384 0038 00       		.byte	0
+ 385 0039 03       		.uleb128 0x3
+ 386 003a 0E       		.uleb128 0xe
+ 387 003b 3A       		.uleb128 0x3a
+ 388 003c 0B       		.uleb128 0xb
+ 389 003d 3B       		.uleb128 0x3b
+ 390 003e 05       		.uleb128 0x5
+ 391 003f 49       		.uleb128 0x49
+ 392 0040 13       		.uleb128 0x13
+ 393 0041 00       		.byte	0
+ 394 0042 00       		.byte	0
+ 395 0043 06       		.uleb128 0x6
+ 396 0044 35       		.uleb128 0x35
+ 397 0045 00       		.byte	0
+ 398 0046 49       		.uleb128 0x49
+ 399 0047 13       		.uleb128 0x13
+ 400 0048 00       		.byte	0
+ 401 0049 00       		.byte	0
+ 402 004a 07       		.uleb128 0x7
+ 403 004b 2E       		.uleb128 0x2e
+ 404 004c 01       		.byte	0x1
+ 405 004d 3F       		.uleb128 0x3f
+ 406 004e 19       		.uleb128 0x19
+ 407 004f 03       		.uleb128 0x3
+ 408 0050 0E       		.uleb128 0xe
+ 409 0051 3A       		.uleb128 0x3a
+ 410 0052 0B       		.uleb128 0xb
+ 411 0053 3B       		.uleb128 0x3b
+ 412 0054 0B       		.uleb128 0xb
+ 413 0055 27       		.uleb128 0x27
+ 414 0056 19       		.uleb128 0x19
+ 415 0057 11       		.uleb128 0x11
+ 416 0058 01       		.uleb128 0x1
+ 417 0059 12       		.uleb128 0x12
+ 418 005a 06       		.uleb128 0x6
+ 419 005b 40       		.uleb128 0x40
+ 420 005c 18       		.uleb128 0x18
+ 421 005d 9742     		.uleb128 0x2117
+ 422 005f 19       		.uleb128 0x19
+ 423 0060 01       		.uleb128 0x1
+ 424 0061 13       		.uleb128 0x13
+ 425 0062 00       		.byte	0
+ 426 0063 00       		.byte	0
+ 427 0064 08       		.uleb128 0x8
+ 428 0065 34       		.uleb128 0x34
+ 429 0066 00       		.byte	0
+ 430 0067 03       		.uleb128 0x3
+ 431 0068 0E       		.uleb128 0xe
+ 432 0069 3A       		.uleb128 0x3a
+ 433 006a 0B       		.uleb128 0xb
+ 434 006b 3B       		.uleb128 0x3b
+ 435 006c 0B       		.uleb128 0xb
+ 436 006d 49       		.uleb128 0x49
+ 437 006e 13       		.uleb128 0x13
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 12
+
+
+ 438 006f 02       		.uleb128 0x2
+ 439 0070 18       		.uleb128 0x18
+ 440 0071 00       		.byte	0
+ 441 0072 00       		.byte	0
+ 442 0073 09       		.uleb128 0x9
+ 443 0074 34       		.uleb128 0x34
+ 444 0075 00       		.byte	0
+ 445 0076 03       		.uleb128 0x3
+ 446 0077 0E       		.uleb128 0xe
+ 447 0078 3A       		.uleb128 0x3a
+ 448 0079 0B       		.uleb128 0xb
+ 449 007a 3B       		.uleb128 0x3b
+ 450 007b 05       		.uleb128 0x5
+ 451 007c 49       		.uleb128 0x49
+ 452 007d 13       		.uleb128 0x13
+ 453 007e 3F       		.uleb128 0x3f
+ 454 007f 19       		.uleb128 0x19
+ 455 0080 3C       		.uleb128 0x3c
+ 456 0081 19       		.uleb128 0x19
+ 457 0082 00       		.byte	0
+ 458 0083 00       		.byte	0
+ 459 0084 0A       		.uleb128 0xa
+ 460 0085 01       		.uleb128 0x1
+ 461 0086 01       		.byte	0x1
+ 462 0087 49       		.uleb128 0x49
+ 463 0088 13       		.uleb128 0x13
+ 464 0089 01       		.uleb128 0x1
+ 465 008a 13       		.uleb128 0x13
+ 466 008b 00       		.byte	0
+ 467 008c 00       		.byte	0
+ 468 008d 0B       		.uleb128 0xb
+ 469 008e 21       		.uleb128 0x21
+ 470 008f 00       		.byte	0
+ 471 0090 49       		.uleb128 0x49
+ 472 0091 13       		.uleb128 0x13
+ 473 0092 2F       		.uleb128 0x2f
+ 474 0093 0B       		.uleb128 0xb
+ 475 0094 00       		.byte	0
+ 476 0095 00       		.byte	0
+ 477 0096 00       		.byte	0
+ 478              		.section	.debug_aranges,"",%progbits
+ 479 0000 1C000000 		.4byte	0x1c
+ 480 0004 0200     		.2byte	0x2
+ 481 0006 00000000 		.4byte	.Ldebug_info0
+ 482 000a 04       		.byte	0x4
+ 483 000b 00       		.byte	0
+ 484 000c 0000     		.2byte	0
+ 485 000e 0000     		.2byte	0
+ 486 0010 00000000 		.4byte	.LFB0
+ 487 0014 D8000000 		.4byte	.LFE0-.LFB0
+ 488 0018 00000000 		.4byte	0
+ 489 001c 00000000 		.4byte	0
+ 490              		.section	.debug_ranges,"",%progbits
+ 491              	.Ldebug_ranges0:
+ 492 0000 00000000 		.4byte	.LFB0
+ 493 0004 D8000000 		.4byte	.LFE0
+ 494 0008 00000000 		.4byte	0
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 13
+
+
+ 495 000c 00000000 		.4byte	0
+ 496              		.section	.debug_line,"",%progbits
+ 497              	.Ldebug_line0:
+ 498 0000 86000000 		.section	.debug_str,"MS",%progbits,1
+ 498      02005300 
+ 498      00000201 
+ 498      FB0E0D00 
+ 498      01010101 
+ 499              	.LASF6:
+ 500 0000 6C6F6E67 		.ascii	"long long int\000"
+ 500      206C6F6E 
+ 500      6720696E 
+ 500      7400
+ 501              	.LASF8:
+ 502 000e 756E7369 		.ascii	"unsigned int\000"
+ 502      676E6564 
+ 502      20696E74 
+ 502      00
+ 503              	.LASF17:
+ 504 001b 696E6372 		.ascii	"increment_pointer\000"
+ 504      656D656E 
+ 504      745F706F 
+ 504      696E7465 
+ 504      7200
+ 505              	.LASF19:
+ 506 002d 4C43445F 		.ascii	"LCD_2_rxBuffer\000"
+ 506      325F7278 
+ 506      42756666 
+ 506      657200
+ 507              	.LASF23:
+ 508 003c 4C43445F 		.ascii	"LCD_2_rxBufferOverflow\000"
+ 508      325F7278 
+ 508      42756666 
+ 508      65724F76 
+ 508      6572666C 
+ 509              	.LASF12:
+ 510 0053 75696E74 		.ascii	"uint8\000"
+ 510      3800
+ 511              	.LASF5:
+ 512 0059 6C6F6E67 		.ascii	"long unsigned int\000"
+ 512      20756E73 
+ 512      69676E65 
+ 512      6420696E 
+ 512      7400
+ 513              	.LASF7:
+ 514 006b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 514      206C6F6E 
+ 514      6720756E 
+ 514      7369676E 
+ 514      65642069 
+ 515              	.LASF27:
+ 516 0082 4C43445F 		.ascii	"LCD_2_RXISR\000"
+ 516      325F5258 
+ 516      49535200 
+ 517              	.LASF11:
+ 518 008e 63686172 		.ascii	"char\000"
+ 518      00
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 14
+
+
+ 519              	.LASF1:
+ 520 0093 756E7369 		.ascii	"unsigned char\000"
+ 520      676E6564 
+ 520      20636861 
+ 520      7200
+ 521              	.LASF25:
+ 522 00a1 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\LCD_2_INT.c\000"
+ 522      6E657261 
+ 522      7465645F 
+ 522      536F7572 
+ 522      63655C50 
+ 523              	.LASF4:
+ 524 00c6 6C6F6E67 		.ascii	"long int\000"
+ 524      20696E74 
+ 524      00
+ 525              	.LASF24:
+ 526 00cf 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 526      4320342E 
+ 526      392E3320 
+ 526      32303135 
+ 526      30333033 
+ 527 0102 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 527      20726576 
+ 527      6973696F 
+ 527      6E203232 
+ 527      31323230 
+ 528 0135 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 528      66756E63 
+ 528      74696F6E 
+ 528      2D736563 
+ 528      74696F6E 
+ 529              	.LASF2:
+ 530 015d 73686F72 		.ascii	"short int\000"
+ 530      7420696E 
+ 530      7400
+ 531              	.LASF10:
+ 532 0167 646F7562 		.ascii	"double\000"
+ 532      6C6500
+ 533              	.LASF26:
+ 534 016e 433A5C55 		.ascii	"C:\\Users\\Recepcion\\Desktop\\Prueba_Autogas\\BBB."
+ 534      73657273 
+ 534      5C526563 
+ 534      65706369 
+ 534      6F6E5C44 
+ 535 019c 63796473 		.ascii	"cydsn\000"
+ 535      6E00
+ 536              	.LASF21:
+ 537 01a2 4C43445F 		.ascii	"LCD_2_rxBufferWrite\000"
+ 537      325F7278 
+ 537      42756666 
+ 537      65725772 
+ 537      69746500 
+ 538              	.LASF3:
+ 539 01b6 73686F72 		.ascii	"short unsigned int\000"
+ 539      7420756E 
+ 539      7369676E 
+ 539      65642069 
+ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccpo2WUC.s 			page 15
+
+
+ 539      6E7400
+ 540              	.LASF0:
+ 541 01c9 7369676E 		.ascii	"signed char\000"
+ 541      65642063 
+ 541      68617200 
+ 542              	.LASF18:
+ 543 01d5 4C43445F 		.ascii	"LCD_2_errorStatus\000"
+ 543      325F6572 
+ 543      726F7253 
+ 543      74617475 
+ 543      7300
+ 544              	.LASF16:
+ 545 01e7 72656164 		.ascii	"readStatus\000"
+ 545      53746174 
+ 545      757300
+ 546              	.LASF9:
+ 547 01f2 666C6F61 		.ascii	"float\000"
+ 547      7400
+ 548              	.LASF22:
+ 549 01f8 4C43445F 		.ascii	"LCD_2_rxBufferLoopDetect\000"
+ 549      325F7278 
+ 549      42756666 
+ 549      65724C6F 
+ 549      6F704465 
+ 550              	.LASF20:
+ 551 0211 4C43445F 		.ascii	"LCD_2_rxBufferRead\000"
+ 551      325F7278 
+ 551      42756666 
+ 551      65725265 
+ 551      616400
+ 552              	.LASF13:
+ 553 0224 72656738 		.ascii	"reg8\000"
+ 553      00
+ 554              	.LASF15:
+ 555 0229 72656164 		.ascii	"readData\000"
+ 555      44617461 
+ 555      00
+ 556              	.LASF14:
+ 557 0232 73697A65 		.ascii	"sizetype\000"
+ 557      74797065 
+ 557      00
+ 558              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

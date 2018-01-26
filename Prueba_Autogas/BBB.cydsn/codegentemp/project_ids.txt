@@ -1,0 +1,6 @@
+C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\BBB.cyprj|d36598b3-362f-479b-9132-c86fbcc82293
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|902a0292-7fbf-4e27-b9be-06a03fa31fe2
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|a89f3250-3bea-4cd2-861a-2507b4213237
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5f12321d-69a1-4d11-befd-3d13b45ae9c8
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|df692eac-5572-467c-a3ac-1a67a1e78186
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|22d3a407-bd3c-4b0c-b57f-e4d06a5ffea6

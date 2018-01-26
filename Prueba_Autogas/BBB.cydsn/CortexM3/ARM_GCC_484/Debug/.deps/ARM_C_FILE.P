@@ -1,0 +1,12 @@
+C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/CortexM3/ARM_GCC_484/Debug/cybootloader.o : C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cybootloader.c C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cytypes.h 
+
+C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cybootloader.c : 
+
+C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+C:/Users/sistemas_pc/Desktop/Nueva\ carpeta\ (2)/BEAGLE/Programa/Prueba_Autogas/BBB.cydsn/Generated_Source/PSoC5/cytypes.h : 
+

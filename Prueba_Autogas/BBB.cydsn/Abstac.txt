@@ -1,0 +1,34 @@
+Flujo LCD
+0   Inicio de protector
+1   Mantiene el protector se verifica en la Int del puerto de la LCD
+2   Teclado Numerico
+3   Lectura de Id
+4   Venta en efectivo, elige pesos, galones o full
+5   Esperar a levantar la manija o Cancelar
+7 	Lee el grado
+8	Pone el estado en Listo
+9	Envia Trama
+10	Espera a que el Beagle autorice o rechaze la venta.
+11	Termina Venta
+12  Envia Venta
+13  Venta - Corte - Otras Opciones
+14	Contraseña otras opciones
+15	Otras opciones
+102  Espera que el Beagle suba la venta.
+101 Deja una imagen por un momento y pasa a un nuevo caso
+100 Deja una imagen por un momento y vuelve al inicio
+
+
+
+/******************************************************************/
+Id_teclado
+1 	Dinero o Volumen
+2 	Kilometraje
+3   cedula turno
+4	password turno
+
+/******************************Reset*******************************/
+1	No pudo autorizar vuelve al inicio
+2	Recibio bien la venta
+
+	
