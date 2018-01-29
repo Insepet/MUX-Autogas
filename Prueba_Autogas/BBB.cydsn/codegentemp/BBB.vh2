@@ -2,7 +2,7 @@
 --	Conversion of BBB.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Jul 12 16:50:52 2017
+--	Mon Jan 29 12:42:02 2018
 --
 
 USE cypress.cypress.all;

@@ -1,30 +1,8 @@
-/*
-*********************************************************************************************************
-*                                           GRP550M CODE
-*
-*                             (c) Copyright 2013; Sistemas Insepet LTDA
-*
-*               All rights reserved.  Protected by international copyright laws.
-*               Knowledge of the source code may NOT be used to develop a similar product.
-*               Please help us continue to provide the Embedded community with the finest
-*               software available.  Your honesty is greatly appreciated.
-*********************************************************************************************************
-*/
-
-/*
-*********************************************************************************************************
-*
-*                                               GRP550M CODE
-*
-*                                             CYPRESS PSoC5LP
-*                                                with the
-*                                            CY8C5969AXI-LP035
-*
-* Filename      : ibutton.c
-* Version       : V1.00
-* Programmer(s) : 
-                  
-*********************************************************************************************************
+/**
+* @file ibuton.c
+* @Author Insepet LTDA
+* @date 28/2/2016
+* @brief Librería para la lectura del ibutton
 */
 
 /*
@@ -35,23 +13,13 @@
 #include <device.h>
 #include "VariablesG.h"
 
-/*
-*********************************************************************************************************
-*                                           uint8 touch_present(void)
+/**
+* touch_present
+* @brief indica el lado donde se encuentra el ibutton
+* @param ibutton lado del lector
+* @return 0 no hay ibutton , 1 si hay ibutton
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
-
 uint8 touch_present(uint8 ibutton){  
     uint8 present;
 	if(ibutton==1){
@@ -96,23 +64,14 @@ uint8 touch_present(uint8 ibutton){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                           uint8 touch_write(uint8 dato)
+/**
+* touch_write
+* @brief Escribe un byte en el Ibutton
+* @param ibutton lado
+* @param dato byte que se va a escribir
+* @return 0 operacion correcta , 1 operacion incorrecta
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
-
 uint8 touch_write(uint8 ibutton, uint8 dato){
     uint8 i;
 	if(ibutton==1){
@@ -165,23 +124,13 @@ uint8 touch_write(uint8 ibutton, uint8 dato){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                           uint8 touch_read_byte()
+/**
+* touch_read_byte
+* @brief Lee un byte del ibutton, se usa para leer los bytes del serial
+* @param ibutton lado
+* @return 0 no hubo lectura , =!0 dato leido
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
-
 uint8 touch_read_byte(uint8 ibutton){
     uint8 i, dato=0;
 	if(ibutton==1){
@@ -208,23 +157,14 @@ uint8 touch_read_byte(uint8 ibutton){
 	}
 } 
 
-/*
-*********************************************************************************************************
-* 							uint8 crc_check(uint8_t crc, uint8_t data)
+/**
+* crc_check
+* @brief verifica los datos leídos del ibutton
+* @param crc dato obtenido
+* @param dato byte de ibutton
+* @return crc calculado
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
-
 uint8 crc_check(uint8 crc, uint8 dato){
     uint8 i;
     crc = crc ^ dato;

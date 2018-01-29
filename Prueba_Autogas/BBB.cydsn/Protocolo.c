@@ -1,31 +1,8 @@
-/*
-*********************************************************************************************************
-*                                           GRP550/700 CODE
-
-*
-*                             (c) Copyright 2013; Sistemas Insepet LTDA
-*
-*               All rights reserved.  Protected by international copyright laws.
-*               Knowledge of the source code may NOT be used to develop a similar product.
-*               Please help us continue to provide the Embedded community with the finest
-*               software available.  Your honesty is greatly appreciated.
-*********************************************************************************************************
-*/
-
-/*
-*********************************************************************************************************
-*
-*                                             GRP550/700 CODE
-*
-*                                             CYPRESS PSoC5LP
-*                                                with the
-*                                            CY8C5969AXI-LP035
-*
-* Filename      : Protocolo.c
-* Version       : V1.00
-* Programmer(s) : 
-                  
-*********************************************************************************************************
+/**
+* @file Protocolo.c
+* @Author Insepet LTDA
+* @date 28/2/2016
+* @brief Archivo para el manejo del dispensador, comunicación del MUX-Dispensador
 */
 
 
@@ -52,13 +29,8 @@ uint8 msn_lecact[15]="Lectura Actual:";
 uint8 msn_lecaan[17]="Lectura Anterior:";
 uint8 msn_tventas[18]="Total de Ventas: $";
 
-/*
-*********************************************************************************************************
-*                                        CY_ISR(modo_mux)
-*
-* Description : 
-*               
-*********************************************************************************************************
+/**
+* Interrupción de tiempo para la espera de datos del surtidor
 */
 CY_ISR(Rx_Surtidor){
     Timer_RxSurtidor_ReadStatusRegister();
@@ -66,23 +38,13 @@ CY_ISR(Rx_Surtidor){
 }
 
 
-/*
-*********************************************************************************************************
-*                                         ver_estado( void )
+/**
+* get_estado
+* @brief obtiene el estado de la posicion a la que se pregunte
+* @param dir direccion de la posicion
+* @return estado si hay respuesta del dispensador 0 si no
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
-
 uint8 get_estado(uint8 dir){
     uint8 estado;
     Surtidor_ClearRxBuffer();	
@@ -115,21 +77,11 @@ uint8 get_estado(uint8 dir){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         ver_pos( void )
+/**
+* ver_pos
+* @brief detecta las posiciones del equipo
+* @return 1 si detecta las dos posiciones 0 si no
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
 uint8 ver_pos (void){
 uint8 x;
@@ -159,50 +111,13 @@ lado2.dir=0xff;
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         void ver_error(uint8 val)
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
-*/
-void ver_error(uint8 val){
-    uint8 estado;
-    Surtidor_PutChar(val);
-    CyDelay(200);
-    if(Surtidor_GetRxBufferSize()>=1){
-       estado=(Surtidor_ReadRxData()&0xF0)>>4;
-       Surtidor_ClearRxBuffer();
-       if(estado==0){
 
-       }
-    }    
-}
-
-/*
-*********************************************************************************************************
-*                                         estado_ex(uint8 val)
+/**
+* estado_ex
+* @brief funcion para obtener el número de manija levantada
+* @param val posición del surtidor, lado de la manija que se levantó
+* @return 0 si error, # de manija
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
 uint8 estado_ex(uint8 val){
     uint8 rx_extend[19],x,comand_exten[9]={0xFF,0xE9,0xFE,0xE0,0xE1,0xE0,0xFB,0xEE,0xF0};
@@ -269,42 +184,25 @@ uint8 estado_ex(uint8 val){
     }
 }
 
-/*
-*********************************************************************************************************
-*                                         void detener(uint8 val)
+/**
+* detener
+* @brief Envía un stop a la posición seleccionada
+* @param val posición del surtidor
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
 void detener(uint8 val){
     Surtidor_PutChar(0x30|val);
     CyDelay(200);
 }
 
-/*
-*********************************************************************************************************
-*                                         void venta(uint8 val)
+/**
+* venta
+* @brief La función se llama cuando hay un FEOT o PEOT, obtiene los datos de la última venta
+* almacena la venta en eeprom para utilizar los datos en otros procesos
+
+* @param val posición del surtidor
+* @return 0 si hay error, 1 si se almacena la venta    
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
 uint8 venta(uint8 dir){
 	uint8 x;
@@ -378,21 +276,15 @@ uint8 venta(uint8 dir){
 	return 0;
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 programar(uint8 dir)
+/**
+* programar
+* @brief Envía el preset al equipo según lo que se programe en las pantallas
+* @param dir posición del surtidor
+* @param grado manguera del equipo
+* @param *valor valor del preset a enviar
+* @param preset tipo de preset 1,2,3
+* @return 0 si hay error, 1 si se realiza el preset al equipo
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
 uint8 programar(uint8 dir, uint8 grado, uint8 *valor, uint8 preset){
 	uint8 buffer[18]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},size,temp,i,decimal;
@@ -638,21 +530,14 @@ uint8 programar(uint8 dir, uint8 grado, uint8 *valor, uint8 preset){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 programar(uint8 dir)
+/**
+* cambiar_precio
+* @brief Realiza el cambio de precio al producto según lo enviado por el Beagle
+* @param dir posición del surtidor
+* @param *precio apuntador al precio con el que se va a realizar el cambio
+* @param num_man grado del equipo (manguera)
+* @return 0 si hay error, 1 si realiza el cambio de precio
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
 uint8 cambiar_precio(uint8 dir, uint8 *precio, uint8 num_man){
 	uint8 buffer[15]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},size,x;
@@ -727,21 +612,14 @@ uint8 cambiar_precio(uint8 dir, uint8 *precio, uint8 num_man){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 totales(uint8 dir)
+/**
+* totales
+* @brief Obtiene los totales electrónicos del equipo
+* almacena los valores obtenidos en las variables ladox.totales
+* @param dir posición del surtidor
+* @param nmangueras numero de mangueras definidas
+* @return 0 si hay error, =!0 si se realizan las operaciones   
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
 uint8 totales(uint8 dir, uint8 nmangueras){
 	uint8 x,y;

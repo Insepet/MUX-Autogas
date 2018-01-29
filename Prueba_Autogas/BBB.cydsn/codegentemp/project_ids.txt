@@ -1,6 +1,6 @@
-C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\BBB.cyprj|d36598b3-362f-479b-9132-c86fbcc82293
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|902a0292-7fbf-4e27-b9be-06a03fa31fe2
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|a89f3250-3bea-4cd2-861a-2507b4213237
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5f12321d-69a1-4d11-befd-3d13b45ae9c8
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|df692eac-5572-467c-a3ac-1a67a1e78186
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|22d3a407-bd3c-4b0c-b57f-e4d06a5ffea6
+C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\BBB.cyprj|187f458d-4ef0-4792-9fb9-5a19d3cc355d
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|22f38528-d5dd-426a-b434-5ca45c6ca316
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|f0026468-3628-46e8-94c4-0dfc1e5e2d14
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d25a4bfc-ffc4-444b-862e-6843bda3cb8f
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1ec68a37-2009-4e7b-86c5-ff365be18394
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|80009ccd-bf6a-4df2-9c4d-000e53445d5b

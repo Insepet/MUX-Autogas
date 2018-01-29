@@ -1,6 +1,6 @@
 -- Project:   BBB
--- Generated: 07/12/2017 16:50:55
--- PSoC Creator  3.3 SP1
+-- Generated: 01/29/2018 12:42:03
+-- PSoC Creator  3.3 SP2
 
 ENTITY BBB IS
     PORT(
@@ -477,6 +477,7 @@ ARCHITECTURE __DEFAULT__ OF BBB IS
     ATTRIBUTE lib_model OF \LP:BUART:rx_postpoll\ : LABEL IS "macrocell46";
     ATTRIBUTE lib_model OF \LP:BUART:rx_status_4\ : LABEL IS "macrocell47";
     ATTRIBUTE lib_model OF \LP:BUART:rx_status_5\ : LABEL IS "macrocell48";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell49";
     ATTRIBUTE lib_model OF \Surtidor:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE lib_model OF \Surtidor:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell2";
     ATTRIBUTE lib_model OF \Surtidor:BUART:sTX:TxSts\ : LABEL IS "statusicell1";
@@ -497,7 +498,6 @@ ARCHITECTURE __DEFAULT__ OF BBB IS
     ATTRIBUTE lib_model OF \PC:BUART:sTX:TxSts\ : LABEL IS "statusicell7";
     ATTRIBUTE lib_model OF \PC:BUART:sRX:RxShifter:u0\ : LABEL IS "datapathcell12";
     ATTRIBUTE lib_model OF \PC:BUART:sRX:RxSts\ : LABEL IS "statusicell8";
-    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell49";
     ATTRIBUTE lib_model OF \LCD_2:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell13";
     ATTRIBUTE lib_model OF \LCD_2:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell14";
     ATTRIBUTE lib_model OF \LCD_2:BUART:sTX:TxSts\ : LABEL IS "statusicell9";
@@ -3477,6 +3477,13 @@ BEGIN
             interrupt => Net_1336,
             clock => ClockBlock_BUS_CLK);
 
+    __ONE__:macrocell
+        GENERIC MAP(
+            eqn_main => "1'b0",
+            clken_mode => 1)
+        PORT MAP(
+            q => __ONE__);
+
     \Surtidor:BUART:sTX:TxShifter:u0\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
@@ -4224,13 +4231,6 @@ BEGIN
             tc => \Timer_RxSurtidor:Net_51\,
             cmp => \Timer_RxSurtidor:Net_261\,
             irq => Net_1411);
-
-    __ONE__:macrocell
-        GENERIC MAP(
-            eqn_main => "1'b0",
-            clken_mode => 1)
-        PORT MAP(
-            q => __ONE__);
 
     \LCD_2:RXInternalInterrupt\:interrupt
         GENERIC MAP(

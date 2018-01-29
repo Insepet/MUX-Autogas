@@ -35,7 +35,7 @@ void set_imagen(uint8 lcd, uint16 id);
 void write_LCD(uint8_t lcd,uint8_t dato, uint16_t posy, uint16_t posx,uint8_t size);
 void Hora_LCD(uint8 lcd);
 void Fecha_LCD(uint8 lcd);
-void write_LCDB(uint8 lcd, uint8 dato, uint8 pos);
+
 
 
 #endif

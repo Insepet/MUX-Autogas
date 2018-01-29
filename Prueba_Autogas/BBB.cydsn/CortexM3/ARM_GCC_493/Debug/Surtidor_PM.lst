@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
   25:.\Generated_Source\PSoC5/Surtidor_PM.c **** {
   26:.\Generated_Source\PSoC5/Surtidor_PM.c ****     /* enableState - disabled */
   27:.\Generated_Source\PSoC5/Surtidor_PM.c ****     0u,
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 2
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 2
 
 
   28:.\Generated_Source\PSoC5/Surtidor_PM.c **** };
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
   53              		.align	2
   54              		.global	Surtidor_RestoreConfig
   55              		.thumb
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 3
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 3
 
 
   56              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
   77 000a 7047     		bx	lr
   78              		.cfi_endproc
   79              	.LFE1:
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 4
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 4
 
 
   80              		.size	Surtidor_RestoreConfig, .-Surtidor_RestoreConfig
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  103 000a 03F01003 		and	r3, r3, #16
  104 000e 002B     		cmp	r3, #0
  105 0010 03D0     		beq	.L4
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 5
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 5
 
 
  124:.\Generated_Source\PSoC5/Surtidor_PM.c ****         {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  145:.\Generated_Source\PSoC5/Surtidor_PM.c **** 
  146:.\Generated_Source\PSoC5/Surtidor_PM.c **** 
  147:.\Generated_Source\PSoC5/Surtidor_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 6
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 6
 
 
  148:.\Generated_Source\PSoC5/Surtidor_PM.c **** * Function Name: Surtidor_Wakeup
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  158 0014 002B     		cmp	r3, #0
  159 0016 01D0     		beq	.L8
  183:.\Generated_Source\PSoC5/Surtidor_PM.c ****     {
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 7
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 7
 
 
  184:.\Generated_Source\PSoC5/Surtidor_PM.c ****         Surtidor_Enable();
@@ -387,38 +387,38 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  180 0006 00000000 		.4byte	.Ldebug_abbrev0
  181 000a 04       		.byte	0x4
  182 000b 01       		.uleb128 0x1
- 183 000c C4000000 		.4byte	.LASF20
+ 183 000c 17010000 		.4byte	.LASF20
  184 0010 01       		.byte	0x1
- 185 0011 52010000 		.4byte	.LASF21
- 186 0015 97010000 		.4byte	.LASF22
+ 185 0011 A5010000 		.4byte	.LASF21
+ 186 0015 81000000 		.4byte	.LASF22
  187 0019 00000000 		.4byte	.Ldebug_ranges0+0
  188 001d 00000000 		.4byte	0
  189 0021 00000000 		.4byte	.Ldebug_line0
  190 0025 02       		.uleb128 0x2
  191 0026 01       		.byte	0x1
  192 0027 06       		.byte	0x6
- 193 0028 DE010000 		.4byte	.LASF0
+ 193 0028 FD010000 		.4byte	.LASF0
  194 002c 02       		.uleb128 0x2
  195 002d 01       		.byte	0x1
  196 002e 08       		.byte	0x8
- 197 002f 96000000 		.4byte	.LASF1
+ 197 002f E9000000 		.4byte	.LASF1
  198 0033 02       		.uleb128 0x2
  199 0034 02       		.byte	0x2
  200 0035 05       		.byte	0x5
- 201 0036 0F020000 		.4byte	.LASF2
+ 201 0036 2E020000 		.4byte	.LASF2
  202 003a 02       		.uleb128 0x2
  203 003b 02       		.byte	0x2
  204 003c 07       		.byte	0x7
- 205 003d CB010000 		.4byte	.LASF3
+ 205 003d EA010000 		.4byte	.LASF3
  206 0041 02       		.uleb128 0x2
  207 0042 04       		.byte	0x4
  208 0043 05       		.byte	0x5
- 209 0044 BB000000 		.4byte	.LASF4
+ 209 0044 0E010000 		.4byte	.LASF4
  210 0048 02       		.uleb128 0x2
  211 0049 04       		.byte	0x4
  212 004a 07       		.byte	0x7
  213 004b 58000000 		.4byte	.LASF5
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 8
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 8
 
 
  214 004f 02       		.uleb128 0x2
@@ -445,17 +445,17 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  235 0076 02       		.uleb128 0x2
  236 0077 04       		.byte	0x4
  237 0078 04       		.byte	0x4
- 238 0079 09020000 		.4byte	.LASF9
+ 238 0079 28020000 		.4byte	.LASF9
  239 007d 02       		.uleb128 0x2
  240 007e 08       		.byte	0x8
  241 007f 04       		.byte	0x4
- 242 0080 90010000 		.4byte	.LASF10
+ 242 0080 E3010000 		.4byte	.LASF10
  243 0084 02       		.uleb128 0x2
  244 0085 01       		.byte	0x1
  245 0086 08       		.byte	0x8
- 246 0087 81000000 		.4byte	.LASF11
+ 246 0087 D4000000 		.4byte	.LASF11
  247 008b 05       		.uleb128 0x5
- 248 008c 19020000 		.4byte	.LASF13
+ 248 008c 38020000 		.4byte	.LASF13
  249 0090 02       		.byte	0x2
  250 0091 5E01     		.2byte	0x15e
  251 0093 97000000 		.4byte	0x97
@@ -464,7 +464,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  254 009c 02       		.uleb128 0x2
  255 009d 04       		.byte	0x4
  256 009e 07       		.byte	0x7
- 257 009f 1E020000 		.4byte	.LASF14
+ 257 009f 3D020000 		.4byte	.LASF14
  258 00a3 07       		.uleb128 0x7
  259 00a4 27000000 		.4byte	.LASF23
  260 00a8 01       		.byte	0x1
@@ -478,11 +478,11 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  268 00b6 6B000000 		.4byte	0x6b
  269 00ba 00       		.byte	0
  270 00bb 00       		.byte	0
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 9
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 9
 
 
  271 00bc 04       		.uleb128 0x4
- 272 00bd 79010000 		.4byte	.LASF15
+ 272 00bd CC010000 		.4byte	.LASF15
  273 00c1 03       		.byte	0x3
  274 00c2 4D       		.byte	0x4d
  275 00c3 A3000000 		.4byte	0xa3
@@ -495,7 +495,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  282 00d6 01       		.uleb128 0x1
  283 00d7 9C       		.byte	0x9c
  284 00d8 09       		.uleb128 0x9
- 285 00d9 A4000000 		.4byte	.LASF17
+ 285 00d9 F7000000 		.4byte	.LASF17
  286 00dd 01       		.byte	0x1
  287 00de 57       		.byte	0x57
  288 00df 00000000 		.4byte	.LFB1
@@ -503,7 +503,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  290 00e7 01       		.uleb128 0x1
  291 00e8 9C       		.byte	0x9c
  292 00e9 0A       		.uleb128 0xa
- 293 00ea EA010000 		.4byte	.LASF18
+ 293 00ea 09020000 		.4byte	.LASF18
  294 00ee 01       		.byte	0x1
  295 00ef 78       		.byte	0x78
  296 00f0 00000000 		.4byte	.LFB2
@@ -511,7 +511,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  298 00f8 01       		.uleb128 0x1
  299 00f9 9C       		.byte	0x9c
  300 00fa 0A       		.uleb128 0xa
- 301 00fb F9010000 		.4byte	.LASF19
+ 301 00fb 18020000 		.4byte	.LASF19
  302 00ff 01       		.byte	0x1
  303 0100 AC       		.byte	0xac
  304 0101 00000000 		.4byte	.LFB3
@@ -519,7 +519,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  306 0109 01       		.uleb128 0x1
  307 010a 9C       		.byte	0x9c
  308 010b 0B       		.uleb128 0xb
- 309 010c 86000000 		.4byte	.LASF25
+ 309 010c D9000000 		.4byte	.LASF25
  310 0110 01       		.byte	0x1
  311 0111 18       		.byte	0x18
  312 0112 BC000000 		.4byte	0xbc
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  325 0006 0B       		.uleb128 0xb
  326 0007 03       		.uleb128 0x3
  327 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 10
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 10
 
 
  328 0009 1B       		.uleb128 0x1b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  382 003f 49       		.uleb128 0x49
  383 0040 13       		.uleb128 0x13
  384 0041 00       		.byte	0
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 11
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 11
 
 
  385 0042 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  439 0078 06       		.uleb128 0x6
  440 0079 40       		.uleb128 0x40
  441 007a 18       		.uleb128 0x18
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 12
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 12
 
 
  442 007b 9742     		.uleb128 0x2117
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  496 001c 0C000000 		.4byte	.LFE1-.LFB1
  497 0020 00000000 		.4byte	.LFB2
  498 0024 34000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 13
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 13
 
 
  499 0028 00000000 		.4byte	.LFB3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  531      20756E73 
  531      69676E65 
  531      6420696E 
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 14
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 14
 
 
  531      7400
@@ -788,103 +788,106 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 1
  533      6720756E 
  533      7369676E 
  533      65642069 
- 534              	.LASF11:
- 535 0081 63686172 		.ascii	"char\000"
- 535      00
- 536              	.LASF25:
- 537 0086 53757274 		.ascii	"Surtidor_backup\000"
- 537      69646F72 
- 537      5F626163 
- 537      6B757000 
- 538              	.LASF1:
- 539 0096 756E7369 		.ascii	"unsigned char\000"
- 539      676E6564 
- 539      20636861 
- 539      7200
- 540              	.LASF17:
- 541 00a4 53757274 		.ascii	"Surtidor_RestoreConfig\000"
- 541      69646F72 
- 541      5F526573 
- 541      746F7265 
- 541      436F6E66 
- 542              	.LASF4:
- 543 00bb 6C6F6E67 		.ascii	"long int\000"
- 543      20696E74 
- 543      00
- 544              	.LASF20:
- 545 00c4 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 545      4320342E 
- 545      392E3320 
- 545      32303135 
- 545      30333033 
- 546 00f7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 546      20726576 
- 546      6973696F 
- 546      6E203232 
- 546      31323230 
- 547 012a 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 547      66756E63 
- 547      74696F6E 
- 547      2D736563 
- 547      74696F6E 
- 548              	.LASF21:
- 549 0152 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Surtidor_PM.c\000"
- 549      6E657261 
- 549      7465645F 
- 549      536F7572 
- 549      63655C50 
- 550              	.LASF15:
- 551 0179 53757274 		.ascii	"Surtidor_BACKUP_STRUCT\000"
- 551      69646F72 
- 551      5F424143 
- 551      4B55505F 
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccI53Y1c.s 			page 15
+ 534              	.LASF22:
+ 535 0081 433A5C55 		.ascii	"C:\\Users\\IN-002143\\Documents\\GitHub\\version12\\"
+ 535      73657273 
+ 535      5C494E2D 
+ 535      30303231 
+ 535      34335C44 
+ 536 00af 4D55582D 		.ascii	"MUX-Autogas\\Prueba_Autogas\\BBB.cydsn\000"
+ 536      4175746F 
+ 536      6761735C 
+ 536      50727565 
+ 536      62615F41 
+ 537              	.LASF11:
+ 538 00d4 63686172 		.ascii	"char\000"
+ 538      00
+ 539              	.LASF25:
+ 540 00d9 53757274 		.ascii	"Surtidor_backup\000"
+ 540      69646F72 
+ 540      5F626163 
+ 540      6B757000 
+ 541              	.LASF1:
+ 542 00e9 756E7369 		.ascii	"unsigned char\000"
+ 542      676E6564 
+ 542      20636861 
+ 542      7200
+ 543              	.LASF17:
+ 544 00f7 53757274 		.ascii	"Surtidor_RestoreConfig\000"
+ 544      69646F72 
+ 544      5F526573 
+ 544      746F7265 
+ 544      436F6E66 
+ 545              	.LASF4:
+ 546 010e 6C6F6E67 		.ascii	"long int\000"
+ 546      20696E74 
+ 546      00
+ 547              	.LASF20:
+ 548 0117 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 548      4320342E 
+ 548      392E3320 
+ 548      32303135 
+ 548      30333033 
+ 549 014a 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 549      20726576 
+ 549      6973696F 
+ 549      6E203232 
+ 549      31323230 
+ 550 017d 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 550      66756E63 
+ 550      74696F6E 
+ 550      2D736563 
+ 550      74696F6E 
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc0mQB6S.s 			page 15
 
 
- 551      53545255 
- 552              	.LASF10:
- 553 0190 646F7562 		.ascii	"double\000"
- 553      6C6500
- 554              	.LASF22:
- 555 0197 433A5C55 		.ascii	"C:\\Users\\Recepcion\\Desktop\\Prueba_Autogas\\BBB."
- 555      73657273 
- 555      5C526563 
- 555      65706369 
- 555      6F6E5C44 
- 556 01c5 63796473 		.ascii	"cydsn\000"
- 556      6E00
+ 551              	.LASF21:
+ 552 01a5 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Surtidor_PM.c\000"
+ 552      6E657261 
+ 552      7465645F 
+ 552      536F7572 
+ 552      63655C50 
+ 553              	.LASF15:
+ 554 01cc 53757274 		.ascii	"Surtidor_BACKUP_STRUCT\000"
+ 554      69646F72 
+ 554      5F424143 
+ 554      4B55505F 
+ 554      53545255 
+ 555              	.LASF10:
+ 556 01e3 646F7562 		.ascii	"double\000"
+ 556      6C6500
  557              	.LASF3:
- 558 01cb 73686F72 		.ascii	"short unsigned int\000"
+ 558 01ea 73686F72 		.ascii	"short unsigned int\000"
  558      7420756E 
  558      7369676E 
  558      65642069 
  558      6E7400
  559              	.LASF0:
- 560 01de 7369676E 		.ascii	"signed char\000"
+ 560 01fd 7369676E 		.ascii	"signed char\000"
  560      65642063 
  560      68617200 
  561              	.LASF18:
- 562 01ea 53757274 		.ascii	"Surtidor_Sleep\000"
+ 562 0209 53757274 		.ascii	"Surtidor_Sleep\000"
  562      69646F72 
  562      5F536C65 
  562      657000
  563              	.LASF19:
- 564 01f9 53757274 		.ascii	"Surtidor_Wakeup\000"
+ 564 0218 53757274 		.ascii	"Surtidor_Wakeup\000"
  564      69646F72 
  564      5F57616B 
  564      65757000 
  565              	.LASF9:
- 566 0209 666C6F61 		.ascii	"float\000"
+ 566 0228 666C6F61 		.ascii	"float\000"
  566      7400
  567              	.LASF2:
- 568 020f 73686F72 		.ascii	"short int\000"
+ 568 022e 73686F72 		.ascii	"short int\000"
  568      7420696E 
  568      7400
  569              	.LASF13:
- 570 0219 72656738 		.ascii	"reg8\000"
+ 570 0238 72656738 		.ascii	"reg8\000"
  570      00
  571              	.LASF14:
- 572 021e 73697A65 		.ascii	"sizetype\000"
+ 572 023d 73697A65 		.ascii	"sizetype\000"
  572      74797065 
  572      00
  573              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

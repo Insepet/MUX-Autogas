@@ -1,153 +1,153 @@
 <?xml version="1.0" encoding="us-ascii"?>
 
-<fileSet version="1" anchorPath="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitter_cfg.h" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitter_cfg.c" value="ARM_C_FILE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\config.hex" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\protect.hex" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\eeprom.hex" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cymetadata.c" value="ARM_C_FILE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydevice.h" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicegnu.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicerv.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydeviceiar.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydevice_trm.h" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicegnu_trm.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicerv_trm.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydeviceiar_trm.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyfittergnu.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitterrv.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitteriar.inc" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitter.h" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cydisabledsheets.h" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor.c" value="ARM_C_FILE;Surtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor.h" value="NONE;Surtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor_PM.c" value="ARM_C_FILE;Surtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor_INT.c" value="ARM_C_FILE;Surtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor_BOOT.c" value="ARM_C_FILE;Surtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1.c" value="ARM_C_FILE;LCD_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1.h" value="NONE;LCD_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_PM.c" value="ARM_C_FILE;LCD_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_INT.c" value="ARM_C_FILE;LCD_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_BOOT.c" value="ARM_C_FILE;LCD_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora.c" value="ARM_C_FILE;Impresora" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora.h" value="NONE;Impresora" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_PM.c" value="ARM_C_FILE;Impresora" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_INT.c" value="ARM_C_FILE;Impresora" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_BOOT.c" value="ARM_C_FILE;Impresora" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\PC.c" value="ARM_C_FILE;PC" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\PC.h" value="NONE;PC" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\PC_PM.c" value="ARM_C_FILE;PC" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\PC_INT.c" value="ARM_C_FILE;PC" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\PC_BOOT.c" value="ARM_C_FILE;PC" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\SCL_1_aliases.h" value="NONE;SCL_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\SCL_1.c" value="ARM_C_FILE;SCL_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\SCL_1.h" value="NONE;SCL_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\SDA_1_aliases.h" value="NONE;SDA_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\SDA_1.c" value="ARM_C_FILE;SDA_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\SDA_1.h" value="NONE;SDA_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1.c" value="ARM_C_FILE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1.h" value="NONE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_BOOT.c" value="ARM_C_FILE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_INT.c" value="ARM_C_FILE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_PM.c" value="ARM_C_FILE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_SLAVE.c" value="ARM_C_FILE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_MASTER.c" value="ARM_C_FILE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_PVT.h" value="NONE;I2C_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\IB2_aliases.h" value="NONE;IB2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\IB2.c" value="ARM_C_FILE;IB2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\IB2.h" value="NONE;IB2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_1.c" value="ARM_C_FILE;isr_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_1.h" value="NONE;isr_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_RxSurtidor.c" value="ARM_C_FILE;Timer_RxSurtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_RxSurtidor.h" value="NONE;Timer_RxSurtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_RxSurtidor_PM.c" value="ARM_C_FILE;Timer_RxSurtidor" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2.c" value="ARM_C_FILE;LCD_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2.h" value="NONE;LCD_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_PM.c" value="ARM_C_FILE;LCD_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_INT.c" value="ARM_C_FILE;LCD_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_BOOT.c" value="ARM_C_FILE;LCD_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\IB1_aliases.h" value="NONE;IB1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\IB1.c" value="ARM_C_FILE;IB1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\IB1.h" value="NONE;IB1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_WP_aliases.h" value="NONE;Pin_WP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_WP.c" value="ARM_C_FILE;Pin_WP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_WP.h" value="NONE;Pin_WP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\timer_clock_1.c" value="ARM_C_FILE;timer_clock_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\timer_clock_1.h" value="NONE;timer_clock_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion.c" value="ARM_C_FILE;Timer_Animacion" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion.h" value="NONE;Timer_Animacion" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion_PM.c" value="ARM_C_FILE;Timer_Animacion" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_5.c" value="ARM_C_FILE;isr_5" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_5.h" value="NONE;isr_5" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Modo.c" value="ARM_C_FILE;Timer_Modo" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Modo.h" value="NONE;Timer_Modo" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Modo_PM.c" value="ARM_C_FILE;Timer_Modo" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_4.c" value="ARM_C_FILE;isr_4" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_4.h" value="NONE;isr_4" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_3.c" value="ARM_C_FILE;isr_3" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\isr_3.h" value="NONE;isr_3" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion2.c" value="ARM_C_FILE;Timer_Animacion2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion2.h" value="NONE;Timer_Animacion2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion2_PM.c" value="ARM_C_FILE;Timer_Animacion2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\EEPROM.c" value="ARM_C_FILE;EEPROM" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\EEPROM.h" value="NONE;EEPROM" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LP.c" value="ARM_C_FILE;LP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LP.h" value="NONE;LP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LP_PM.c" value="ARM_C_FILE;LP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LP_INT.c" value="ARM_C_FILE;LP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LP_BOOT.c" value="ARM_C_FILE;LP" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_1_aliases.h" value="NONE;Pin_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_1.c" value="ARM_C_FILE;Pin_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_1.h" value="NONE;Pin_1" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_2_aliases.h" value="NONE;Pin_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_2.c" value="ARM_C_FILE;Pin_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_2.h" value="NONE;Pin_2" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_3_aliases.h" value="NONE;Pin_3" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_3.c" value="ARM_C_FILE;Pin_3" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_3.h" value="NONE;Pin_3" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_4_aliases.h" value="NONE;Pin_4" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_4.c" value="ARM_C_FILE;Pin_4" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_4.h" value="NONE;Pin_4" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_5_aliases.h" value="NONE;Pin_5" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_5.c" value="ARM_C_FILE;Pin_5" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_5.h" value="NONE;Pin_5" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_IntClock.c" value="ARM_C_FILE;LCD_1_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_IntClock.h" value="NONE;LCD_1_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_IntClock.c" value="ARM_C_FILE;Impresora_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_IntClock.h" value="NONE;Impresora_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\PC_IntClock.c" value="ARM_C_FILE;PC_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\PC_IntClock.h" value="NONE;PC_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_IntClock.c" value="ARM_C_FILE;LCD_2_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_IntClock.h" value="NONE;LCD_2_IntClock" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cycodeshareimport.ld" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cycodeshareexport.ld" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cycodeshareimport.scat" value="NONE;" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cm3gcc.ld" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Cm3RealView.scat" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Cm3Start.c" value="ARM_C_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\core_cm3_psoc5.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\core_cm3.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyBootAsmGnu.s" value="GNU_ARM_ASM_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyBootAsmRv.s" value="REALVIEW_ARM_ASM_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyDmac.c" value="ARM_C_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyDmac.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyFlash.c" value="ARM_C_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyFlash.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyLib.c" value="ARM_C_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyLib.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cypins.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyPm.c" value="ARM_C_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyPm.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CySpc.c" value="ARM_C_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CySpc.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cytypes.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\cyutils.c" value="ARM_C_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\core_cmFunc.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\core_cmInstr.h" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\Cm3Iar.icf" value="NONE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\CyBootAsmIar.s" value="IAR_ASM_FILE;cy_boot" />
-  <file name="C:\Users\Recepcion\Documents\Hardware\Proyectos - I\documentacion autogas\codigo fuente\mux advance\version12\version12\Programa\Prueba_Autogas\BBB.cydsn\codegentemp\project.h" value="NONE;" />
+<fileSet version="1" anchorPath="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitter_cfg.h" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitter_cfg.c" value="ARM_C_FILE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\config.hex" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\protect.hex" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\eeprom.hex" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cymetadata.c" value="ARM_C_FILE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydevice.h" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicegnu.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicerv.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydeviceiar.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydevice_trm.h" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicegnu_trm.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydevicerv_trm.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydeviceiar_trm.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyfittergnu.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitterrv.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitteriar.inc" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyfitter.h" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cydisabledsheets.h" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor.c" value="ARM_C_FILE;Surtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor.h" value="NONE;Surtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor_PM.c" value="ARM_C_FILE;Surtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor_INT.c" value="ARM_C_FILE;Surtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Surtidor_BOOT.c" value="ARM_C_FILE;Surtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1.c" value="ARM_C_FILE;LCD_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1.h" value="NONE;LCD_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_PM.c" value="ARM_C_FILE;LCD_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_INT.c" value="ARM_C_FILE;LCD_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_BOOT.c" value="ARM_C_FILE;LCD_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora.c" value="ARM_C_FILE;Impresora" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora.h" value="NONE;Impresora" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_PM.c" value="ARM_C_FILE;Impresora" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_INT.c" value="ARM_C_FILE;Impresora" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_BOOT.c" value="ARM_C_FILE;Impresora" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\PC.c" value="ARM_C_FILE;PC" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\PC.h" value="NONE;PC" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\PC_PM.c" value="ARM_C_FILE;PC" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\PC_INT.c" value="ARM_C_FILE;PC" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\PC_BOOT.c" value="ARM_C_FILE;PC" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\SCL_1_aliases.h" value="NONE;SCL_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\SCL_1.c" value="ARM_C_FILE;SCL_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\SCL_1.h" value="NONE;SCL_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\SDA_1_aliases.h" value="NONE;SDA_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\SDA_1.c" value="ARM_C_FILE;SDA_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\SDA_1.h" value="NONE;SDA_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1.c" value="ARM_C_FILE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1.h" value="NONE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_BOOT.c" value="ARM_C_FILE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_INT.c" value="ARM_C_FILE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_PM.c" value="ARM_C_FILE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_SLAVE.c" value="ARM_C_FILE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_MASTER.c" value="ARM_C_FILE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\I2C_1_PVT.h" value="NONE;I2C_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\IB2_aliases.h" value="NONE;IB2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\IB2.c" value="ARM_C_FILE;IB2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\IB2.h" value="NONE;IB2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_1.c" value="ARM_C_FILE;isr_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_1.h" value="NONE;isr_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_RxSurtidor.c" value="ARM_C_FILE;Timer_RxSurtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_RxSurtidor.h" value="NONE;Timer_RxSurtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_RxSurtidor_PM.c" value="ARM_C_FILE;Timer_RxSurtidor" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2.c" value="ARM_C_FILE;LCD_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2.h" value="NONE;LCD_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_PM.c" value="ARM_C_FILE;LCD_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_INT.c" value="ARM_C_FILE;LCD_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_BOOT.c" value="ARM_C_FILE;LCD_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\IB1_aliases.h" value="NONE;IB1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\IB1.c" value="ARM_C_FILE;IB1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\IB1.h" value="NONE;IB1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_WP_aliases.h" value="NONE;Pin_WP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_WP.c" value="ARM_C_FILE;Pin_WP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_WP.h" value="NONE;Pin_WP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\timer_clock_1.c" value="ARM_C_FILE;timer_clock_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\timer_clock_1.h" value="NONE;timer_clock_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion.c" value="ARM_C_FILE;Timer_Animacion" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion.h" value="NONE;Timer_Animacion" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion_PM.c" value="ARM_C_FILE;Timer_Animacion" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_5.c" value="ARM_C_FILE;isr_5" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_5.h" value="NONE;isr_5" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Modo.c" value="ARM_C_FILE;Timer_Modo" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Modo.h" value="NONE;Timer_Modo" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Modo_PM.c" value="ARM_C_FILE;Timer_Modo" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_4.c" value="ARM_C_FILE;isr_4" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_4.h" value="NONE;isr_4" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_3.c" value="ARM_C_FILE;isr_3" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\isr_3.h" value="NONE;isr_3" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion2.c" value="ARM_C_FILE;Timer_Animacion2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion2.h" value="NONE;Timer_Animacion2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Timer_Animacion2_PM.c" value="ARM_C_FILE;Timer_Animacion2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\EEPROM.c" value="ARM_C_FILE;EEPROM" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\EEPROM.h" value="NONE;EEPROM" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LP.c" value="ARM_C_FILE;LP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LP.h" value="NONE;LP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LP_PM.c" value="ARM_C_FILE;LP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LP_INT.c" value="ARM_C_FILE;LP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LP_BOOT.c" value="ARM_C_FILE;LP" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_1_aliases.h" value="NONE;Pin_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_1.c" value="ARM_C_FILE;Pin_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_1.h" value="NONE;Pin_1" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_2_aliases.h" value="NONE;Pin_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_2.c" value="ARM_C_FILE;Pin_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_2.h" value="NONE;Pin_2" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_3_aliases.h" value="NONE;Pin_3" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_3.c" value="ARM_C_FILE;Pin_3" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_3.h" value="NONE;Pin_3" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_4_aliases.h" value="NONE;Pin_4" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_4.c" value="ARM_C_FILE;Pin_4" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_4.h" value="NONE;Pin_4" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_5_aliases.h" value="NONE;Pin_5" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_5.c" value="ARM_C_FILE;Pin_5" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Pin_5.h" value="NONE;Pin_5" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_IntClock.c" value="ARM_C_FILE;LCD_1_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_1_IntClock.h" value="NONE;LCD_1_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_IntClock.c" value="ARM_C_FILE;Impresora_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Impresora_IntClock.h" value="NONE;Impresora_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\PC_IntClock.c" value="ARM_C_FILE;PC_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\PC_IntClock.h" value="NONE;PC_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_IntClock.c" value="ARM_C_FILE;LCD_2_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\LCD_2_IntClock.h" value="NONE;LCD_2_IntClock" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cycodeshareimport.ld" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cycodeshareexport.ld" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cycodeshareimport.scat" value="NONE;" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cm3gcc.ld" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Cm3RealView.scat" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Cm3Start.c" value="ARM_C_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\core_cm3_psoc5.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\core_cm3.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyBootAsmGnu.s" value="GNU_ARM_ASM_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyBootAsmRv.s" value="REALVIEW_ARM_ASM_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyDmac.c" value="ARM_C_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyDmac.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyFlash.c" value="ARM_C_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyFlash.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyLib.c" value="ARM_C_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyLib.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cypins.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyPm.c" value="ARM_C_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyPm.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CySpc.c" value="ARM_C_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CySpc.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cytypes.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\cyutils.c" value="ARM_C_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\core_cmFunc.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\core_cmInstr.h" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\Cm3Iar.icf" value="NONE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\CyBootAsmIar.s" value="IAR_ASM_FILE;cy_boot" />
+  <file name="C:\Users\IN-002143\Documents\GitHub\version12\MUX-Autogas\Prueba_Autogas\BBB.cydsn\codegentemp\project.h" value="NONE;" />
 </fileSet>

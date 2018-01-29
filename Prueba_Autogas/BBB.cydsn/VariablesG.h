@@ -1,35 +1,17 @@
-/*
-*********************************************************************************************************
-*                                           GRP500 CODE
-*
-*                             (c) Copyright 2016; Sistemas Insepet LTDA
-*
-*               All rights reserved.  Protected by international copyright laws.
-*               Knowledge of the source code may NOT be used to develop a similar product.
-*               Please help us continue to provide the Embedded community with the finest
-*               software available.  Your honesty is greatly appreciated.
-*********************************************************************************************************
-*/
-
-/*
-*********************************************************************************************************
-*
-*                                               GRP500 CODE
-*
-*                                             CYPRESS PSoC5LP
-*                                                with the
-*                                            CY8C5969AXI-LP035
-*
-* Filename      : VariablesG.h
-* Version       : V1.00
-* Programmer(s) : 
-*********************************************************************************************************
+/**
+* @file VariablesG.h
+* @Author Insepet LTDA
+* @date 28/2/2016
+* @brief Contiene las variables globales que se usan en el programa y las principales estructuras
 */
 
 #ifndef VARIABLESG_H
 #define VARIABLESG_H
 #include <device.h>	
-/*****************Imagenes*********************/	
+/**
+* Imagenes para las animaciones de espera
+*    
+*/	
 #define iprotector1     0
 #define iprotector2     1
 #define iprotector3     2
@@ -42,25 +24,36 @@
 #define iprotector10    25
 #define iprotector11    26
 #define iprotector12    27
-/**************Estados del Modulo********************/
-#define libre 		1			 	//No tiene ninguna peticion ni espera ninguna orden
-#define espera 		2			 	//Espera comando del BBB
-#define ocupado		3				//Ocupado esperando respuesta del BBB
-#define listo		4				//Listo para enviar autorizacion
-#define autoriza_ok	5				//Autorizado 
-#define tanqueo     6				//surtiendo combustible
-#define venta_ok	7				//Listo para enviar una venta	
-#define imprimiendo 8				//Imprimiendo	
+/**
+* Estados del Modulo MUX, indica las tareas que está haciendo
+* para el flujo de control con el Beagle
+*/
+///No tiene ninguna peticion ni espera ninguna orden    
+#define libre 		1
+///Espera comando del BBB
+#define espera 		2	
+///Ocupado esperando respuesta del BBB    
+#define ocupado		3
+///Listo para enviar autorizacion
+#define listo		4
+///Autorizado 
+#define autoriza_ok	5				
+///surtiendo combustible
+#define tanqueo     6	
+///Listo para enviar una venta    
+#define venta_ok	7	
+///Imprimiendo    
+#define imprimiendo 8					
 	
-/***************Comandos Modulo**********************/
+/**
+* Comandos Modulo Beagle a MUX para la solicitud de respuestas
+*/
 #define	cautorizar	        0x30
 #define cimprimir	        0x31
 #define cbluetooth	        0x32	
 #define creset		        0x45
 #define totales_elec        0x46
-//#define ok_totales          0x47  
-    
-/****************States from sales Autogas************/
+//#define ok_totales          0x47     
 #define	witeSide1       10
 #define cashSide1	    11
 #define creditSide1 	12	
@@ -93,6 +86,10 @@ volatile uint8 	ppux10;
 volatile uint8 	nombre_pro1[17],nombre_pro2[17],nombre_pro3[17];	//Nombre de cada producto
 volatile uint8 	version[4];											//1 version - 2 Decimal Dinero - 3 Decimal Volumen
 
+/**
+ * @struct surtidor
+ * @brief Separación de caras del equipo
+ */
 struct surtidor{
     volatile uint8 dir;
     volatile uint8 estado;
@@ -116,6 +113,10 @@ volatile uint8 id_logo[2];
 volatile uint8 km[2];
 uint8 fecha[3];
 uint8 hora[2];
+/**
+ * @struct recibo
+ * @brief Variables del recibo, la estructura permite separar todos los datos de cada venta para su impresión
+ */
 struct recibo{					//Datos venta
     uint8 posicion;
     uint8 grado;
@@ -136,28 +137,30 @@ struct recibo{					//Datos venta
 	uint8 autorizado;		//Autorizado 0 venta mux local - 0x30 turno cerrado - 0x31 venta con nsx y turno abierto - 0x32 venta CDG   	
     uint8 password_local[5];
 };
-struct recibo rventa1;   	//datos de la venta actual lado 1
-struct recibo rventa2;   	//datos de la venta actual lado 2
+///datos de la venta actual lado 1
+struct recibo rventa1; 
+///datos de la venta actual lado 2
+struct recibo rventa2;   	
 
-/****************************************************************************************************************
-								Variables para manejo de RF
-****************************************************************************************************************/
-uint8 	ok_RF;      		 //Bandera para indicar que hay comunicacion RF
-uint8 	ok_datosRF;			 //Hay datos para enviar al CDG	
-uint8  	rf_mod[200];		 //Datos que van al CDG
+///Bandera para indicar que hay comunicacion RF
+uint8 	ok_RF;      		 
+///Hay datos para enviar al Beagle
+uint8 	ok_datosRF;			 	
+///Datos que van al Beagle
+uint8  	rf_mod[200];		 
 
-/****************************************************************************************************************
-								Variables para manejo de I2C
-****************************************************************************************************************/
-uint8 	buffer_i2c[64];												//Buffer I2C de lectura
+/**
+								Buffer I2C de lectura
+*/
+uint8 	buffer_i2c[64];												
 
-/****************************************************************************************************************
+/**
 								Variables para manejo de Ibutton
-****************************************************************************************************************/
+*/
 uint8	crc_total;													//Checksum Ibutton
-/****************************************************************************************************************
+/**
 								Variables para manejo de Impresora
-****************************************************************************************************************/
+*/
 uint8	print1[2];													//Puerto de la impresora
 uint8	print2[2];
 

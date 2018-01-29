@@ -1,31 +1,10 @@
-/*
-*********************************************************************************************************
-*                                           GRP550M CODE2
-*
-*                             (c) Copyright 2016; Sistemas Insepet LTDA
-*
-*               All rights reserved.  Protected by international copyright laws.
-*               Knowledge of the source code may NOT be used to develop a similar product.
-*               Please help us continue to provide the Embedded community with the finest
-*               software available.  Your honesty is greatly appreciated.
-*********************************************************************************************************
+/**
+* @file main.c
+* @Author Insepet LTDA
+* @date 28/2/2016
+* @brief Archivo principal, maneja librerías y ejecuta el polling de pantallas y dispensador
 */
 
-/*
-*********************************************************************************************************
-*
-*                                               GRP550M CODE
-*
-*                                             CYPRESS PSoC5LP
-*                                                with the
-*                                            CY8C5969AXI-LP035
-*
-* Filename      : main.c
-* Version       : V2.00
-* Programmer(s) : 
-                  
-*********************************************************************************************************
-*/
 
 /*
 *********************************************************************************************************
@@ -67,28 +46,18 @@ uint8  clave_local[4]={'9','6','3','1'};
 uint8  v_digitos_1;
 uint8  ppuinicial=0;
 uint8  Producto;
-uint8  Productos[4];// el buffer es para guardar los tipos de combustible
+uint8  Productos[4];/// buffer para guardar los tipos de combustible
 uint8  diesel=1,corriente=1,extra=1,supremo_diesel=1;
 uint8  status1LP,status2LP,status1st,status2st;
 uint8  Side1State=witeSide1,Side2State=witeSide2;
 uint8  sinIdentificacionL1,sinIdentificacionL2;
 uint8  versionpantalla[13]={'G','R','P','7','0','0','-','3','G','V','2','.','2'};
 
-/*
-*********************************************************************************************************
-*                                         init( void )
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* @fn init
+* @brief Inicialización de periféricos, lectura de variables de eeprom externa
+* inicialización de interrupciones
+*  
 */ 
 void init(void){
     timeout_autorizacion=0;
@@ -187,65 +156,18 @@ void init(void){
 }
 
 
-/*
-*********************************************************************************************************
-*                             uint8 verificar_check(uint8 *datos, uint16 size)
-*
-* Description : calcula el checksum
-*               
-
-*********************************************************************************************************
-*/
-uint8 verificar_check(uint8 *datos, uint16 size){
-	uint8 checksum,index;
-	uint16 i;
-    uint8 table[256] = { 
-    0, 94,188,226, 97, 63,221,131,194,156,126, 32,163,253, 31, 65,
-    157,195, 33,127,252,162, 64, 30, 95,  1,227,189, 62, 96,130,220,
-    35,125,159,193, 66, 28,254,160,225,191, 93,  3,128,222, 60, 98,
-    190,224,  2, 92,223,129, 99, 61,124, 34,192,158, 29, 67,161,255,
-    70, 24,250,164, 39,121,155,197,132,218, 56,102,229,187, 89,  7,
-    219,133,103, 57,186,228,  6, 88, 25, 71,165,251,120, 38,196,154,
-    101, 59,217,135,  4, 90,184,230,167,249, 27, 69,198,152,122, 36,
-    248,166, 68, 26,153,199, 37,123, 58,100,134,216, 91,  5,231,185,
-    140,210, 48,110,237,179, 81, 15, 78, 16,242,172, 47,113,147,205,
-    17, 79,173,243,112, 46,204,146,211,141,111, 49,178,236, 14, 80,
-    175,241, 19, 77,206,144,114, 44,109, 51,209,143, 12, 82,176,238,
-    50,108,142,208, 83, 13,239,177,240,174, 76, 18,145,207, 45,115,
-    202,148,118, 40,171,245, 23, 73,  8, 86,180,234,105, 55,213,139,
-    87,  9,235,181, 54,104,138,212,149,203, 41,119,244,170, 72, 22,
-    233,183, 85, 11,136,214, 52,106, 43,117,151,201, 74, 20,246,168,
-    116, 42,200,150, 21, 75,169,247,182,232, 10, 84,215,137,107, 53};	
-	checksum=0;
-	for(i=0;i<(size-1);i++){
-		index = (uint8)(checksum ^ datos[i]);
-		checksum = table[index];				
-	}
-	return checksum;
-}
-
-/*
-************************************************************************************************************
-*                                         void error_op()
-*
-* Description : Muestra en la pantalla el mensaje de operación incorrecta y regresa al inicio del Flujo LCD
-*               
-*
-* Argument(s) : uint8 lcd, para elegir cual pantalla entra en esta función
-*
-* Return(s)   : none
-*
-* Caller(s)   : Desde cualquier momento de la operacion donde ocurra un error por parte del usuario
-*
-* Note(s)     : none.
-************************************************************************************************************
+/**
+* error_op
+* @brief reinicia el dispay indicado en (lcd)
+* @param lcd display que se debe reiniciar (1 ó 2)
+* 
 */
 void error_op(uint8 lcd, uint16 imagen){
 	if(lcd==1){
 	   set_imagen(1,imagen);
 	   flujo_LCD1=100;
-	   count_protector=1;
-       lado1.estado=libre;
+	   count_protector=1;    
+       lado1.estado=libre; /// con la variable lado1.libre = libre permite que el control vuelva al sistema principal
        LP_ClearRxBuffer();
 	   isr_3_StartEx(animacion);  
 	   Timer_Animacion_Start();
@@ -260,21 +182,14 @@ void error_op(uint8 lcd, uint16 imagen){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         init_surt( void )
-*
-* Description : Busca las posiciones del surtidor y las graba en lado.a.dir y lado.b.dir
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : main()
-*
-* Note(s)     : Falta generar codigo para los casos 1 y 2
-*********************************************************************************************************
+
+/**
+* init_surt
+* @brief Inicia comunicación con el surtidor
+* Retorna el númeo de posiciones que contesten la consulta, diseñado para máximo 2 posiciones
+* equipos legacy, advantage, encore y prime de 2 posiciones
+* solicita datos de venta si el equipo se encuentra en PEOT o FEOT
+*  
 */
 void init_surt(void){
 	uint8 estado, ok=0;
@@ -391,21 +306,12 @@ void init_surt(void){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 polling_rf(void)
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+
+/**
+* polling_rf
+* @brief función para la comunicación MUX-BBB
+* recibe las respuestas del Beagle para enviar datos al dispensador, de preset, bloqueos y solicitudes
+*  
 */
 void polling_rf(void){
 	uint16 status1, status2,size,x,t_preset;
@@ -757,21 +663,11 @@ void polling_rf(void){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 polling_surt(void)
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* polling_surt
+* @brief consulta el estado de las posiciones del surtidor y cambia el control del dispensador
+* le da control al sistema principal si el dispensador se encuentra en estado libre.
+*  
 */
 void polling_surt(void){
 
@@ -791,23 +687,13 @@ void polling_surt(void){
 	}       
 }
 
-/*
-*********************************************************************************************************
-*                                         void polling_LCD1(void)
+/**
+* polling_LCD1
+* @brief consulta el estado de la variable flujo_LCD la cual cambia su valor según el proceso actual
+* con cada touch se dispara un proceso, la variable lleva el registro del proceso que se está ejecutando
+* así que cada vez que se realice lectura de pantalla realiza la tarea correspondiente al caso
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
-
 void polling_LCD1(void){
 	uint8 x,y,aux[10],precio[5],x_1;
     uint8 h_preset;
@@ -1298,6 +1184,7 @@ void polling_LCD1(void){
 		 }
 		break;
 		case 9:
+        ///case 9 envía los datos al Beagle para autorización
             if(sinIdentificacionL1!=1){
     			rf_mod[0]='M';
     			rf_mod[1]='U';
@@ -1508,7 +1395,8 @@ void polling_LCD1(void){
          }		 	
 		break;
 		
-		case 12:      
+		case 12:
+        ///case 12 envía el dato de la venta al Beagle para registro e impresión
 			rf_mod[0]='M';
 			rf_mod[1]='U';
 			rf_mod[2]='X';
@@ -1771,6 +1659,7 @@ void polling_LCD1(void){
 		break;
             
         case 15:
+            ///case 15 envía solicitud al Beagle de reimpresión
 	        if(LCD_1_GetRxBufferSize()==8){
 	            if((LCD_1_rxBuffer[0]==0xAA) && (LCD_1_rxBuffer[6]==0xC3) && (LCD_1_rxBuffer[7]==0x3C)){
 	                switch(LCD_1_rxBuffer[3]){
@@ -2124,23 +2013,13 @@ void polling_LCD1(void){
 }
 
 
-/*
-*********************************************************************************************************
-*                                         void polling_LCD2(void)
+/**
+* polling_LCD2
+* @brief consulta el estado de la variable flujo_LCD2 la cual cambia su valor según el proceso actual
+* con cada touch se dispara un proceso, la variable lleva el registro del proceso que se está ejecutando
+* así que cada vez que se realice lectura de pantalla realiza la tarea correspondiente al caso
 *
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
 */
-
 void polling_LCD2(void){ 
     
 	uint8 x,y,aux[10],precio[5],x_1;
@@ -3459,41 +3338,15 @@ void polling_LCD2(void){
     
 }
 
-/*
-*********************************************************************************************************
-*                                        void polling_wd(void)
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
-*/
-void polling_wd(void){
 
-}
-
-/*
-*********************************************************************************************************
-*                                         CY_ISR(animacion)
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* CY_ISR 
+* @brief función de interrupción
+* muestra la animación de inicio
+* de la variable flujo_LDC1 = 1 o flujo_LCD2=1
+* @param animacion
+* @param animacion2
+* 
 */
 CY_ISR(animacion){
     Timer_Animacion_ReadStatusRegister();
@@ -3513,22 +3366,7 @@ CY_ISR(animacion){
     }
 }
 
-/*
-*********************************************************************************************************
-*                                         CY_ISR(animacion)
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
-*/
+
 CY_ISR(animacion2){
     Timer_Animacion2_ReadStatusRegister();
     if(flujo_LCD2==1){
@@ -3547,22 +3385,6 @@ CY_ISR(animacion2){
     }
 }
 
-/*
-*********************************************************************************************************
-*                                        CY_ISR(modo_mux)
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
-*/
 CY_ISR(modo_mux){
 	Timer_Modo_ReadStatusRegister();
 	state_rf++;
@@ -3575,21 +3397,12 @@ CY_ISR(modo_mux){
 	}
 }
 
-/*
-*********************************************************************************************************
-*                                         main( void )
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* main 
+* @brief función principal
+* los procesos del microcontrolador inician su ejecución en esta función
+* se hace la inicialización de periféricos
+* en el ciclo infinito se consultan pantallas y puerto serial del Beagle
 */
 int main(){ 
     

@@ -1,32 +1,9 @@
-/*
-*********************************************************************************************************
-*                                           GRP550/700 CODE
-*
-*                             (c) Copyright 2013; Sistemas Insepet LTDA
-*
-*               All rights reserved.  Protected by international copyright laws.
-*               Knowledge of the source code may NOT be used to develop a similar product.
-*               Please help us continue to provide the Embedded community with the finest
-*               software available.  Your honesty is greatly appreciated.
-*********************************************************************************************************
+/**
+* @file I2C.c
+* @Author Insepet LTDA
+* @date 28/2/2016
+* @brief librería para el manejo de dispositivos conectados al psoc por medio del I2C
 */
-
-/*
-*********************************************************************************************************
-*
-*                                             GRP550/700 CODE
-*
-*                                             CYPRESS PSoC5LP
-*                                                with the
-*                                            CY8C5969AXI-LP035
-*
-* Filename      : I2C.c
-* Version       : V1.00
-* Programmer(s) : 
-                  
-*********************************************************************************************************
-*/
-
 
 /*
 *********************************************************************************************************
@@ -37,21 +14,10 @@
 #include "VariablesG.h"
 #include "LCD.h"
 
-/*
-*********************************************************************************************************
-*                                         uint8 leer_hora( void )
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* @fn leer_hora
+* @brief Función para leer la hora vía I2C, escribe la hora solicitada en rventa.hora
+* @return 0 para error de lectura 1 si no hubo problema al leer la hora
 */
 uint8 leer_hora(){
 	uint8 status,i;
@@ -85,21 +51,10 @@ uint8 leer_hora(){
 	return 1;
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 leer_fecha( void )
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* leer_fecha
+* @brief Función para leer la hora vía I2C, escribe la hora solicitada en rventa.fecha
+* @return 0 para error de lectura 1 si no hubo problema al leer la fecha
 */
 uint8 leer_fecha(){
 	uint8 status,i;
@@ -133,23 +88,11 @@ uint8 leer_fecha(){
 	return 1;
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 write_hora( void )
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* write_hora
+* @brief Función para escribir la hora vía I2C, escribe la hora de rventa.hora
+* @return 0 para error de escritura 1 si no hubo problema al escribir la hora
 */
-
 uint8 write_hora( void ){
 	uint8 status, dato[3],i;
 	dato[0]=1;
@@ -175,23 +118,11 @@ uint8 write_hora( void ){
 	return 1;
 }
 
-/*
-*********************************************************************************************************
-*                                         uint8 write_fecha( void )
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* write_fecha
+* @brief Función para escribir la fecha vía I2C, escribe la hora de rventa.fecha
+* @return 0 para error de escritura 1 si no hubo problema al escribir la fecha
 */
-
 uint8 write_fecha( void ){
 	uint8 status, dato[4],i;
 	dato[0]=4;
@@ -218,23 +149,13 @@ uint8 write_fecha( void ){
 	return 1;
 }
 
-/*
-*********************************************************************************************************
-*                                   uint8 write_psoc1( uint8 puerto, uint8 valor )
-*
-* Description : 
-*               
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Caller(s)   : 
-*
-* Note(s)     : none.
-*********************************************************************************************************
+/**
+* write_psoc1
+* @brief Función para enviar datos al micro encargado de controlar las impresoras
+* @param puerto puerto al que se desea enviar los datos (impresora lado A, impresora lado B)
+* @param valor dato a enviar
+* @return 0 para error de lectura 1 si no hubo problema 
 */
-
 uint8 write_psoc1( uint8 puerto, uint8 valor ){
 	uint8 status, dato[2],i;
 	dato[0]=puerto;

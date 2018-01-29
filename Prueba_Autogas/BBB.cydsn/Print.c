@@ -1,30 +1,11 @@
-/*
-*********************************************************************************************************
-*                                           GRP500 CODE
-*
-*                             (c) Copyright 2013; Sistemas Insepet LTDA
-*
-*               All rights reserved.  Protected by international copyright laws.
-*               Knowledge of the source code may NOT be used to develop a similar product.
-*               Please help us continue to provide the Embedded community with the finest
-*               software available.  Your honesty is greatly appreciated.
-*********************************************************************************************************
-*/
-
-/*
-*********************************************************************************************************
-*
-*                                               GRP500 CODE
-*
-*                                             CYPRESS PSoC5LP
-*                                                with the
-*                                            CY8C5969AXI-LP035
-*
-* Filename      : Print.c
-* Version       : V1.00
-* Programmer(s) : 
-                  
-*********************************************************************************************************
+/**
+* @file Print.c
+* @Author Insepet LTDA
+* @date 28/2/2016
+* @brief Librería para el manejo de la impresora
+* no utilizado en esta versión de MUX porque la impresora es controlada
+* vía RS-232 por el BeagleBone.<BR>
+* La misma librería que se utilizó en el MUX GRP700U
 */
 
 

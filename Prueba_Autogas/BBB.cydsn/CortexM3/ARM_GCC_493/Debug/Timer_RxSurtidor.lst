@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
   23:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
   24:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** #include "Timer_RxSurtidor.h"
   25:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 2
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 2
 
 
   26:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** uint8 Timer_RxSurtidor_initVar = 0u;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
   52 0014 1E4A     		ldr	r2, .L2+4
   53 0016 1E4B     		ldr	r3, .L2+4
   54 0018 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 3
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 3
 
 
   55 001a DBB2     		uxtb	r3, r3
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
   63 002a DBB2     		uxtb	r3, r3
   64 002c 23F03003 		bic	r3, r3, #48
   65 0030 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 4
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 4
 
 
   66 0032 1370     		strb	r3, [r2]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  122:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****         Timer_RxSurtidor_CAPTURE_COUNT_CTRL |= Timer_RxSurtidor_CNTR_ENABLE;
  123:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****         Timer_RxSurtidor_SetCaptureCount(Timer_RxSurtidor_INIT_CAPTURE_COUNT);
  124:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****     #endif /* Configure capture counter value */
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 5
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 5
 
 
  125:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  120              		.section	.text.Timer_RxSurtidor_Enable,"ax",%progbits
  121              		.align	2
  122              		.global	Timer_RxSurtidor_Enable
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 6
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 6
 
 
  123              		.thumb
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  187:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
  188:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****     /* Remove assignment if control register is removed */
  189:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****     #if (!Timer_RxSurtidor_UDB_CONTROL_REG_REMOVED || Timer_RxSurtidor_UsingFixedFunction)
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 7
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 7
 
 
  190:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****         Timer_RxSurtidor_CONTROL |= Timer_RxSurtidor_CTRL_ENABLE;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  211:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *  Timer_RxSurtidor_initVar: Is modified when this function is called for the
  212:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *   first time. Is used to ensure that initialization happens only once.
  213:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 8
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 8
 
 
  214:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *******************************************************************************/
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  227:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
  228:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
  229:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** /*******************************************************************************
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 9
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 9
 
 
  230:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** * Function Name: Timer_RxSurtidor_Stop
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  254              		.loc 1 257 0
  255 0024 074A     		ldr	r2, .L12+8
  256 0026 074B     		ldr	r3, .L12+8
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 10
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 10
 
 
  257 0028 1B78     		ldrb	r3, [r3]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  288              		.cfi_startproc
  289              		@ args = 0, pretend = 0, frame = 8
  290              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 11
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 11
 
 
  291              		@ link register save eliminated.
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  296:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *  void
  297:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *
  298:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** * Side Effects:
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 12
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 12
 
 
  299:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *  An existing hardware capture could be overwritten.
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  317:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *
  318:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** * Summary:
  319:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *  Reads the status register and returns it's state. This function should use
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 13
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 13
 
 
  320:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *  defined types for the bit-field information as the bits in this register may
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  403              	.LFB7:
  337:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
  338:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 14
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 14
 
 
  339:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** #if (!Timer_RxSurtidor_UDB_CONTROL_REG_REMOVED) /* Remove API if control register is unused */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  433              		.size	Timer_RxSurtidor_ReadControlRegister, .-Timer_RxSurtidor_ReadControlRegister
  434              		.section	.text.Timer_RxSurtidor_WriteControlRegister,"ax",%progbits
  435              		.align	2
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 15
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 15
 
 
  436              		.global	Timer_RxSurtidor_WriteControlRegister
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  467              		.cfi_restore 7
  468              		.cfi_def_cfa_offset 0
  469 0018 7047     		bx	lr
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 16
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 16
 
 
  470              	.L30:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  412:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** }
  499              		.loc 1 412 0
  500 000a 1846     		mov	r0, r3
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 17
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 17
 
 
  501 000c BD46     		mov	sp, r7
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  535 0006 0346     		mov	r3, r0
  536 0008 FB80     		strh	r3, [r7, #6]	@ movhi
  433:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****     #if(Timer_RxSurtidor_UsingFixedFunction)
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 18
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 18
 
 
  434:.\Generated_Source\PSoC5/Timer_RxSurtidor.c ****         uint16 period_temp = (uint16)period;
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  456:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** uint16 Timer_RxSurtidor_ReadCapture(void) 
  457:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** {
  569              		.loc 1 457 0
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 19
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 19
 
 
  570              		.cfi_startproc
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  475:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *
  476:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** * Return:
  477:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *  void
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 20
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 20
 
 
  478:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** *
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  647              		.type	Timer_RxSurtidor_ReadCounter, %function
  648              	Timer_RxSurtidor_ReadCounter:
  649              	.LFB13:
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 21
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 21
 
 
  492:.\Generated_Source\PSoC5/Timer_RxSurtidor.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  670              		.cfi_def_cfa_register 13
  671              		@ sp needed
  672 0012 5DF8047B 		ldr	r7, [sp], #4
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 22
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 22
 
 
  673              		.cfi_restore 7
@@ -1282,17 +1282,17 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  691 0006 00000000 		.4byte	.Ldebug_abbrev0
  692 000a 04       		.byte	0x4
  693 000b 01       		.uleb128 0x1
- 694 000c 95010000 		.4byte	.LASF35
+ 694 000c 61010000 		.4byte	.LASF35
  695 0010 01       		.byte	0x1
  696 0011 01010000 		.4byte	.LASF36
- 697 0015 3B010000 		.4byte	.LASF37
+ 697 0015 EE020000 		.4byte	.LASF37
  698 0019 00000000 		.4byte	.Ldebug_ranges0+0
  699 001d 00000000 		.4byte	0
  700 0021 00000000 		.4byte	.Ldebug_line0
  701 0025 02       		.uleb128 0x2
  702 0026 01       		.byte	0x1
  703 0027 06       		.byte	0x6
- 704 0028 49030000 		.4byte	.LASF0
+ 704 0028 68030000 		.4byte	.LASF0
  705 002c 02       		.uleb128 0x2
  706 002d 01       		.byte	0x1
  707 002e 08       		.byte	0x8
@@ -1300,7 +1300,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  709 0033 02       		.uleb128 0x2
  710 0034 02       		.byte	0x2
  711 0035 05       		.byte	0x5
- 712 0036 DB020000 		.4byte	.LASF2
+ 712 0036 A7020000 		.4byte	.LASF2
  713 003a 02       		.uleb128 0x2
  714 003b 02       		.byte	0x2
  715 003c 07       		.byte	0x7
@@ -1308,7 +1308,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  717 0041 02       		.uleb128 0x2
  718 0042 04       		.byte	0x4
  719 0043 05       		.byte	0x5
- 720 0044 3B030000 		.4byte	.LASF4
+ 720 0044 5A030000 		.4byte	.LASF4
  721 0048 02       		.uleb128 0x2
  722 0049 04       		.byte	0x4
  723 004a 07       		.byte	0x7
@@ -1316,14 +1316,14 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  725 004f 02       		.uleb128 0x2
  726 0050 08       		.byte	0x8
  727 0051 05       		.byte	0x5
- 728 0052 BF020000 		.4byte	.LASF6
+ 728 0052 8B020000 		.4byte	.LASF6
  729 0056 02       		.uleb128 0x2
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 23
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 23
 
 
  730 0057 08       		.byte	0x8
  731 0058 07       		.byte	0x7
- 732 0059 7D020000 		.4byte	.LASF7
+ 732 0059 49020000 		.4byte	.LASF7
  733 005d 03       		.uleb128 0x3
  734 005e 04       		.byte	0x4
  735 005f 05       		.byte	0x5
@@ -1331,14 +1331,14 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  737 0064 02       		.uleb128 0x2
  738 0065 04       		.byte	0x4
  739 0066 07       		.byte	0x7
- 740 0067 70020000 		.4byte	.LASF8
+ 740 0067 3C020000 		.4byte	.LASF8
  741 006b 04       		.uleb128 0x4
  742 006c 2D010000 		.4byte	.LASF9
  743 0070 02       		.byte	0x2
  744 0071 B4       		.byte	0xb4
  745 0072 2C000000 		.4byte	0x2c
  746 0076 04       		.uleb128 0x4
- 747 0077 2A020000 		.4byte	.LASF10
+ 747 0077 F6010000 		.4byte	.LASF10
  748 007b 02       		.byte	0x2
  749 007c B5       		.byte	0xb5
  750 007d 3A000000 		.4byte	0x3a
@@ -1349,11 +1349,11 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  755 0088 02       		.uleb128 0x2
  756 0089 08       		.byte	0x8
  757 008a 04       		.byte	0x4
- 758 008b 23020000 		.4byte	.LASF12
+ 758 008b EF010000 		.4byte	.LASF12
  759 008f 02       		.uleb128 0x2
  760 0090 01       		.byte	0x1
  761 0091 08       		.byte	0x8
- 762 0092 44030000 		.4byte	.LASF13
+ 762 0092 63030000 		.4byte	.LASF13
  763 0096 05       		.uleb128 0x5
  764 0097 D4000000 		.4byte	.LASF14
  765 009b 02       		.byte	0x2
@@ -1371,20 +1371,20 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  777 00b8 02       		.uleb128 0x2
  778 00b9 04       		.byte	0x4
  779 00ba 07       		.byte	0x7
- 780 00bb B6020000 		.4byte	.LASF16
+ 780 00bb 82020000 		.4byte	.LASF16
  781 00bf 07       		.uleb128 0x7
  782 00c0 D9000000 		.4byte	.LASF17
  783 00c4 01       		.byte	0x1
  784 00c5 2B       		.byte	0x2b
  785 00c6 00000000 		.4byte	.LFB0
  786 00ca 9C000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 24
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 24
 
 
  787 00ce 01       		.uleb128 0x1
  788 00cf 9C       		.byte	0x9c
  789 00d0 08       		.uleb128 0x8
- 790 00d1 0A030000 		.4byte	.LASF18
+ 790 00d1 D6020000 		.4byte	.LASF18
  791 00d5 01       		.byte	0x1
  792 00d6 B4       		.byte	0xb4
  793 00d7 00000000 		.4byte	.LFB1
@@ -1392,7 +1392,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  795 00df 01       		.uleb128 0x1
  796 00e0 9C       		.byte	0x9c
  797 00e1 07       		.uleb128 0x7
- 798 00e2 76030000 		.4byte	.LASF19
+ 798 00e2 95030000 		.4byte	.LASF19
  799 00e6 01       		.byte	0x1
  800 00e7 D7       		.byte	0xd7
  801 00e8 00000000 		.4byte	.LFB2
@@ -1400,7 +1400,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  803 00f0 01       		.uleb128 0x1
  804 00f1 9C       		.byte	0x9c
  805 00f2 08       		.uleb128 0x8
- 806 00f3 A0020000 		.4byte	.LASF20
+ 806 00f3 6C020000 		.4byte	.LASF20
  807 00f7 01       		.byte	0x1
  808 00f8 F7       		.byte	0xf7
  809 00f9 00000000 		.4byte	.LFB3
@@ -1408,7 +1408,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  811 0101 01       		.uleb128 0x1
  812 0102 9C       		.byte	0x9c
  813 0103 09       		.uleb128 0x9
- 814 0104 4E020000 		.4byte	.LASF24
+ 814 0104 1A020000 		.4byte	.LASF24
  815 0108 01       		.byte	0x1
  816 0109 1701     		.2byte	0x117
  817 010b 00000000 		.4byte	.LFB4
@@ -1417,7 +1417,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  820 0114 9C       		.byte	0x9c
  821 0115 29010000 		.4byte	0x129
  822 0119 0A       		.uleb128 0xa
- 823 011a CD020000 		.4byte	.LASF26
+ 823 011a 99020000 		.4byte	.LASF26
  824 011e 01       		.byte	0x1
  825 011f 1701     		.2byte	0x117
  826 0121 6B000000 		.4byte	0x6b
@@ -1426,7 +1426,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  829 0127 77       		.sleb128 -9
  830 0128 00       		.byte	0
  831 0129 0B       		.uleb128 0xb
- 832 012a 55030000 		.4byte	.LASF21
+ 832 012a 74030000 		.4byte	.LASF21
  833 012e 01       		.byte	0x1
  834 012f 2E01     		.2byte	0x12e
  835 0131 00000000 		.4byte	.LFB5
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  841 0140 01       		.byte	0x1
  842 0141 4D01     		.2byte	0x14d
  843 0143 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 25
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 25
 
 
  844 0147 00000000 		.4byte	.LFB6
@@ -1446,7 +1446,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  846 014f 01       		.uleb128 0x1
  847 0150 9C       		.byte	0x9c
  848 0151 0C       		.uleb128 0xc
- 849 0152 E5020000 		.4byte	.LASF23
+ 849 0152 B1020000 		.4byte	.LASF23
  850 0156 01       		.byte	0x1
  851 0157 6401     		.2byte	0x164
  852 0159 6B000000 		.4byte	0x6b
@@ -1455,7 +1455,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  855 0165 01       		.uleb128 0x1
  856 0166 9C       		.byte	0x9c
  857 0167 09       		.uleb128 0x9
- 858 0168 6F010000 		.4byte	.LASF25
+ 858 0168 3B010000 		.4byte	.LASF25
  859 016c 01       		.byte	0x1
  860 016d 7B01     		.2byte	0x17b
  861 016f 00000000 		.4byte	.LFB8
@@ -1498,11 +1498,11 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  898 01c5 02       		.uleb128 0x2
  899 01c6 91       		.byte	0x91
  900 01c7 6E       		.sleb128 -18
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 26
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 26
 
 
  901 01c8 0D       		.uleb128 0xd
- 902 01c9 94020000 		.4byte	.LASF38
+ 902 01c9 60020000 		.4byte	.LASF38
  903 01cd 01       		.byte	0x1
  904 01ce B201     		.2byte	0x1b2
  905 01d0 76000000 		.4byte	0x76
@@ -1511,7 +1511,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  908 01d6 76       		.sleb128 -10
  909 01d7 00       		.byte	0
  910 01d8 0C       		.uleb128 0xc
- 911 01d9 31020000 		.4byte	.LASF31
+ 911 01d9 FD010000 		.4byte	.LASF31
  912 01dd 01       		.byte	0x1
  913 01de C801     		.2byte	0x1c8
  914 01e0 76000000 		.4byte	0x76
@@ -1547,7 +1547,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  944 0228 01       		.uleb128 0x1
  945 0229 9C       		.byte	0x9c
  946 022a 0E       		.uleb128 0xe
- 947 022b 22030000 		.4byte	.LASF39
+ 947 022b 41030000 		.4byte	.LASF39
  948 022f 01       		.byte	0x1
  949 0230 1A       		.byte	0x1a
  950 0231 6B000000 		.4byte	0x6b
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  955              		.section	.debug_abbrev,"",%progbits
  956              	.Ldebug_abbrev0:
  957 0000 01       		.uleb128 0x1
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 27
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 27
 
 
  958 0001 11       		.uleb128 0x11
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  1012 0037 16       		.uleb128 0x16
  1013 0038 00       		.byte	0
  1014 0039 03       		.uleb128 0x3
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 28
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 28
 
 
  1015 003a 0E       		.uleb128 0xe
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  1069 0071 12       		.uleb128 0x12
  1070 0072 06       		.uleb128 0x6
  1071 0073 40       		.uleb128 0x40
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 29
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 29
 
 
  1072 0074 18       		.uleb128 0x18
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  1126 00ac 3B       		.uleb128 0x3b
  1127 00ad 05       		.uleb128 0x5
  1128 00ae 27       		.uleb128 0x27
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 30
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 30
 
 
  1129 00af 19       		.uleb128 0x19
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  1183 00e7 03       		.uleb128 0x3
  1184 00e8 0E       		.uleb128 0xe
  1185 00e9 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 31
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 31
 
 
  1186 00ea 0B       		.uleb128 0xb
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  1240 0008 00000000 		.4byte	.LFB1
  1241 000c 48000000 		.4byte	.LFE1
  1242 0010 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 32
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 32
 
 
  1243 0014 20000000 		.4byte	.LFE2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  1282 0043 54696D65 		.ascii	"Timer_RxSurtidor_ReadStatusRegister\000"
  1282      725F5278 
  1282      53757274 
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 33
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 33
 
 
  1282      69646F72 
@@ -1976,139 +1976,142 @@ ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 1
  1303              	.LASF27:
  1304 0133 636F6E74 		.ascii	"control\000"
  1304      726F6C00 
- 1305              	.LASF37:
- 1306 013b 433A5C55 		.ascii	"C:\\Users\\Recepcion\\Desktop\\Prueba_Autogas\\BBB."
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 34
+ 1305              	.LASF25:
+ 1306 013b 54696D65 		.ascii	"Timer_RxSurtidor_WriteControlRegister\000"
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 34
 
 
- 1306      73657273 
- 1306      5C526563 
- 1306      65706369 
- 1306      6F6E5C44 
- 1307 0169 63796473 		.ascii	"cydsn\000"
- 1307      6E00
- 1308              	.LASF25:
- 1309 016f 54696D65 		.ascii	"Timer_RxSurtidor_WriteControlRegister\000"
- 1309      725F5278 
- 1309      53757274 
- 1309      69646F72 
- 1309      5F577269 
- 1310              	.LASF35:
- 1311 0195 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1311      4320342E 
- 1311      392E3320 
- 1311      32303135 
- 1311      30333033 
- 1312 01c8 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1312      20726576 
- 1312      6973696F 
- 1312      6E203232 
- 1312      31323230 
- 1313 01fb 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1313      66756E63 
- 1313      74696F6E 
- 1313      2D736563 
- 1313      74696F6E 
- 1314              	.LASF12:
- 1315 0223 646F7562 		.ascii	"double\000"
- 1315      6C6500
- 1316              	.LASF10:
- 1317 022a 75696E74 		.ascii	"uint16\000"
- 1317      313600
- 1318              	.LASF31:
- 1319 0231 54696D65 		.ascii	"Timer_RxSurtidor_ReadCapture\000"
- 1319      725F5278 
- 1319      53757274 
- 1319      69646F72 
- 1319      5F526561 
- 1320              	.LASF24:
- 1321 024e 54696D65 		.ascii	"Timer_RxSurtidor_SetInterruptMode\000"
- 1321      725F5278 
- 1321      53757274 
- 1321      69646F72 
- 1321      5F536574 
- 1322              	.LASF8:
- 1323 0270 756E7369 		.ascii	"unsigned int\000"
- 1323      676E6564 
- 1323      20696E74 
- 1323      00
- 1324              	.LASF7:
- 1325 027d 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1325      206C6F6E 
- 1325      6720756E 
- 1325      7369676E 
- 1325      65642069 
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 35
+ 1306      725F5278 
+ 1306      53757274 
+ 1306      69646F72 
+ 1306      5F577269 
+ 1307              	.LASF35:
+ 1308 0161 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1308      4320342E 
+ 1308      392E3320 
+ 1308      32303135 
+ 1308      30333033 
+ 1309 0194 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1309      20726576 
+ 1309      6973696F 
+ 1309      6E203232 
+ 1309      31323230 
+ 1310 01c7 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1310      66756E63 
+ 1310      74696F6E 
+ 1310      2D736563 
+ 1310      74696F6E 
+ 1311              	.LASF12:
+ 1312 01ef 646F7562 		.ascii	"double\000"
+ 1312      6C6500
+ 1313              	.LASF10:
+ 1314 01f6 75696E74 		.ascii	"uint16\000"
+ 1314      313600
+ 1315              	.LASF31:
+ 1316 01fd 54696D65 		.ascii	"Timer_RxSurtidor_ReadCapture\000"
+ 1316      725F5278 
+ 1316      53757274 
+ 1316      69646F72 
+ 1316      5F526561 
+ 1317              	.LASF24:
+ 1318 021a 54696D65 		.ascii	"Timer_RxSurtidor_SetInterruptMode\000"
+ 1318      725F5278 
+ 1318      53757274 
+ 1318      69646F72 
+ 1318      5F536574 
+ 1319              	.LASF8:
+ 1320 023c 756E7369 		.ascii	"unsigned int\000"
+ 1320      676E6564 
+ 1320      20696E74 
+ 1320      00
+ 1321              	.LASF7:
+ 1322 0249 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1322      206C6F6E 
+ 1322      6720756E 
+ 1322      7369676E 
+ 1322      65642069 
+ 1323              	.LASF38:
+ 1324 0260 70657269 		.ascii	"period_temp\000"
+ 1324      6F645F74 
+ 1324      656D7000 
+ 1325              	.LASF20:
+ 1326 026c 54696D65 		.ascii	"Timer_RxSurtidor_Stop\000"
+ 1326      725F5278 
+ 1326      53757274 
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 35
 
 
- 1326              	.LASF38:
- 1327 0294 70657269 		.ascii	"period_temp\000"
- 1327      6F645F74 
- 1327      656D7000 
- 1328              	.LASF20:
- 1329 02a0 54696D65 		.ascii	"Timer_RxSurtidor_Stop\000"
- 1329      725F5278 
- 1329      53757274 
- 1329      69646F72 
- 1329      5F53746F 
- 1330              	.LASF16:
- 1331 02b6 73697A65 		.ascii	"sizetype\000"
- 1331      74797065 
- 1331      00
- 1332              	.LASF6:
- 1333 02bf 6C6F6E67 		.ascii	"long long int\000"
- 1333      206C6F6E 
- 1333      6720696E 
- 1333      7400
- 1334              	.LASF26:
- 1335 02cd 696E7465 		.ascii	"interruptMode\000"
- 1335      72727570 
- 1335      744D6F64 
- 1335      6500
- 1336              	.LASF2:
- 1337 02db 73686F72 		.ascii	"short int\000"
- 1337      7420696E 
- 1337      7400
- 1338              	.LASF23:
- 1339 02e5 54696D65 		.ascii	"Timer_RxSurtidor_ReadControlRegister\000"
- 1339      725F5278 
- 1339      53757274 
- 1339      69646F72 
- 1339      5F526561 
- 1340              	.LASF18:
- 1341 030a 54696D65 		.ascii	"Timer_RxSurtidor_Enable\000"
- 1341      725F5278 
- 1341      53757274 
- 1341      69646F72 
- 1341      5F456E61 
+ 1326      69646F72 
+ 1326      5F53746F 
+ 1327              	.LASF16:
+ 1328 0282 73697A65 		.ascii	"sizetype\000"
+ 1328      74797065 
+ 1328      00
+ 1329              	.LASF6:
+ 1330 028b 6C6F6E67 		.ascii	"long long int\000"
+ 1330      206C6F6E 
+ 1330      6720696E 
+ 1330      7400
+ 1331              	.LASF26:
+ 1332 0299 696E7465 		.ascii	"interruptMode\000"
+ 1332      72727570 
+ 1332      744D6F64 
+ 1332      6500
+ 1333              	.LASF2:
+ 1334 02a7 73686F72 		.ascii	"short int\000"
+ 1334      7420696E 
+ 1334      7400
+ 1335              	.LASF23:
+ 1336 02b1 54696D65 		.ascii	"Timer_RxSurtidor_ReadControlRegister\000"
+ 1336      725F5278 
+ 1336      53757274 
+ 1336      69646F72 
+ 1336      5F526561 
+ 1337              	.LASF18:
+ 1338 02d6 54696D65 		.ascii	"Timer_RxSurtidor_Enable\000"
+ 1338      725F5278 
+ 1338      53757274 
+ 1338      69646F72 
+ 1338      5F456E61 
+ 1339              	.LASF37:
+ 1340 02ee 433A5C55 		.ascii	"C:\\Users\\IN-002143\\Documents\\GitHub\\version12\\"
+ 1340      73657273 
+ 1340      5C494E2D 
+ 1340      30303231 
+ 1340      34335C44 
+ 1341 031c 4D55582D 		.ascii	"MUX-Autogas\\Prueba_Autogas\\BBB.cydsn\000"
+ 1341      4175746F 
+ 1341      6761735C 
+ 1341      50727565 
+ 1341      62615F41 
  1342              	.LASF39:
- 1343 0322 54696D65 		.ascii	"Timer_RxSurtidor_initVar\000"
+ 1343 0341 54696D65 		.ascii	"Timer_RxSurtidor_initVar\000"
  1343      725F5278 
  1343      53757274 
  1343      69646F72 
  1343      5F696E69 
  1344              	.LASF4:
- 1345 033b 6C6F6E67 		.ascii	"long int\000"
+ 1345 035a 6C6F6E67 		.ascii	"long int\000"
  1345      20696E74 
  1345      00
  1346              	.LASF13:
- 1347 0344 63686172 		.ascii	"char\000"
+ 1347 0363 63686172 		.ascii	"char\000"
  1347      00
  1348              	.LASF0:
- 1349 0349 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\IN-002~1\AppData\Local\Temp\cc7MKL4R.s 			page 36
+
+
+ 1349 0368 7369676E 		.ascii	"signed char\000"
  1349      65642063 
  1349      68617200 
-ARM GAS  C:\Users\RECEPC~1\AppData\Local\Temp\ccdl5MzA.s 			page 36
-
-
  1350              	.LASF21:
- 1351 0355 54696D65 		.ascii	"Timer_RxSurtidor_SoftwareCapture\000"
+ 1351 0374 54696D65 		.ascii	"Timer_RxSurtidor_SoftwareCapture\000"
  1351      725F5278 
  1351      53757274 
  1351      69646F72 
  1351      5F536F66 
  1352              	.LASF19:
- 1353 0376 54696D65 		.ascii	"Timer_RxSurtidor_Start\000"
+ 1353 0395 54696D65 		.ascii	"Timer_RxSurtidor_Start\000"
  1353      725F5278 
  1353      53757274 
  1353      69646F72 
